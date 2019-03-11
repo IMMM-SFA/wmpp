@@ -1,15 +1,7 @@
-
 #' check_storage
 #'
 #' check the wm storage output
 #'
-#' @return
-#' @importFrom readr read_delim
-#' @importFrom lubridate
-#' @importFrom magrittr set_colnames
-#' @export
-#'
-#' @examples
 check_storage <- function(storage_output_file, res_input_file, in_wm_dir = TRUE){
 
   # allow for users to simply state wm folder name and input/output names
