@@ -67,7 +67,7 @@ prep_flow <- function(wm_output_dir,
             set_colnames(c("date", grid_ids)) %>%
             select(one_of(c("date", hydro_grid_ids))) %>%
             mutate_if(is.numeric, round, 3) %>%
-            write_csv(paste0(reg, "_", x_reg_sim$sim %>% unique(), ".csv"))
+            write_csv(paste0(hyd_output_dir, "/", reg, "_", x_reg_sim$sim %>% unique(), ".csv"))
         })
     })
 }
