@@ -4,10 +4,12 @@
 \alias{compute_wsgif_hydro}
 \title{compute_wsgif_hydro}
 \usage{
-compute_wsgif_hydro(wm_output_dir)
+compute_wsgif_hydro(wm_output_dir, by = "all")
 }
 \arguments{
 \item{wm_output_dir}{directory of results folder}
+
+\item{by}{spatial unit ("all", "bal_auth", "region", "HUC2", "WECC")}
 }
 \value{
 time series of WSGIF
