@@ -4,6 +4,7 @@
 #'
 #' @param wm_output_dir directory of results folder
 #' @param hyd_output_dir output directory
+#' @param in_parallel run data extraction in parallel (where multiple regions are being assessed)
 #' @details extracts flow data for hydropower grids; combines files if runs are temporally split
 #' @return daily time series of regulated flows at hydropower grids
 #' @importFrom readr read_table2 read_csv write_csv
@@ -13,10 +14,20 @@
 #' @importFrom stringr str_split_fixed
 #' @importFrom tibble as_tibble
 #' @importFrom purrr map pmap
+#' @importFrom future plan multiprocess
+#' @importFrom furrr future_map
 #' @export
 #'
 prep_flow <- function(wm_output_dir,
-                      hyd_output_dir = ""){
+                      hyd_output_dir = "",
+                      in_parallel = FALSE){
+
+  if(in_parallel == TRUE){
+    plan(multiprocess)
+    map_wm_regions <- furrr::future_map
+  }else{
+    map_wm_regions <- purrr::map
+  }
 
   # get names of all flow files and folders in results directory
   list.files(wm_output_dir, recursive = T) %>%
@@ -33,8 +44,8 @@ prep_flow <- function(wm_output_dir,
   # read flows, combine temporal splits, and extract hydro grids
   flow_by_region_sim_sec %>%
     split(.$reg_hucwm) %>%
-    # map on all regions...
-    map(function(x_reg){
+    # map on all regions (accross cores if available)
+    map_wm_regions(function(x_reg){
       x_reg$reg_hucwm %>% unique() -> reg
       reg %>% read_grid_ids() %>% as.character() -> grid_ids
       reg %>% read_hydro_plant_grids() -> hydro_grid_ids
