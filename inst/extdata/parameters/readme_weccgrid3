@@ -1,0 +1,2 @@
+   335	14:53	awk '{if (NR>6) { for (i=1;i<=NF;i++) { row=NR-6+1;col=i;lat = 27-0.125/2+(272-row)*0.125;lon=-140-0.125/2+col*0.125; if ($i > 0 ) printf("%f %f %f\n",lat,lon,$i);}}}' weccgrid3.txt > weccgrid3.ll
+   336	14:53	history | tail -2 >> readme_weccgrid3
