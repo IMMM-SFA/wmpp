@@ -181,7 +181,9 @@ get_wsgif_hydro <- function(hydro_flow_fn_1,
     mutate(BA_weighting = nameplate_MW_ / sum(nameplate_MW_)) %>%
     group_by(reg_hucwm) %>%
     mutate(hucwm_weighting = nameplate_MW_ / sum(nameplate_MW_)) %>%
-    ungroup() -> hydro_plants_weighted
+    ungroup() %>%
+    mutate(wecc_weighting = nameplate_MW_ / sum(nameplate_MW_)) ->
+    hydro_plants_weighted
 
   wsgif_all_dams_and_regions %>% #filter(is.na(wsgif)) %>% pull(dam) %>% unique()
     left_join(hydro_plants_weighted, by = c("dam" = "grid_id")) %>%
@@ -192,15 +194,22 @@ get_wsgif_hydro <- function(hydro_flow_fn_1,
   wsgif_all_dams_BA_region %>%
     mutate(wsgif_weighted = wsgif * BA_weighting) %>%
     group_by(year, BA) %>%
-    summarise(wsgif = sum(wsgif_weighted)) %>% ungroup() %>%
+    summarise(wsgif = round(sum(wsgif_weighted), 2)) %>% ungroup() %>%
     spread(BA, wsgif) -> wsgif_hydro_BA
 
   # get wsgif by hucwm region
   wsgif_all_dams_BA_region %>%
     mutate(wsgif_weighted = wsgif * hucwm_weighting) %>%
     group_by(year, reg_hucwm) %>%
-    summarise(wsgif = sum(wsgif_weighted)) %>% ungroup() %>%
+    summarise(wsgif = round(sum(wsgif_weighted), 2)) %>% ungroup() %>%
     spread(reg_hucwm, wsgif) -> wsgif_hydro_hucwm
+
+  # get wsgif by wecc region
+  wsgif_all_dams_BA_region %>%
+    mutate(wsgif_weighted = wsgif * wecc_weighting) %>%
+    group_by(year, reg_hucwm) %>%
+    summarise(wsgif = round(sum(wsgif_weighted), 2)) %>% ungroup() %>%
+    spread(reg_hucwm, wsgif) -> wsgif_hydro_wecc
 
   # write to file
   if(missing(output_file_dir)){
@@ -210,6 +219,7 @@ get_wsgif_hydro <- function(hydro_flow_fn_1,
 
   write_csv(wsgif_hydro_BA, paste0(output_file_dir, "/wsgif_hydro_BA_", output_fn_tag, ".csv"))
   write_csv(wsgif_hydro_hucwm, paste0(output_file_dir, "/wsgif_hydro_hucwm_", output_fn_tag, ".csv"))
+  write_csv(wsgif_hydro_wecc, paste0(output_file_dir, "/wsgif_hydro_wecc_", output_fn_tag, ".csv"))
 
 }
 
