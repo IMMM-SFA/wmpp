@@ -4,20 +4,30 @@
 \alias{get_wsgif_hydro}
 \title{get_wsgif_hydro}
 \usage{
-get_wsgif_hydro(hydro_flow_file_1, hydro_flow_file_2,
-  historical_period = 1955:2004, future_period = 2005:2095,
-  by = "all")
+get_wsgif_hydro(hydro_flow_fn_1, hydro_flow_fn_2, hydro_flow_file_dir,
+  output_fn_tag = "", output_file_dir,
+  historical_period = c("1955-01-01", "2004-12-31"),
+  future_period = c("2005-01-01", "2095-12-31"), by = "all",
+  dam_cutoff_percentile = 0.92)
 }
 \arguments{
-\item{hydro_flow_file_1}{directory of results folder}
+\item{hydro_flow_fn_1}{file naming format for the hydro_flow_file, excluding the region (e.g., 10_HIST_MOSART.csv, would be "HIST_MOSART.csv")}
 
-\item{hydro_flow_file_2}{optional second flow file (in case results are split); will be binded to hydro_flow_file_1}
+\item{hydro_flow_fn_2}{optional second flow file naming format in case hist and future parts are split.}
 
-\item{historical_period}{...}
+\item{output_fn_tag}{naming convention for output files}
 
-\item{future_period}{...}
+\item{output_file_dir}{directory for output. If blank, new directory is made inside hydro_flow_file_dir.}
+
+\item{historical_period}{start and end dates of historical period in format yyyy-mm-dd}
+
+\item{future_period}{start and end dates of future period in format yyyy-mm-dd}
 
 \item{by}{spatial unit ("all", "bal_auth", "region", "HUC2", "WECC")}
+
+\item{dam_cutoff_percentile}{cutoff for which dams to include in the wsgif computation. The percentile is based on nameplate capacity (i.e., percentile of 0.5 will include the largest dams that contribute 50 percent total nameplate).}
+
+\item{hydro_flow_dir}{directory where hydro flow files are stored}
 }
 \value{
 time series of WSGIF
