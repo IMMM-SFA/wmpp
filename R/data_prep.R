@@ -9,7 +9,7 @@
 #' @return daily time series of regulated flows at hydropower grids
 #' @importFrom readr read_table2 read_csv write_csv
 #' @importFrom lubridate ymd
-#' @importFrom dplyr mutate mutate_if rename bind_rows select one_of
+#' @importFrom dplyr mutate mutate_if rename bind_rows select one_of filter
 #' @importFrom magrittr set_colnames
 #' @importFrom stringr str_split_fixed
 #' @importFrom tibble as_tibble
@@ -22,6 +22,7 @@ prep_flow <- function(wm_output_dir,
                       hyd_output_dir = "",
                       in_parallel = FALSE){
 
+  # set up parallel processing if selected
   if(in_parallel == TRUE){
     plan(multiprocess)
     map_wm_regions <- furrr::future_map
@@ -38,7 +39,9 @@ prep_flow <- function(wm_output_dir,
   flow_files %>%
     str_split_fixed("/", 4) %>% .[,1:3] %>%
     as_tibble() %>%
-    rename(reg_hucwm = V1, sim = V2, section = V3) ->
+    rename(reg_hucwm = V1, sim = V2, section = V3) %>%
+    filter(reg_hucwm %in% hucwm_regions) ->
+    # ^^ ensures results folders unconnected to HUC-WM regions are excluded
     flow_by_region_sim_sec
 
   # read flows, combine temporal splits, and extract hydro grids
