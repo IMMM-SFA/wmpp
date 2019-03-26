@@ -11,7 +11,7 @@
 #' @param dam_cutoff_percentile cutoff for which dams to include in the wsgif computation. The percentile is based on nameplate capacity (i.e., percentile of 0.5 will include the largest dams that contribute 50 percent total nameplate).
 #' @details computes WSGIF for hydropower by balancing authority, region, HUC2, or entire WECC
 #' @return time series of WSGIF
-#' @importFrom readr read_csv
+#' @importFrom readr read_csv cols
 #' @importFrom lubridate ymd
 #' @importFrom tidyr gather spread separate
 #' @importFrom stringr str_split
