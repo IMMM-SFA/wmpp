@@ -12,7 +12,7 @@
 #' @details computes WSGIF for hydropower by balancing authority, region, HUC2, or entire WECC
 #' @return time series of WSGIF
 #' @importFrom readr read_csv cols
-#' @importFrom lubridate ymd
+#' @importFrom lubridate ymd year
 #' @importFrom tidyr gather spread separate
 #' @importFrom stringr str_split
 #' @import dplyr
