@@ -1,19 +1,28 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-wmpp
-====
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# wmpp
 
 `wmpp` (in development) produces Water Scarcity Grid Impact Factor (WSGIF) estimates and PLEXOS inputs from WM simulation results.
 
-Installation
-------------
+## Installation
 
 You can install `wmpp` using devtools:
 
 `devtools::install_github("IMMM-SFA/wmpp")`
 
-Running on PIC
---------------
+## Running on PIC
 
 ### Install `wmpp` in your PIC home directory
 
@@ -39,9 +48,9 @@ Then quit R, without saving the workspace image:
 
 Computation of Water Scarcity Grid Impact Factor (WSGIF) requires flow time series for relevant grids where hydropower dams (for hydropower WSGIF) and catchment outlets (for thermal WSGIF) are located. The `prep_flow` function will search inside a WM results directory and extract these data from all available gridded flow outputs. The function has three arguments:
 
-1.  `wm_output_dir` is used to specify the WM results directory.
+1. `wm_output_dir` is used to specify the WM results directory.
 
-2.  `hyd_output_dir` set the output directory for the extracted time series.
+2. `hyd_output_dir` set the output directory for the extracted time series.
 
 3.- `in_parallel` (default = FALSE) tells the functions whether or not run the regional results folders across separate cores.
 
@@ -49,30 +58,34 @@ An example WM output directory is located at `/pic/projects/wat_nrg_nex/hydromet
 
 To extract the relevant flow information you need to set up a simple .R script. Create a new folder in your `$HOME` directory (e.g. `/people/my_username/wmpp_analysis/`) and add the following R script (named `get_flows.R` or similar):
 
-    #################
-    # .R script for extracting flow time series for hydropower and thermal WSGIF computation
+```
+#################
+# .R script for extracting flow time series for hydropower and thermal WSGIF computation
 
-    # load the wmpp library
-    library(wmpp)
+# load the wmpp library
+library(wmpp)
 
-    # exectute prep_flow
-    prep_flow("/pic/projects/wat_nrg_nex/hydromet/Tian/CMIP5_BCSD_runoffs/output/access1-0/",
-              hyd_output_dir = "/people/my_username/wmpp_analysis/access1-0_output_hydro/",
-              in_parallel = TRUE)
-    #################
+# exectute prep_flow
+prep_flow("/pic/projects/wat_nrg_nex/hydromet/Tian/CMIP5_BCSD_runoffs/output/access1-0/",
+          hyd_output_dir = "/people/my_username/wmpp_analysis/access1-0_output_hydro/",
+          in_parallel = TRUE)
+#################
+```
 
 Then create a bash (named something like `batch_get_flows.sh`) in the same directory:
 
-    #!/bin/bash
+```
+#!/bin/bash
 
-    #SBATCH -p shared
-    #SBATCH -n 4
-    #SBATCH -A your_allocation
-    #SBATCH -t 120
-    #SBATCH --output=/dev/null
-    #SBATCH --error=/dev/null
+#SBATCH -p shared
+#SBATCH -n 4
+#SBATCH -A your_allocation
+#SBATCH -t 120
+#SBATCH --output=/dev/null
+#SBATCH --error=/dev/null
 
-    R CMD BATCH get_flows.R
+R CMD BATCH get_flows.R
+```
 
 **Note:** WM gridded flow files are in the order of 1Gb each, causing slow load and computation within the R environment. Currently, the above script can take up to an hour to run (depending on how many flow files are in the results directory), even with the `in_parallel` option set to TRUE.
 
@@ -83,3 +96,10 @@ $`sbatch batch_get_flows.sh`
 ### WSGIF computation
 
 The computation of WSGIF is computed on files prepared in the prior step.
+
+
+
+
+
+
+
