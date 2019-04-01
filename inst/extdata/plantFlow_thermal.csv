@@ -1,0 +1,502 @@
+refID,name,annualMWh,namePlate,TEPPCtype,plantCode,coolingTechnology,coolingType,latAdj,lonAdj,region,ifDerating,huc4,huc4.name,huc2
+29,Alamitos1,0,175,Steam Turbine-Gas,315,Once-Through,Ocean,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+30,Alamitos2,0,176,Steam Turbine-Gas,315,Once-Through,Ocean,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+31,Alamitos3,0,322,Steam Turbine-Gas,315,Once-Through,Ocean,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+32,Alamitos4,0,320,Steam Turbine-Gas,315,Once-Through,Ocean,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+33,Alamitos5,0,482,Steam Turbine-Gas,315,Once-Through,Ocean,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+34,Alamitos6,0,481,Steam Turbine-Gas,315,Once-Through,Ocean,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+36,HuntingtonBeach1,0,226,Steam Turbine-Gas,335,Once-Through,Ocean,33.6875,241.9375,18,0,1807,Southern California Coastal,CA
+37,HuntingtonBeach2,0,226,Steam Turbine-Gas,335,Once-Through,Ocean,33.6875,241.9375,18,0,1807,Southern California Coastal,CA
+45,ACE-Cogen,708981,96,Steam Turbine-Coal,10002,Recirculating,Groundwater,35.6875,242.5625,18,0,1809,Northern Mojave-Mono Lake,CA
+62,AguaFria1,8769,113.64,Steam Turbine-Gas,141,Recirculating,Groundwater,33.4375,247.6875,COLO,0,1507,Lower Gila,COLO
+63,AguaFria2,7216,113.64,Steam Turbine-Gas,141,Recirculating,Groundwater,33.4375,247.6875,COLO,0,1507,Lower Gila,COLO
+64,AguaFria3,27447,163.2,Steam Turbine-Gas,141,Recirculating,Groundwater,33.4375,247.6875,COLO,0,1507,Lower Gila,COLO
+118,ApacheST2,1386789,204,Steam Turbine-Coal,160,Recirculating,Groundwater,32.0625,250.1875,COLO,0,1505,Middle Gila,COLO
+119,ApacheST3,1397677,204,Steam Turbine-Coal,160,Recirculating,Groundwater,32.0625,250.1875,COLO,0,1505,Middle Gila,COLO
+190,BenFrenchST1,0,25,Steam Turbine-Coal,3325,Recirculating,Groundwater,44.0625,256.8125,10,0,1012,Cheyenne,10
+272,BiomassOneGE1,78829,14.4,Steam Turbine-Biomass,10869,Recirculating,Municipal,42.4375,237.0625,PNW,0,1710,Oregon-Washington Coastal,PNW
+273,BiomassOneGE2,69888,15,Steam Turbine-Biomass,10869,Recirculating,Municipal,42.4375,237.0625,PNW,0,1710,Oregon-Washington Coastal,PNW
+296,BigValley,2570,8.6,Steam Turbine-Biomass,10288,NA,NA,41.0625,238.8125,18,0,1802,Sacramento,CA
+325,BlueLake,53530,13.8,Steam Turbine-Biomass,10764,NA,NA,41.0625,236.0625,18,0,1801,Klamath-Northern California Coastal,CA
+336,Boardman,0,642.2,Steam Turbine-Coal,6106,Cooling Pond,Surface Water,45.8125,240.3125,PNW,1,1707,Middle Columbia,PNW
+342,Bonanza,2522226,460,Steam Turbine-Coal,7790,Recirculating,Surface Water,40.1875,250.8125,COLO,1,1405,White-Yampa,COLO
+420,WilmingtonCalciner,174780,35.8,Steam Turbine-Waste Heat,10601,Recirculating,Municipal,34.1875,241.6875,18,0,1807,Southern California Coastal,CA
+422,BradleyLandfill,0,6,Steam Turbine-Biomass,NaN,NA,NA,34.3125,242.0625,18,0,1807,Southern California Coastal,CA
+460,Broadway3,0,65,Steam Turbine-Gas,420,Recirculating,Municipal,34.0625,241.8125,18,0,1807,Southern California Coastal,CA
+630,Castrvlle_QF,854,13.04,Steam Turbine-Coal,NaN,NA,NA,37.9375,239.4375,18,0,1804,San Joaquin,CA
+665,Centralia1,0,729.9,Steam Turbine-Coal,3845,Recirculating,Surface Water,46.6875,237.0625,PNW,1,1710,Oregon-Washington Coastal,PNW
+666,Centralia2,4079949,729.9,Steam Turbine-Coal,3845,Recirculating,Surface Water,46.6875,237.0625,PNW,1,1710,Oregon-Washington Coastal,PNW
+684,Cherokee3,0,170.5,Steam Turbine-Coal,469,Recirculating,Surface Water,39.8125,255.0625,10,1,1019,South Platte,10
+685,Cherokee4,0,380.8,Steam Turbine-Coal,469,Recirculating,Surface Water,39.8125,255.0625,10,1,1019,South Platte,10
+730,Chino_Area_Agg,96398,21.8,Steam Turbine-Biomass,NaN,NA,NA,34.8125,241.9375,18,0,1809,Northern Mojave-Mono Lake,CA
+738,Cholla_1,696926,113.6,Steam Turbine-Coal,113,Recirculating,Surface Water,34.9375,249.6875,COLO,1,1502,Little Colorado,COLO
+739,Cholla_2,0,288.9,Steam Turbine-Coal,113,Recirculating,Surface Water,34.9375,249.6875,COLO,1,1502,Little Colorado,COLO
+740,Cholla_3,2023100,312.3,Steam Turbine-Coal,113,Recirculating,Surface Water,34.9375,249.6875,COLO,1,1502,Little Colorado,COLO
+741,Cholla_4,2959138,414,Steam Turbine-Coal,113,Recirculating,Surface Water,34.9375,249.6875,COLO,1,1502,Little Colorado,COLO
+742,Amp_Chow_Bio,56404,12.5,Steam Turbine-Biomass,56706,None,Municipal,37.1875,239.6875,18,0,1804,San Joaquin,CA
+771,SE_Resource,224383,38.91,Steam Turbine-Biomass,50837,Recirculating,Municipal,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+782,ClearwaterPaper3,210528,28.8,Steam Turbine-Biomass,50637,Recirculating,Surface Water,46.4375,242.9375,PNW,1,1706,Lower Snake,PNW
+783,ClearwaterPaper4,216653,65,Steam Turbine-Biomass,50637,Recirculating,Surface Water,46.4375,242.9375,PNW,1,1706,Lower Snake,PNW
+814,PrairieWoodProducts,10785,7.5,Steam Turbine-Biomass,50921,#not designated,Surface Water,44.4375,241.1875,PNW,1,1707,Middle Columbia,PNW
+825,Collins_Pine,45679,13.8,Steam Turbine-Biomass,10661,#not designated,Surface Water,40.3125,238.8125,18,1,1802,Sacramento,CA
+826,Desert_View,332422,55.5,Steam Turbine-Biomass,10300,Recirculating,Groundwater,33.4375,244.0625,18,0,1810,Southern Mojave-Salton Sea,CA
+833,Colstrip_1,2355330,330,Steam Turbine-Coal,6076,Recirculating,Surface Water,45.8125,253.4375,10,1,1010,Lower Yellowstone,10
+834,Colstrip_2,2296826,330,Steam Turbine-Coal,6076,Recirculating,Surface Water,45.8125,253.4375,10,1,1010,Lower Yellowstone,10
+835,Colstrip_3,5679789,823,Steam Turbine-Coal,6076,Recirculating,Surface Water,45.8125,253.4375,10,1,1010,Lower Yellowstone,10
+836,Colstrip_4,5949828,823,Steam Turbine-Coal,6076,Recirculating,Surface Water,45.8125,253.4375,10,1,1010,Lower Yellowstone,10
+837,Colstrip_Energy,268365,43.7,Steam Turbine-Coal,10784,Recirculating,Groundwater,45.8125,253.4375,10,0,1010,Lower Yellowstone,10
+839,Columbia2,8415782,1170,Steam Turbine-Nuclear,371,Recirculating,Surface Water,46.5625,240.6875,PNW,1,1702,Upper Columbia,PNW
+852,Comanche_1,2544160,382.5,Steam Turbine-Coal,470,Recirculating,Surface Water,38.3125,255.4375,11,1,1102,Upper Arkansas,11
+853,Comanche_2,2501339,396,Steam Turbine-Coal,470,Recirculating,Surface Water,38.3125,255.4375,11,1,1102,Upper Arkansas,11
+854,Comanche_3,5861195,856.8,Steam Turbine-Coal,470,Recirculating,Surface Water,38.3125,255.4375,11,1,1102,Upper Arkansas,11
+868,Phillips_Carbon,88920,20,Steam Turbine-Coal,50388,Recirculating,Municipal,38.0625,237.6875,18,0,1805,San Francisco Bay,CA
+897,Coolwater_1,0,65,Steam Turbine-Gas,329,Recirculating,Groundwater,34.9375,243.1875,18,0,1809,Northern Mojave-Mono Lake,CA
+898,Coolwater_2,0,71,Steam Turbine-Gas,329,Recirculating,Groundwater,34.9375,243.1875,18,0,1809,Northern Mojave-Mono Lake,CA
+905,Naughton1,1253191,163.2,Steam Turbine-Coal,4162,Recirculating,Surface Water,41.8125,249.4375,COLO,1,1404,Great Divide-Upper Green,COLO
+906,Naughton2,1584615,217.6,Steam Turbine-Coal,4162,Recirculating,Surface Water,41.8125,249.4375,COLO,1,1404,Great Divide-Upper Green,COLO
+907,Naughton3Coal,0,350,Steam Turbine-Coal,4162,Recirculating,Surface Water,41.8125,249.4375,COLO,1,1404,Great Divide-Upper Green,COLO
+907,Naughton3Gas,65097,350,Steam Turbine-Gas,4162,Recirculating,Surface Water,41.8125,249.4375,COLO,1,1404,Great Divide-Upper Green,COLO
+908,Navajo_NAV1,0,803.16,Steam Turbine-Coal,4941,Recirculating,Surface Water,36.9375,248.5625,COLO,1,1407,Upper Colorado-Dirty Devil,COLO
+909,Navajo_NAV2,5024530,803.16,Steam Turbine-Coal,4941,Recirculating,Surface Water,36.9375,248.5625,COLO,1,1407,Upper Colorado-Dirty Devil,COLO
+910,Navajo_NAV3,5060126,803.16,Steam Turbine-Coal,4941,Recirculating,Surface Water,36.9375,248.5625,COLO,1,1407,Upper Colorado-Dirty Devil,COLO
+944,Yucca_ST1,746,86.7,Steam Turbine-Gas,120,Recirculating,Groundwater,32.6875,245.3125,COLO,0,1503,Lower Colorado,COLO
+978,Shasta1,124778,18.39,Steam Turbine-Biomass,50881,Dry Cooled,Groundwater,40.3125,237.8125,18,0,1802,Sacramento,CA
+979,Shasta2,127188,18.39,Steam Turbine-Biomass,50881,Dry Cooled,Groundwater,40.3125,237.8125,18,0,1802,Sacramento,CA
+980,Shasta3,126939,18.39,Steam Turbine-Biomass,50881,Dry Cooled,Groundwater,40.3125,237.8125,18,0,1802,Sacramento,CA
+981,Shasta4,34714,7.84,Steam Turbine-Biomass,50881,Dry Cooled,Groundwater,40.3125,237.8125,18,0,1802,Sacramento,CA
+990,Yellowstone_Eng,435670,64,Steam Turbine-Coal,50931,Dry Cooled,Surface Water,45.8125,251.5625,10,0,1007,Upper Yellowstone,10
+1005,Wyodak,2638902,362.07,Steam Turbine-Coal,6101,Dry Cooled,Municipal,44.3125,254.6875,10,0,1012,Cheyenne,10
+1007,Wygen1,676665,105.6,Steam Turbine-Coal,55479,Dry Cooled,Groundwater,44.3125,254.6875,10,0,1012,Cheyenne,10
+1008,Wygen2,752762,105.6,Steam Turbine-Coal,56319,Dry Cooled,Groundwater,44.3125,254.6875,10,0,1012,Cheyenne,10
+1009,Wygen3,807559,110,Steam Turbine-Coal,56596,NA,NA,44.3125,254.6875,10,0,1012,Cheyenne,10
+1011,Woodland_Bio,185056,28,Steam Turbine-Biomass,10836,#not designated,Municipal,38.6875,238.3125,18,0,1802,Sacramento,CA
+1023,WM_Landfill_1,23329,3.28,Steam Turbine-Biomass,NaN,NA,NA,39.3125,255.5625,10,0,1019,South Platte,10
+1084,J_E_Corette,0,172.8,Steam Turbine-Coal,2187,Once-Through,Surface Water,45.6875,251.4375,10,1,1007,Upper Yellowstone,10
+1086,Coronado_CO1,2858731,410.94,Steam Turbine-Coal,6177,Recirculating,Unknown Freshwater,34.6875,250.6875,COLO,0,1502,Little Colorado,COLO
+1087,Coronado_CO2,2922406,410.94,Steam Turbine-Coal,6177,Recirculating,Unknown Freshwater,34.6875,250.6875,COLO,0,1502,Little Colorado,COLO
+1088,Coronado1-1,0,380,Steam Turbine-Coal,NaN,NA,NA,33.4375,248.1875,COLO,0,1506,Salt,COLO
+1093,Cosmo1,46551,8.6,Steam Turbine-Biomass,50185,NA,NA,46.9375,236.1875,PNW,0,1710,Oregon-Washington Coastal,PNW
+1094,Cosmo2,46467,8.6,Steam Turbine-Biomass,50185,NA,NA,46.9375,236.1875,PNW,0,1710,Oregon-Washington Coastal,PNW
+1115,County_Line,3949,0.55,Steam Turbine-Biomass,NaN,NA,NA,39.3125,255.5625,10,0,1019,South Platte,10
+1117,SonomaCentralLF1+2,37168,8,Steam Turbine-Biomass,0.9999820637454486,NA,NA,37.9375,239.4375,18,0,1804,San Joaquin,CA
+1118,Marion_Inc,107842,13.1,Steam Turbine-Biomass,50630,#not designated,Groundwater,45.0625,237.1875,PNW,0,1709,Willamette,PNW
+1127,CoyoteCanyon,52055,17.1,Steam Turbine-Biomass,10395,#not designated,Municipal,33.6875,242.0625,18,0,1807,Southern California Coastal,CA
+1139,Craig_1,3401342,446.4,Steam Turbine-Coal,6021,Recirculating,Surface Water,40.4375,252.3125,COLO,1,1405,White-Yampa,COLO
+1140,Craig_2,3060025,446.4,Steam Turbine-Coal,6021,Recirculating,Surface Water,40.4375,252.3125,COLO,1,1405,White-Yampa,COLO
+1141,Craig_3,2762943,446.4,Steam Turbine-Coal,6021,Recirculating,Surface Water,40.4375,252.3125,COLO,1,1405,White-Yampa,COLO
+1147,Crockett_Cogen,54124,247,Combined Cycle-Single Shaft,55084,Dry Cooled,Ocean,38.0625,237.6875,18,0,1805,San Francisco Bay,CA
+1176,CoGen2DRJohnson,23504,7.5,Steam Turbine-Biomass,50993,#not designated,Unknown Freshwater,43.0625,236.5625,PNW,0,1710,Oregon-Washington Coastal,PNW
+1189,Dave_Johnston_1,816943,113.64,Steam Turbine-Coal,4158,Once-Through,Surface Water,42.8125,254.3125,10,1,1018,North Platte,10
+1190,Dave_Johnston_2,834202,113.64,Steam Turbine-Coal,4158,Once-Through,Surface Water,42.8125,254.3125,10,1,1018,North Platte,10
+1191,Dave_Johnston_3,1702633,229.5,Steam Turbine-Coal,4158,Once-Through,Surface Water,42.8125,254.3125,10,1,1018,North Platte,10
+1192,Dave_Johnston_4,2590679,360,Steam Turbine-Coal,4158,Once-Through,Surface Water,42.8125,254.3125,10,1,1018,North Platte,10
+1241,DiabloCanyon1,8497869,1200,Steam Turbine-Nuclear,6099,Once-Through,Ocean,35.3125,239.1875,18,0,1806,Central California Coastal,CA
+1242,DiabloCanyon2,8422957,1200,Steam Turbine-Nuclear,6099,Once-Through,Ocean,35.3125,239.1875,18,0,1806,Central California Coastal,CA
+1259,Dinuba_1,857,12,Steam Turbine-Gas,NaN,NA,NA,37.9375,239.4375,18,0,1804,San Joaquin,CA
+1275,Simplot_Leasing,121897,15.9,Steam Turbine-Other,50274,#not designated,Groundwater,42.9375,247.4375,PNW,0,1704,Upper Snake,PNW
+1313,Dry_Fork_Sta,3276264,440,Steam Turbine-Coal,56609,NA,NA,44.3125,254.5625,10,0,1012,Cheyenne,10
+1341,East_Bay_MUD,20325,4.6,Steam Turbine-Biomass,NaN,NA,NA,37.5625,238.0625,18,0,1805,San Francisco Bay,CA
+1370,ElSegundoPwr3,0,335,Steam Turbine-Gas,330,Once-Through,Ocean,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+1371,ElSegundoPwr4,0,335,Steam Turbine-Gas,330,Once-Through,Ocean,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+1404,Encina_ST1,0,106.25,Steam Turbine-Gas,302,Once-Through,Ocean,33.1875,242.6875,18,0,1807,Southern California Coastal,CA
+1405,Encina_2,0,110.25,Steam Turbine-Gas,302,Once-Through,Ocean,33.1875,242.6875,18,0,1807,Southern California Coastal,CA
+1406,Encina_3,0,110.25,Steam Turbine-Gas,302,Once-Through,Ocean,33.1875,242.6875,18,0,1807,Southern California Coastal,CA
+1407,Encina_4,0,306,Steam Turbine-Gas,302,Once-Through,Ocean,33.1875,242.6875,18,0,1807,Southern California Coastal,CA
+1408,Encina_5,0,345.6,Steam Turbine-Gas,302,Once-Through,Ocean,33.1875,242.6875,18,0,1807,Southern California Coastal,CA
+1421,Escalante_1,1889071,285,Steam Turbine-Coal,87,Recirculating,Groundwater,35.3125,251.9375,13,0,1302,Rio Grande-Elephant Butte,13
+1428,Etiwanda3,0,333,Steam Turbine-Gas,331,Recirculating,GW/Waste Water,34.1875,242.5625,18,0,1807,Southern California Coastal,CA
+1429,Etiwanda4,0,333,Steam Turbine-Gas,331,Recirculating,GW/Waste Water,34.1875,242.5625,18,0,1807,Southern California Coastal,CA
+1436,Fairhaven_Pwr,120600,19.9,Steam Turbine-Biomass,10052,Recirculating,Municipal,40.9375,235.8125,18,0,1801,Klamath-Northern California Coastal,CA
+1456,Fellow_QF,654,17.25,Steam Turbine-Coal,NaN,NA,NA,37.9375,239.4375,18,0,1804,San Joaquin,CA
+1501,Fort_Churchill1,0,115,Steam Turbine-Gas,2330,Cooling Pond,Groundwater,39.1875,240.9375,16,0,1605,Central Lahontan,16
+1502,Fort_Churchill2,0,115,Steam Turbine-Gas,2330,Cooling Pond,Groundwater,39.1875,240.9375,16,0,1605,Central Lahontan,16
+1554,Ft_James_Cogen,229781,53,Steam Turbine-Other,57759,NA,NA,39.0625,239.0625,18,0,1802,Sacramento,CA
+1561,Gadsby_1,0,69,Steam Turbine-Gas,3648,None,Surface Water,40.6875,248.0625,16,1,1602,Great Salt Lake,16
+1562,Gadsby_2,0,73,Steam Turbine-Gas,3648,None,Surface Water,40.6875,248.0625,16,1,1602,Great Salt Lake,16
+1563,Gadsby_3,0,113.64,Steam Turbine-Gas,3648,None,Surface Water,40.6875,248.0625,16,1,1602,Great Salt Lake,16
+1619,GeorgeBirdsall1,597,17.3,Steam Turbine-Gas,493,Recirculating,Municipal,38.8125,255.1875,11,0,1102,Upper Arkansas,11
+1620,GeorgeBirdsall2,541,18.8,Steam Turbine-Gas,493,Recirculating,Municipal,38.8125,255.1875,11,0,1102,Upper Arkansas,11
+1621,GeorgeBirdsall3,1008,23.5,Steam Turbine-Gas,493,Recirculating,Municipal,38.8125,255.1875,11,0,1102,Upper Arkansas,11
+1627,WaunaMill,293804,36,Steam Turbine-Biomass,56192,Dry Cooled,Surface Water,46.1875,236.6875,PNW,0,1708,Lower Columbia,PNW
+1775,Grayson_3,840,20,Steam Turbine-Gas,377,Recirculating,Waste Water,34.0625,241.8125,18,0,1807,Southern California Coastal,CA
+1776,Grayson_4,2376,44,Steam Turbine-Gas,377,Recirculating,Waste Water,34.0625,241.8125,18,0,1807,Southern California Coastal,CA
+1777,Grayson_5,5400,44,Steam Turbine-Gas,377,Recirculating,Waste Water,34.0625,241.8125,18,0,1807,Southern California Coastal,CA
+1817,HWilsonSundtST1,718,108.8,Steam Turbine-Gas,126,None,Groundwater,32.1875,249.0625,COLO,0,1505,Middle Gila,COLO
+1818,HWilsonSundtST2,3706,108.8,Steam Turbine-Gas,126,None,Groundwater,32.1875,249.0625,COLO,0,1505,Middle Gila,COLO
+1819,HWilsonSundtST3,11626,113.6,Steam Turbine-Gas,126,None,Groundwater,32.1875,249.0625,COLO,0,1505,Middle Gila,COLO
+1820,HWilsonSundtST4,1234640,173.3,Steam Turbine-Coal,126,None,Groundwater,32.1875,249.0625,COLO,0,1505,Middle Gila,COLO
+1832,Darrington_GEN1,15326,4.5,Steam Turbine-Biomass,57969,NA,NA,48.3125,238.4375,PNW,0,1711,Puget Sound,PNW
+1876,Hayden_1,1140348,190,Steam Turbine-Coal,525,Recirculating,Surface Water,40.5625,252.8125,COLO,1,1405,White-Yampa,COLO
+1877,Hayden_2,1902245,275.4,Steam Turbine-Coal,525,Recirculating,Surface Water,40.5625,252.8125,COLO,1,1405,White-Yampa,COLO
+1878,Haynes_1,0,230,Steam Turbine-Gas,400,Once-Through,Ocean,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+1879,Haynes_2,19232,230,Steam Turbine-Gas,400,Once-Through,Ocean,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+1880,Haynes_5,0,343,Steam Turbine-Gas,400,Once-Through,Ocean,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+1881,Haynes_6,0,343,Steam Turbine-Gas,400,Once-Through,Ocean,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+1908,HeberGeo1,268767,52,Steam Turbine-Other,54689,Recirculating,Surface Water,32.6875,244.4375,18,1,1810,Southern Mojave-Salton Sea,CA
+2010,El_Centro_3,0,50,Steam Turbine-Gas,389,Recirculating,Surface Water,32.6875,244.4375,18,1,1810,Southern Mojave-Salton Sea,CA
+2014,El_Centro_4,7809,81.6,Steam Turbine-Gas,389,Recirculating,Surface Water,32.6875,244.4375,18,1,1810,Southern Mojave-Salton Sea,CA
+2089,Hunter_1,3487544,488.3,Steam Turbine-Coal,6165,Recirculating,Surface Water,39.1875,249.0625,COLO,1,1406,Lower Green,COLO
+2090,Hunter_2,3340420,488.3,Steam Turbine-Coal,6165,Recirculating,Surface Water,39.1875,249.0625,COLO,1,1406,Lower Green,COLO
+2091,Hunter_3,3506161,495.6,Steam Turbine-Coal,6165,Recirculating,Surface Water,39.1875,249.0625,COLO,1,1406,Lower Green,COLO
+2092,Huntington_1,3633212,498,Steam Turbine-Coal,8069,Recirculating,Surface Water,39.3125,248.8125,COLO,1,1406,Lower Green,COLO
+2093,Huntington_2,3533795,498,Steam Turbine-Coal,8069,Recirculating,Surface Water,39.3125,248.8125,COLO,1,1406,Lower Green,COLO
+2163,InlandEmpireEC2,2731655,405,Combined Cycle-Single Shaft,55853,NA,NA,33.8125,242.8125,18,0,1807,Southern California Coastal,CA
+2164,InlandEmpireEC1,2730550,405,Combined Cycle-Single Shaft,55853,NA,NA,33.8125,242.8125,18,0,1807,Southern California Coastal,CA
+2169,IP_Springfield4,329324,40,Steam Turbine-Biomass,50191,#not designated,Surface Water,44.0625,236.9375,PNW,1,1709,Willamette,PNW
+2172,Intermountain1,3980408,820,Steam Turbine-Coal,6481,Recirculating,Surface Water,39.4375,247.4375,16,1,1603,Escalante Desert-Sevier Lake,16
+2173,Intermountain2,3067678,820,Steam Turbine-Coal,6481,Recirculating,Surface Water,39.4375,247.4375,16,1,1603,Escalante Desert-Sevier Lake,16
+2184,JacksonValley,42020,20.7,Steam Turbine-Coal,NaN,NA,NA,37.9375,239.4375,18,0,1804,San Joaquin,CA
+2193,Jim_Bridger_1,4055836,577.9,Steam Turbine-Coal,8066,Recirculating,Surface Water,41.6875,251.1875,COLO,1,1404,Great Divide-Upper Green,COLO
+2194,Jim_Bridger_2,4026551,577.9,Steam Turbine-Coal,8066,Recirculating,Surface Water,41.6875,251.1875,COLO,1,1404,Great Divide-Upper Green,COLO
+2195,Jim_Bridger_3,3781369,577.9,Steam Turbine-Coal,8066,Recirculating,Surface Water,41.6875,251.1875,COLO,1,1404,Great Divide-Upper Green,COLO
+2196,Jim_Bridger_4,3329111,584,Steam Turbine-Coal,8066,Recirculating,Surface Water,41.6875,251.1875,COLO,1,1404,Great Divide-Upper Green,COLO
+2317,Lamar_Plant_4,0,25,Steam Turbine-Coal,508,None,Groundwater,38.0625,257.4375,11,0,1102,Upper Arkansas,11
+2318,Lamar_Plant_6,0,18.5,Steam Turbine-Coal,508,None,Groundwater,38.0625,257.4375,11,0,1102,Upper Arkansas,11
+2327,Spokane1,214266,26,Steam Turbine-Biomass,50886,Dry Cooled,Municipal,47.6875,242.5625,PNW,0,1701,Kootenai-Pend Oreille-Spokane,PNW
+2331,WeyerhaeuserWA2,41211,5,Steam Turbine-Biomass,50187,#not designated,Surface Water,46.1875,236.9375,PNW,1,1708,Lower Columbia,PNW
+2332,WeyerhaeuserWA3,148273,18,Steam Turbine-Biomass,50187,#not designated,Surface Water,46.1875,236.9375,PNW,1,1708,Lower Columbia,PNW
+2333,WeyerhaeuserWA4,258870,31.4,Steam Turbine-Biomass,50187,#not designated,Surface Water,46.1875,236.9375,PNW,1,1708,Lower Columbia,PNW
+2364,West_Phoenix_1B,130134,132,Combined Cycle-Single Shaft,117,Recirculating,Groundwater,33.4375,247.8125,COLO,0,1506,Salt,COLO
+2365,WesTPhoenix_2B,148594,132,Combined Cycle-Single Shaft,117,Recirculating,Groundwater,33.4375,247.8125,COLO,0,1506,Salt,COLO
+2366,WestPhoenix_3B,177949,132,Combined Cycle-Single Shaft,117,Recirculating,Groundwater,33.4375,247.8125,COLO,0,1506,Salt,COLO
+2442,Lockwood1,12958,1.6,Steam Turbine-Biomass,57166,NA,NA,39.5625,240.3125,16,0,1605,Central Lahontan,16
+2443,Lockwood2,12964,1.6,Steam Turbine-Biomass,57166,NA,NA,39.5625,240.3125,16,0,1605,Central Lahontan,16
+2486,WadhamEnrgy,190190,32,Steam Turbine-Biomass,50293,Dry Cooled,Groundwater,39.0625,237.9375,18,0,1802,Sacramento,CA
+2502,W_N_Clark_1,0,18.7,Steam Turbine-Coal,462,Recirculating,Surface Water,38.4375,254.8125,11,1,1102,Upper Arkansas,11
+2503,W_N_Clark_2,0,25,Steam Turbine-Coal,462,Recirculating,Surface Water,38.4375,254.8125,11,1,1102,Upper Arkansas,11
+2540,Valmont_5,0,191.7,Steam Turbine-Coal,477,None,Surface Water,40.0625,254.8125,10,1,1019,South Platte,10
+2574,KUCC-1,317656,50,Steam Turbine-Coal,56163,Recirculating,Groundwater,40.8125,247.8125,16,0,1602,Great Salt Lake,16
+2575,KUCC-2,158366,25,Steam Turbine-Coal,56163,Recirculating,Groundwater,40.8125,247.8125,16,0,1602,Great Salt Lake,16
+2576,KUCC-3,156266,25,Steam Turbine-Coal,56163,Recirculating,Groundwater,40.8125,247.8125,16,0,1602,Great Salt Lake,16
+2577,KUCC-4,611374,75,Steam Turbine-Coal,56163,Recirculating,Groundwater,40.8125,247.8125,16,0,1602,Great Salt Lake,16
+2673,TS_Pwr_Plant1,966723,242,Steam Turbine-Coal,56224,Recirculating,Groundwater,40.8125,243.8125,16,0,1604,Black Rock Desert-Humboldt,16
+2717,Tracy_ST1,0,55,Steam Turbine-Gas,2336,Cooling Pond,Groundwater,39.5625,240.5625,16,0,1605,Central Lahontan,16
+2718,Tracy_ST2,0,75,Steam Turbine-Gas,2336,Cooling Pond,Groundwater,39.5625,240.5625,16,0,1605,Central Lahontan,16
+2719,Tracy_3,37660,119.8,Steam Turbine-Gas,2336,Cooling Pond,Groundwater,39.5625,240.5625,16,0,1605,Central Lahontan,16
+2740,LA_Wilmington2,461646,58.5,Steam Turbine-Gas,54451,None,Municipal,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+2767,KettleFalls1,274238,50.7,Steam Turbine-Biomass,550,Recirculating,Groundwater,48.5625,241.8125,PNW,0,1702,Upper Columbia,PNW
+2778,Kiara_Anderson,36109,6.8,Steam Turbine-Biomass,57857,NA,NA,40.4375,237.6875,18,0,1802,Sacramento,CA
+2779,Kiefer2_1,16650,3,Steam Turbine-Biomass,NaN,NA,NA,38.5625,239.1875,18,0,1804,San Joaquin,CA
+2780,Kiefer2_2,16636,3,Steam Turbine-Biomass,NaN,NA,NA,38.5625,239.1875,18,0,1804,San Joaquin,CA
+2844,Kyrene1,2472,34.5,Steam Turbine-Gas,147,Recirculating,Waste Water,33.4375,248.1875,COLO,0,1506,Salt,COLO
+2845,Kyrene2,5202,73.5,Steam Turbine-Gas,147,Recirculating,Waste Water,33.4375,248.1875,COLO,0,1506,Salt,COLO
+2854,Puente_Hills1,380002,50,Steam Turbine-Biomass,10472,None,Municipal,33.9375,241.9375,18,0,1807,Southern California Coastal,CA
+2875,LaPaloma1,1641267,255.6,Combined Cycle-Single Shaft,55151,Recirculating,Municipal,35.3125,240.3125,18,0,1803,Tulare-Buena Vista Lakes,CA
+2876,LaPaloma2,1588729,255.6,Combined Cycle-Single Shaft,55151,Recirculating,Municipal,35.3125,240.3125,18,0,1803,Tulare-Buena Vista Lakes,CA
+2877,LaPaloma3,1564060,255.6,Combined Cycle-Single Shaft,55151,Recirculating,Municipal,35.3125,240.3125,18,0,1803,Tulare-Buena Vista Lakes,CA
+2878,LaPaloma4,1547103,255.6,Combined Cycle-Single Shaft,55151,Recirculating,Municipal,35.3125,240.3125,18,0,1803,Tulare-Buena Vista Lakes,CA
+2890,LagunaBelle_Agg,78070,17.41,Steam Turbine-Biomass,NaN,NA,NA,34.8125,241.9375,18,0,1809,Northern Mojave-Mono Lake,CA
+2916,LANL_TA_3_1,176,5,Steam Turbine-Gas,NaN,NA,NA,34.3125,253.0625,13,0,1302,Rio Grande-Elephant Butte,13
+2917,LANL_TA_3_2,162,5,Steam Turbine-Gas,NaN,NA,NA,34.3125,253.0625,13,0,1302,Rio Grande-Elephant Butte,13
+2918,LANL_TA_3_3,481,16.47,Steam Turbine-Gas,NaN,NA,NA,34.3125,253.0625,13,0,1302,Rio Grande-Elephant Butte,13
+2920,LaramieRiver2,4524412,605,Steam Turbine-Coal,6204,Recirculating,Surface Water,42.0625,255.0625,10,1,1018,North Platte,10
+2921,LaramieRiver3,4460020,605,Steam Turbine-Coal,6204,Recirculating,Surface Water,42.0625,255.0625,10,1,1018,North Platte,10
+2933,Lassen_QF,9911,40.65,Steam Turbine-Coal,NaN,NA,NA,37.9375,239.4375,18,0,1804,San Joaquin,CA
+3023,LongviewFibre4,82400,10,Steam Turbine-Biomass,54562,#not designated,Surface Water,46.1875,236.9375,PNW,1,1708,Lower Columbia,PNW
+3031,Lopez_Canyon_1,8148,1.5,Steam Turbine-Biomass,57730,NA,NA,34.1875,241.6875,18,0,1807,Southern California Coastal,CA
+3083,Loyalton_1,0,13,Steam Turbine-Biomass,50111,Recirculating,Groundwater,39.6875,239.6875,18,0,1802,Sacramento,CA
+3106,Madera_Pwr_1,141883,28.5,Steam Turbine-Biomass,NaN,NA,NA,37.9375,239.4375,18,0,1804,San Joaquin,CA
+3167,Martin_Drake_5,270380,50,Steam Turbine-Coal,492,Recirculating,Waste Water,38.8125,255.1875,11,0,1102,Upper Arkansas,11
+3168,Martin_Drake_6,464306,90,Steam Turbine-Coal,492,Recirculating,Waste Water,38.8125,255.1875,11,0,1102,Upper Arkansas,11
+3169,Martin_Drake_7,901624,150,Steam Turbine-Coal,492,Recirculating,Waste Water,38.8125,255.1875,11,0,1102,Upper Arkansas,11
+3225,Mecca_1,261983,53.3,Steam Turbine-Biomass,NaN,NA,NA,32.8125,244.5625,18,0,1810,Southern Mojave-Salton Sea,CA
+3232,Mendota,164708,33,Steam Turbine-Biomass,10837,#not designated,Groundwater,36.8125,239.5625,18,0,1804,San Joaquin,CA
+3240,Mesa_South_Agg,15993,2.9,Steam Turbine-Biomass,NaN,NA,NA,34.8125,241.9375,18,0,1809,Northern Mojave-Mono Lake,CA
+3247,MesquiteRecvry,112939,21,Steam Turbine-Biomass,50363,NA,NA,32.9375,244.4375,18,0,1810,Southern Mojave-Salton Sea,CA
+3272,Midway_QF,229,0.05,Steam Turbine-Biomass,NaN,NA,NA,37.9375,239.4375,18,0,1804,San Joaquin,CA
+3343,MM_WestCovina2,33721,6.5,Steam Turbine-Biomass,54015,#not designated,Municipal,33.9375,242.1875,18,0,1807,Southern California Coastal,CA
+3378,MorroBay3,0,300,Steam Turbine-Gas,259,Once-Through,Ocean,35.4375,239.1875,18,0,1806,Central California Coastal,CA
+3379,MorroBay4,0,300,Steam Turbine-Gas,259,Once-Through,Ocean,35.4375,239.1875,18,0,1806,Central California Coastal,CA
+3383,MossLanding6,0,702,Steam Turbine-Gas,260,Once-Through,Ocean,36.6875,238.3125,18,0,1806,Central California Coastal,CA
+3384,MossLanding7,0,702,Steam Turbine-Gas,260,Once-Through,Ocean,36.6875,238.3125,18,0,1806,Central California Coastal,CA
+3416,MtPosoCogen,24427,57,Steam Turbine-Coal,54626,Recirculating,Groundwater,35.4375,241.1875,18,0,1803,Tulare-Buena Vista Lakes,CA
+3444,NeilSimpson_ST1,0,21.76,Steam Turbine-Coal,4150,Dry Cooled,Groundwater,44.3125,254.6875,10,0,1012,Cheyenne,10
+3445,NeilSimpson_ST2,642341,105.6,Steam Turbine-Coal,7504,Dry Cooled,Groundwater,44.3125,254.6875,10,0,1012,Cheyenne,10
+3465,Newman_1,0,81.6,Steam Turbine-Gas,3456,Recirculating,GW/Waste Water,31.9375,253.6875,13,0,1304,Rio Grande-Amistad,13
+3466,Newman_2,0,81.6,Steam Turbine-Gas,3456,Recirculating,GW/Waste Water,31.9375,253.6875,13,0,1304,Rio Grande-Amistad,13
+3467,Newman_3,42214,121.8,Steam Turbine-Gas,3456,Recirculating,GW/Waste Water,31.9375,253.6875,13,0,1304,Rio Grande-Amistad,13
+3512,NipponBiomass,112344,20,Steam Turbine-Biomass,NaN,NA,NA,46.9375,239.6875,PNW,0,1703,Yakima,PNW
+3531,NorthValmy1,0,277.2,Steam Turbine-Coal,8224,Recirculating,Groundwater,40.9375,242.8125,16,0,1604,Black Rock Desert-Humboldt,16
+3532,NorthValmy2,1663708,289.8,Steam Turbine-Coal,8224,Recirculating,Groundwater,40.9375,242.8125,16,0,1604,Black Rock Desert-Humboldt,16
+3556,Nucla_1,54473,11.5,Steam Turbine-Coal,527,Recirculating,Surface Water,38.1875,251.4375,COLO,1,1403,Upper Colorado-Dolores,COLO
+3557,Nucla_2,55323,11.5,Steam Turbine-Coal,527,Recirculating,Surface Water,38.1875,251.4375,COLO,1,1403,Upper Colorado-Dolores,COLO
+3558,Nucla_3,55355,11.5,Steam Turbine-Coal,527,Recirculating,Surface Water,38.1875,251.4375,COLO,1,1403,Upper Colorado-Dolores,COLO
+3559,Nucla_ST4,386994,79.38,Steam Turbine-Coal,527,Recirculating,Surface Water,38.1875,251.4375,COLO,1,1403,Upper Colorado-Dolores,COLO
+3613,ThermoGreeley1,0,37,Combined Cycle-Single Shaft,50709,None,Municipal,40.4375,255.3125,10,0,1019,South Platte,10
+3614,ThermalEnrgyDev,137555,24.2,Steam Turbine-Biomass,10502,#not designated,Groundwater,37.8125,238.4375,18,0,1804,San Joaquin,CA
+3645,Tamarack,33621,5,Steam Turbine-Biomass,50099,#not designated,Groundwater,45.1875,243.6875,PNW,0,1706,Lower Snake,PNW
+3700,Sunnyside_Cgn,244739,58.1,Steam Turbine-Coal,50951,Recirculating,Surface Water,39.4375,249.5625,COLO,1,1406,Lower Green,COLO
+3762,StocktonCgn,0,63,Steam Turbine-Coal,10640,Recirculating,Groundwater,37.9375,238.6875,18,0,1804,San Joaquin,CA
+3799,StanislausEnrgy,87888,22.3,Steam Turbine-Biomass,50632,#not designated,Groundwater,37.4375,238.9375,18,0,1804,San Joaquin,CA
+3839,Springerville_1,2647039,424.8,Steam Turbine-Coal,8223,Recirculating,Groundwater,34.3125,250.8125,COLO,0,1502,Little Colorado,COLO
+3840,Springerville_2,2740718,424.8,Steam Turbine-Coal,8223,Recirculating,Groundwater,34.3125,250.8125,COLO,0,1502,Little Colorado,COLO
+3841,Springerville_3,2866259,450,Steam Turbine-Coal,8223,Recirculating,Groundwater,34.3125,250.8125,COLO,0,1502,Little Colorado,COLO
+3842,Springerville_4,2727006,450,Steam Turbine-Coal,8223,Recirculating,Groundwater,34.3125,250.8125,COLO,0,1502,Little Colorado,COLO
+3971,Snowflake,223858,27.2,Steam Turbine-Biomass,56616,Recirculating,Groundwater,34.5625,249.9375,COLO,0,1502,Little Colorado,COLO
+4015,SimpsonTacoma,526847,64,Steam Turbine-Biomass,57099,NA,NA,47.3125,237.5625,PNW,0,1711,Puget Sound,PNW
+4039,Aberdeen,122562,18,Steam Turbine-Biomass,55882,Recirculating,Municipal,46.9375,236.1875,PNW,0,1710,Oregon-Washington Coastal,PNW
+4041,Anderson,26252,5.7,Steam Turbine-Biomass,55049,Recirculating,Groundwater,40.4375,237.6875,18,0,1802,Sacramento,CA
+4043,Lincoln4,98640,18.3,Steam Turbine-Biomass,10144,Recirculating,Groundwater,38.9375,238.6875,18,0,1802,Sacramento,CA
+4044,Quincy_1,116565,20,Steam Turbine-Biomass,50112,Recirculating,Groundwater,40.0625,239.0625,18,0,1802,Sacramento,CA
+4045,Quincy_2,31436,7.5,Steam Turbine-Biomass,50112,Recirculating,Groundwater,40.0625,239.0625,18,0,1802,Sacramento,CA
+4046,Sonora2,15452,7.5,Steam Turbine-Biomass,54517,Recirculating,Municipal,38.0625,239.5625,18,0,1804,San Joaquin,CA
+4047,Sierra_Pwr,52501,9,Steam Turbine-Biomass,50068,#not designated,Municipal,36.0625,240.9375,18,0,1803,Tulare-Buena Vista Lakes,CA
+4048,Burlington,181539,28,Steam Turbine-Biomass,56406,Recirculating,Groundwater,48.4375,237.6875,PNW,0,1711,Puget Sound,PNW
+4101,Ocotillo_1,8426,113.64,Steam Turbine-Gas,116,None,Groundwater,33.4375,248.1875,COLO,0,1506,Salt,COLO
+4102,Ocotillo_2,4727,113.64,Steam Turbine-Gas,116,None,Groundwater,33.4375,248.1875,COLO,0,1506,Salt,COLO
+4108,Burney_Mountain,37957,13,Steam Turbine-Biomass,54219,Recirculating,Groundwater,40.9375,238.4375,18,0,1802,Sacramento,CA
+4109,PacificUltrapwr,129403,22,Steam Turbine-Biomass,50560,#not designated,Groundwater,37.9375,239.4375,18,0,1804,San Joaquin,CA
+4110,MtLassenPwr,60617,13.1,Steam Turbine-Biomass,54468,Recirculating,Groundwater,40.1875,238.9375,18,0,1802,Sacramento,CA
+4111,OgdenPwrPacific,108481,23.8,Steam Turbine-Biomass,NaN,NA,NA,37.9375,239.4375,18,0,1804,San Joaquin,CA
+4123,Olive_O1,2505,50,Steam Turbine-Gas,6013,Recirculating,Municipal,34.1875,241.6875,18,0,1807,Southern California Coastal,CA
+4124,Olive_O2,7552,59.78,Steam Turbine-Gas,6013,Recirculating,Municipal,34.1875,241.6875,18,0,1807,Southern California Coastal,CA
+4168,Ormond_Beach_1,0,750,Steam Turbine-Gas,350,Once-Through,Ocean,34.1875,240.8125,18,0,1807,Southern California Coastal,CA
+4169,Ormond_Beach_2,0,750,Steam Turbine-Gas,350,Once-Through,Ocean,34.1875,240.8125,18,0,1807,Southern California Coastal,CA
+4178,Osage_1,0,11.5,Steam Turbine-Coal,4151,Recirculating,Groundwater,43.9375,255.6875,10,0,1012,Cheyenne,10
+4179,Osage_2,0,11.5,Steam Turbine-Coal,4151,Recirculating,Groundwater,43.9375,255.6875,10,0,1012,Cheyenne,10
+4180,Osage_3,0,11.5,Steam Turbine-Coal,4151,Recirculating,Groundwater,43.9375,255.6875,10,0,1012,Cheyenne,10
+4206,PacificLumber1,73962,12.5,Steam Turbine-Biomass,50049,Recirculating,Groundwater,40.5625,235.8125,18,0,1801,Klamath-Northern California Coastal,CA
+4207,PacificLumber2,51255,12.5,Steam Turbine-Biomass,50049,Recirculating,Groundwater,40.5625,235.8125,18,0,1801,Klamath-Northern California Coastal,CA
+4208,PacificLumber3,35194,12.5,Steam Turbine-Biomass,50049,Recirculating,Groundwater,40.5625,235.8125,18,0,1801,Klamath-Northern California Coastal,CA
+4220,Palo_Verde_1,11130393,1403.19,Steam Turbine-Nuclear,6008,Recirculating,Waste Water,33.4375,247.1875,COLO,0,1507,Lower Gila,COLO
+4221,Palo_Verde_2,9963660,1403.19,Steam Turbine-Nuclear,6008,Recirculating,Waste Water,33.4375,247.1875,COLO,0,1507,Lower Gila,COLO
+4222,Palo_Verde_3,9824125,1403.19,Steam Turbine-Nuclear,6008,Recirculating,Waste Water,33.4375,247.1875,COLO,0,1507,Lower Gila,COLO
+4256,PAUL_SWEET_QF,5294,1.2,Steam Turbine-Biomass,NaN,NA,NA,37.9375,239.4375,18,0,1804,San Joaquin,CA
+4257,Pawnee_1,3964556,552.3,Steam Turbine-Coal,6248,Recirculating,Surface Water,40.3125,256.4375,10,1,1019,South Platte,10
+4279,Penrose_LF,33396,6,Steam Turbine-Biomass,NaN,NA,NA,34.3125,242.0625,18,0,1807,Southern California Coastal,CA
+4319,PittsburgPwr5,0,320,Steam Turbine-Gas,271,Recirculating,Surface Water,38.0625,238.0625,18,1,1805,San Francisco Bay,CA
+4320,PittsburgPwr6,0,325,Steam Turbine-Gas,271,Recirculating,Surface Water,38.0625,238.0625,18,1,1805,San Francisco Bay,CA
+4321,PittsburgPwr7,0,712,Steam Turbine-Gas,271,Recirculating,Surface Water,38.0625,238.0625,18,1,1805,San Francisco Bay,CA
+4360,Plummer_Cgn,36385,6.2,Steam Turbine-Biomass,55090,#not designated,Groundwater,47.4375,243.1875,PNW,0,1701,Kootenai-Pend Oreille-Spokane,PNW
+4375,Port_Townsend4,24702,3,Steam Turbine-Biomass,50544,#not designated,Ocean,48.1875,237.3125,PNW,0,1711,Puget Sound,PNW
+4376,Port_Townsend6,61843,7.5,Steam Turbine-Biomass,50544,#not designated,Ocean,48.1875,237.3125,PNW,0,1711,Puget Sound,PNW
+4440,Pueblo5,0,7.5,Steam Turbine-Gas,460,Recirculating,Surface Water,38.3125,255.4375,11,1,1102,Upper Arkansas,11
+4441,Pueblo6,0,15,Steam Turbine-Gas,460,Recirculating,Surface Water,38.3125,255.4375,11,1,1102,Upper Arkansas,11
+4596,RichmondCgn1,410974,62.6,Steam Turbine-Gas,52109,None,Municipal,37.9375,237.5625,18,0,1805,San Francisco Bay,CA
+4597,RichmondCgn2,410598,62.6,Steam Turbine-Gas,52109,None,Municipal,37.9375,237.5625,18,0,1805,San Francisco Bay,CA
+4646,Seneca,113258,19.78,Steam Turbine-Biomass,57457,NA,NA,44.1875,236.8125,PNW,0,1709,Willamette,PNW
+4655,Argus_Cogen8,37017,27.5,Steam Turbine-Coal,10684,Recirculating,Groundwater,35.6875,242.5625,18,0,1809,Northern Mojave-Mono Lake,CA
+4656,Argus_Cogen9,40936,27.5,Steam Turbine-Coal,10684,Recirculating,Groundwater,35.6875,242.5625,18,0,1809,Northern Mojave-Mono Lake,CA
+4668,Scattergood_1,0,163.2,Steam Turbine-Gas,404,Once-Through,Ocean,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+4669,Scattergood_2,0,163.2,Steam Turbine-Gas,404,Once-Through,Ocean,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+4670,Scattergood_3,0,496.8,Steam Turbine-Gas,404,Once-Through,Ocean,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+4773,Rawhide_1,2226112,280,Steam Turbine-Coal,6761,None,Waste Water,40.8125,254.9375,10,0,1019,South Platte,10
+4781,Ray_D_Nixon_1,1317816,207,Steam Turbine-Coal,8219,None,Groundwater,38.5625,255.3125,11,0,1102,Upper Arkansas,11
+4820,RedondoBeach5,0,175,Steam Turbine-Gas,356,Once-Through,Ocean,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+4821,RedondoBeach6,0,175,Steam Turbine-Gas,356,Once-Through,Ocean,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+4822,RedondoBeach7,0,480,Steam Turbine-Gas,356,Once-Through,Ocean,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+4823,RedondoBeach8,0,480,Steam Turbine-Gas,356,Once-Through,Ocean,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+4826,Reeves_1,0,44,Steam Turbine-Gas,2450,Recirculating,Groundwater,35.0625,253.3125,13,0,1302,Rio Grande-Elephant Butte,13
+4827,Reeves_2,0,44,Steam Turbine-Gas,2450,Recirculating,Groundwater,35.0625,253.3125,13,0,1302,Rio Grande-Elephant Butte,13
+4831,Reid_Gardner_1,0,114,Steam Turbine-Coal,2324,Recirculating,GW/Surface Water,36.6875,245.4375,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+4832,Reid_Gardner_2,0,114,Steam Turbine-Coal,2324,Recirculating,GW/Surface Water,36.6875,245.4375,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+4833,Reid_Gardner_3,0,114,Steam Turbine-Coal,2324,Recirculating,GW/Surface Water,36.6875,245.4375,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+4834,Reid_Gardner_4,0,294.8,Steam Turbine-Coal,2324,Recirculating,GW/Surface Water,36.6875,245.4375,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+4843,MartinezRegen,1,4.6,Steam Turbine-Other,52063,Recirculating,Ocean,38.0625,237.8125,18,0,1805,San Francisco Bay,CA
+4857,RioBravoFresno,182859,30.5,Steam Turbine-Biomass,10767,Recirculating,Municipal,36.8125,240.1875,18,0,1803,Tulare-Buena Vista Lakes,CA
+4858,RioBravo_Jasmin,0,37,Steam Turbine-Coal,10768,Recirculating,Municipal,35.4375,241.0625,18,0,1803,Tulare-Buena Vista Lakes,CA
+4859,RioBravoPoso,0,45,Steam Turbine-Coal,10769,Recirculating,Groundwater,35.4375,241.0625,18,0,1803,Tulare-Buena Vista Lakes,CA
+4860,RioBravoRocklin,176372,28.8,Steam Turbine-Biomass,10772,Recirculating,Municipal,38.9375,238.5625,18,0,1802,Sacramento,CA
+4861,RioGrande6,0,50,Steam Turbine-Gas,2444,Recirculating,Groundwater,31.6875,253.5625,13,0,1304,Rio Grande-Amistad,13
+4862,RioGrande7,0,50,Steam Turbine-Gas,2444,Recirculating,Groundwater,31.6875,253.5625,13,0,1304,Rio Grande-Amistad,13
+4863,RioGrande8,75032,166.5,Steam Turbine-Gas,2444,Recirculating,Groundwater,31.6875,253.5625,13,0,1304,Rio Grande-Amistad,13
+4884,River_Road,838492,248,Combined Cycle-Single Shaft,7605,Recirculating,Groundwater,45.6875,237.1875,PNW,0,1709,Willamette,PNW
+4931,Hardin,931783,135,Steam Turbine-Coal,55749,Recirculating,Surface Water,45.6875,252.4375,10,1,1008,Big Horn,10
+4963,Roseburg_Forest,178755,35,Steam Turbine-Biomass,NaN,NA,NA,43.9375,237.9375,PNW,0,1709,Willamette,PNW
+4964,RoseburgBiomass,38024,10,Steam Turbine-Biomass,56469,NA,NA,41.5625,237.5625,18,0,1801,Klamath-Northern California Coastal,CA
+4966,Santan1,71084,103.5,Combined Cycle-Single Shaft,8068,Recirculating,Groundwater,33.4375,248.1875,COLO,0,1506,Salt,COLO
+4967,Santan2,87073,103.5,Combined Cycle-Single Shaft,8068,Recirculating,Groundwater,33.4375,248.1875,COLO,0,1506,Salt,COLO
+4968,Santan3,93502,103.5,Combined Cycle-Single Shaft,8068,Recirculating,Groundwater,33.4375,248.1875,COLO,0,1506,Salt,COLO
+4969,Santan4,106508,103.5,Combined Cycle-Single Shaft,8068,Recirculating,Groundwater,33.4375,248.1875,COLO,0,1506,Salt,COLO
+4986,SANTA_CLARA,49362,11.16,Steam Turbine-Biomass,NaN,NA,NA,34.8125,241.9375,18,0,1809,Northern Mojave-Mono Lake,CA
+4998,SAN_MARCOS_LF,3179,1.88,Steam Turbine-Biomass,10386,None,Unknown Freshwater,33.0625,242.9375,18,0,1807,Southern California Coastal,CA
+5008,San_Juan_1,2426801,369,Steam Turbine-Coal,2451,Recirculating,Surface Water,36.6875,251.4375,COLO,1,1408,San Juan,COLO
+5009,San_Juan_2,0,369,Steam Turbine-Coal,2451,Recirculating,Surface Water,36.6875,251.4375,COLO,1,1408,San Juan,COLO
+5010,San_Juan_3,0,555,Steam Turbine-Coal,2451,Recirculating,Surface Water,36.6875,251.4375,COLO,1,1408,San Juan,COLO
+5011,San_Juan_4,3914269,555,Steam Turbine-Coal,2451,Recirculating,Surface Water,36.6875,251.4375,COLO,1,1408,San Juan,COLO
+5152,Rupert_Cgn,35115,10.4,Combined Cycle-Single Shaft,54579,#not designated,Groundwater,42.9375,246.3125,PNW,0,1704,Upper Snake,PNW
+5184,Saguaro_1,0,125,Steam Turbine-Gas,118,Recirculating,Groundwater,32.5625,248.5625,COLO,0,1505,Middle Gila,COLO
+5185,Saguaro_2,0,125,Steam Turbine-Gas,118,Recirculating,Groundwater,32.5625,248.5625,COLO,0,1505,Middle Gila,COLO
+5262,Equilon_LA_3,7358,23,Steam Turbine-Other,50530,None,Groundwater,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+5288,WilmngtnHydrgn,227942,31.9,Steam Turbine-Waste Heat,55557,#not designated,Municipal,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+5544,DillardComplexGEN4,64021,11.5,Steam Turbine-Biomass,50396,Recirculating,Surface Water,43.1875,236.5625,PNW,1,1710,Oregon-Washington Coastal,PNW
+5545,DillardComplexGEN5,59318,11.5,Steam Turbine-Biomass,50396,Recirculating,Surface Water,43.1875,236.5625,PNW,1,1710,Oregon-Washington Coastal,PNW
+5776,RichmondRefinery-5,1550,30.4,Steam Turbine-Other,52105,#not designated,Municipal,37.9375,237.5625,18,0,1805,San Francisco Bay,CA
+5899,PortofStocktonEF,264013,54,Steam Turbine-Coal,54238,Once-Through,Municipal,37.9375,238.6875,18,0,1804,San Joaquin,CA
+5946,HLPwrGEN1,202055,36.2,Steam Turbine-Biomass,10777,Recirculating,Groundwater,40.3125,239.8125,18,0,1808,North Lahontan,CA
+6072,PortlandCementColtn1,50415,15,Steam Turbine-Coal,57907,NA,NA,33.9375,242.5625,18,0,1807,Southern California Coastal,CA
+6073,PortlandCementColtn2,51243,15,Steam Turbine-Coal,57907,NA,NA,33.9375,242.5625,18,0,1807,Southern California Coastal,CA
+6080,SpreckelsSugarComp,0,8.9,Steam Turbine-Gas,57916,NA,NA,32.8125,244.3125,18,0,1810,Southern Mojave-Salton Sea,CA
+8030,AftonCC-Total,1405097,287.95,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.1875,253.1875,13,0,1303,Rio Grande-Mimbres,13
+8031,AgnewsCC-Total,6236,41.5,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,37.4375,238.0625,18,0,1805,San Francisco Bay,CA
+8033,AlgonquinCC-Total,18747,60.8,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,36.6875,240.4375,18,0,1803,Tulare-Buena Vista Lakes,CA
+8035,ApacheCC-Total,394045,93.1,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.0625,250.1875,COLO,0,1505,Middle Gila,COLO
+8036,ApexCC-Total,1323377,600.6,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.1875,244.9375,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8037,ArlngtnVallyCC-Total,906013,713,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.4375,247.1875,COLO,0,1507,Lower Gila,COLO
+8042,BeaverCC-Total,2279190,586.2,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,46.1875,236.8125,PNW,0,1708,Lower Columbia,PNW
+8043,BluffviewCC-Total,244227,64,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,36.6875,251.6875,COLO,0,1408,San Juan,COLO
+8044,BlytheCC-Total,3182690,559.99,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.5625,245.4375,COLO,0,1503,Lower Colorado,COLO
+8045,BowieCC1-Total,801912,525,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.4375,250.5625,COLO,0,1504,Upper Gila,COLO
+8046,BowieCC2-Total,272590,525,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.4375,250.5625,COLO,0,1504,Upper Gila,COLO
+8047,Brea2CC-Total,227127,37.2,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,33.8125,242.0625,18,0,1807,Southern California Coastal,CA
+8048,BrushCC1-Total,126142,88,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,40.3125,256.4375,10,0,1019,South Platte,10
+8049,BrushCC2-Total,73988,74,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,40.3125,256.4375,10,0,1019,South Platte,10
+8050,BrushCC3-Total,124095,137.6,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,40.3125,256.4375,10,0,1019,South Platte,10
+8051,Caliente1CC-Total,2084999,294,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,31.9375,253.6875,13,0,1304,Rio Grande-Amistad,13
+8052,CardinalCC-Total,4163,57.3,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,37.4375,237.8125,18,0,1805,San Francisco Bay,CA
+8053,CarsonCC-Total,251359,48.9,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+8054,CarsonIceCC-Total,25182,71.51,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,38.3125,238.5625,18,0,1804,San Joaquin,CA
+8056,CentraliaCC-Total,627918,268,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,46.6875,237.0625,PNW,0,1710,Oregon-Washington Coastal,PNW
+8057,ChehalisCC-Total,2966306,594,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,46.6875,237.0625,PNW,0,1710,Oregon-Washington Coastal,PNW
+8058,CherokeeCC-Total,3387566,625.6,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,39.8125,255.0625,10,0,1019,South Platte,10
+8060,ClarkCC1-Total,0,289.4,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.0625,245.0625,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8061,ClarkCC2-Total,0,289.4,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.0625,245.0625,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8062,ClearwaterCC-Total,19593,49,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,33.8125,242.3125,18,0,1807,Southern California Coastal,CA
+8063,CoolwaterCC3-Total,701124,255.99,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,34.9375,243.1875,18,0,1809,Northern Mojave-Mono Lake,CA
+8064,CoolwaterCC4-Total,760102,255.99,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,34.9375,243.1875,18,0,1809,Northern Mojave-Mono Lake,CA
+8065,CurrantCreekCC-Total,2089460,566.9,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,39.9375,248.0625,16,0,1602,Great Salt Lake,16
+8066,DeltaEnergyCC-Total,5694584,943.5,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,38.0625,238.0625,18,0,1805,San Francisco Bay,CA
+8067,DesertBasinCC-Total,998402,643,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.8125,248.1875,COLO,0,1505,Middle Gila,COLO
+8068,DivisnNavalCC-Total,30948,55.1,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,32.6875,242.9375,18,0,1807,Southern California Coastal,CA
+8069,DonVonRsfldCC-Total,729413,154.4,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,37.4375,237.9375,18,0,1805,San Francisco Bay,CA
+8071,ElkHillsCC-Total,3527872,561,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,35.3125,240.5625,18,0,1803,Tulare-Buena Vista Lakes,CA
+8072,ElSegndCogCC1-Total,313574,42.4,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+8073,ElSegndCogCC2-Total,210145,42.4,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+8074,ElSegndCogCC3-Total,142386,49.4,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+8075,ElSegndEnrgCC1-Total,1971458,285,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+8076,ElSegndEnrgCC2-Total,1960810,285,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.8125,241.5625,18,0,1807,Southern California Coastal,CA
+8078,FosterWhlrCC-Total,505708,126.98,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,38.0625,238.0625,18,0,1805,San Francisco Bay,CA
+8079,FourCorners4-Total,4932896,818.1,Steam Turbine-Coal,2442,Cooling Pond,Surface Water,36.6875,251.4375,COLO,1,1408,San Juan,COLO
+8080,FourCorners5-Total,5733767,818.1,Steam Turbine-Coal,2442,Cooling Pond,Surface Water,36.6875,251.4375,COLO,1,1408,San Juan,COLO
+8081,FredericksonCC-Total,999531,269,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,47.1875,237.6875,PNW,0,1711,Puget Sound,PNW
+8082,FrontRangeCC-Total,2018036,541,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,38.6875,255.3125,11,0,1102,Upper Arkansas,11
+8083,GatewayCC-Total,2312892,619,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,38.0625,238.1875,18,0,1802,Sacramento,CA
+8084,GilaRiverCC1-Total,1705336,619,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.9375,247.1875,COLO,0,1507,Lower Gila,COLO
+8085,GilaRiverCC2-Total,1309440,619,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.9375,247.1875,COLO,0,1507,Lower Gila,COLO
+8086,GilaRiverCC3-Total,1498753,619,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.9375,247.1875,COLO,0,1507,Lower Gila,COLO
+8087,GilaRiverCC4-Total,1951995,619,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.9375,247.1875,COLO,0,1507,Lower Gila,COLO
+8088,GilroyCC-Total,747314,140,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.9375,238.4375,18,0,1806,Central California Coastal,CA
+8089,GoalLineCC-Total,47385,49.9,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.0625,242.8125,18,0,1807,Southern California Coastal,CA
+8090,GoldendaleCC-Total,1554650,280.3,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,45.6875,239.0625,PNW,0,1707,Middle Columbia,PNW
+8091,GraysHarborCC-Total,1746728,650,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,46.9375,236.4375,PNW,0,1710,Oregon-Washington Coastal,PNW
+8092,GreenleafCC-Total,1438,69,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,39.0625,238.4375,18,0,1802,Sacramento,CA
+8093,GriffithCC-Total,2636987,654.4,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,35.3125,246.0625,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8094,HarborCgnCC-Total,522716,107.46,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+8095,HarquahalaCC1-Total,1363965,441.7,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.4375,246.8125,COLO,0,1507,Lower Gila,COLO
+8096,HarquahalaCC2-Total,1369804,441.7,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.4375,246.8125,COLO,0,1507,Lower Gila,COLO
+8097,HarquahalaCC3-Total,948843,441.7,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.4375,246.8125,COLO,0,1507,Lower Gila,COLO
+8098,HermistnCC-Total,2775627,689.4,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,45.8125,240.6875,PNW,0,1707,Middle Columbia,PNW
+8099,HigginsCC-Total,3598664,688.4,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,35.5625,244.5625,16,0,1606,Central Nevada Desert Basins,16
+8100,HighDesertCC-Total,5185290,854.9,Combined Cycle-Whole Plant-Industrial Frame,55518,Recirculating,Municipal,34.6875,242.6875,18,0,1809,Northern Mojave-Mono Lake,CA
+8102,JeffrsnSmrftCC-Total,2113,25.8,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,37.4375,237.9375,18,0,1805,San Francisco Bay,CA
+8105,KingCityCC-Total,47264,133.3,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.3125,238.8125,18,0,1806,Central California Coastal,CA
+8106,KlamathCogenCC-Total,2354794,501.5,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,42.1875,238.1875,18,0,1801,Klamath-Northern California Coastal,CA
+8107,LakeSideCC-Total,2576127,591.3,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,40.3125,248.1875,16,0,1602,Great Salt Lake,16
+8108,LangleyGulchCC-Total,1964417,330,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,43.9375,243.3125,PNW,0,1705,Middle Snake,PNW
+8110,LaRosita2CC-Total,1756570,336.5,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.1875,242.6875,18,0,1807,Southern California Coastal,CA
+8111,LasVegasCg1CC-Total,183403,61.3,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,36.1875,244.9375,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8112,LasVegasCg2CC1-Total,759624,148.8,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,36.1875,244.9375,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8113,LasVegasCg2CC2-Total,758982,148.8,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,36.1875,244.9375,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8114,LodiEnergyCC-Total,1085661,315,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,38.1875,238.5625,18,0,1804,San Joaquin,CA
+8115,LomaLindaCC-Total,14,11.6,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,34.0625,242.6875,18,0,1807,Southern California Coastal,CA
+8117,LosMedanosCC-Total,4250882,677.8,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,38.0625,238.0625,18,0,1805,San Francisco Bay,CA
+8118,LunaCC-Total,2614180,700.08,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.3125,252.3125,13,0,1303,Rio Grande-Mimbres,13
+8119,MarchPointCC-Total,664778,167.04,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,48.5625,237.3125,PNW,0,1711,Puget Sound,PNW
+8120,MartinezCC-Total,795725,100,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,38.0625,237.8125,18,0,1805,San Francisco Bay,CA
+8121,MesquiteCC1-Total,2232930,625,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.4375,247.1875,COLO,0,1507,Lower Gila,COLO
+8122,MesquiteCC2-Total,1353313,625,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.4375,247.1875,COLO,0,1507,Lower Gila,COLO
+8123,MetcalfEnrgyCC-Total,3278504,636,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,37.3125,238.1875,18,0,1805,San Francisco Bay,CA
+8124,MintFarmCC-Total,1497115,319,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,46.1875,236.9375,PNW,0,1708,Lower Columbia,PNW
+8125,MojaveCC-Total,134477,57.1,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,34.9375,242.1875,18,0,1809,Northern Mojave-Mono Lake,CA
+8126,MossLandingCC1-Total,2942738,699,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.6875,238.3125,18,0,1806,Central California Coastal,CA
+8127,MossLandingCC2-Total,2994959,699,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.6875,238.3125,18,0,1806,Central California Coastal,CA
+8128,MtnviewCC3-Total,3449514,543,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,34.0625,242.6875,18,0,1807,Southern California Coastal,CA
+8129,MtnviewCC4-Total,3690163,659.1,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,34.0625,242.6875,18,0,1807,Southern California Coastal,CA
+8130,NeboPwrStaCC-Total,439456,140,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,40.1875,248.1875,16,0,1602,Great Salt Lake,16
+8131,NevadaCogenCC1-Total,404991,96.3,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.1875,244.9375,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8132,NevadaCogenCC2-Total,444374,96.3,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.1875,244.9375,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8133,Newman4CC-Total,0,290,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,31.9375,253.6875,13,0,1304,Rio Grande-Amistad,13
+8134,Newman5CC-Total,1793771,312,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,31.9375,253.6875,13,0,1304,Rio Grande-Amistad,13
+8135,Newman6CC-Total,2033002,294,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,31.9375,253.6875,13,0,1304,Rio Grande-Amistad,13
+8137,NTC-MCRD-CC-Total,104734,24.88,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.8125,242.8125,18,0,1807,Southern California Coastal,CA
+8141,OtayMesaCC-Total,3199280,688.3,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.5625,243.1875,18,0,1807,Southern California Coastal,CA
+8142,PalomarCC-Total,3460544,595,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.0625,242.8125,18,0,1807,Southern California Coastal,CA
+8143,PastoriaCC1-Total,3227884,521,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,34.6875,241.1875,18,0,1807,Southern California Coastal,CA
+8144,PastoriaCC2-Total,1623936,258,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,34.6875,241.1875,18,0,1807,Southern California Coastal,CA
+8145,PortWestwrd1CC-Total,2459325,483,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,46.1875,236.8125,PNW,0,1708,Lower Columbia,PNW
+8146,PuebloAP-3CC-Total,213411,100,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,38.3125,255.5625,11,0,1102,Upper Arkansas,11
+8147,PuebloAP-4CC-Total,209927,100,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,38.3125,255.5625,11,0,1102,Upper Arkansas,11
+8148,RedHawkCC1-Total,920178,573.5,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.4375,247.1875,COLO,0,1507,Lower Gila,COLO
+8149,RedHawkCC2-Total,661286,568,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.4375,247.1875,COLO,0,1507,Lower Gila,COLO
+8150,RifleCC-Total,98606,85,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,39.5625,252.1875,COLO,0,1401,Colorado Headwaters,COLO
+8151,RockyMtnCC-Total,2611927,685.1,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,40.0625,255.4375,10,0,1019,South Platte,10
+8152,RooseveltBioCC-Total,212963,26,Combined Cycle-Whole Plant-Biomass,NaN,NA,NA,45.6875,239.6875,PNW,0,1707,Middle Columbia,PNW
+8153,RosevilleEPCC-Total,560127,154,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,38.6875,238.5625,18,0,1802,Sacramento,CA
+8154,RussellCityCC-Total,2054293,655,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,37.5625,237.9375,18,0,1805,San Francisco Bay,CA
+8155,SantaYnezCC-Total,112,49.3,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,34.5625,239.9375,18,0,1806,Central California Coastal,CA
+8156,SCACogen2CC-Total,21248,150,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,38.4375,238.4375,18,0,1802,Sacramento,CA
+8159,SilverhawkCC-Total,3772794,664.7,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.3125,244.5625,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8160,SouthPointCC-Total,2923887,556,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,34.8125,245.4375,COLO,0,1503,Lower Colorado,COLO
+8161,SPACogenCC-Total,154326,164.75,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,38.4375,238.4375,18,0,1802,Sacramento,CA
+8162,SunriseCC-Total,3402973,605.4,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,35.3125,240.3125,18,0,1803,Tulare-Buena Vista Lakes,CA
+8163,SutterEnergyCC-Total,3737368,636,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,39.0625,238.1875,18,0,1802,Sacramento,CA
+8165,TotalEngyFacCC-Total,241898,35.2,Combined Cycle-Whole Plant-Biomass,NaN,NA,NA,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+8167,TracyNVCC2-Total,2135942,623.2,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,39.5625,240.5625,16,0,1605,Central Lahontan,16
+8168,UofCO-CC-Total,0,33,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,40.0625,254.8125,10,0,1019,South Platte,10
+8170,WalnutEnergyCC-Total,992190,300.6,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,37.5625,239.1875,18,0,1804,San Joaquin,CA
+8172,LakeSide2CC-Total,2855179,655.2,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,40.3125,248.1875,16,0,1602,Great Salt Lake,16
+8174,ArapahoeCC-Total,198085,194,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,39.6875,254.9375,10,0,1019,South Platte,10
+8176,ChinoMinesCC-Total,276757,54,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.6875,251.8125,13,0,1303,Rio Grande-Mimbres,13
+8177,C_LenzieCC1-Total,2711151,732.8,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.3125,244.5625,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8178,C_LenzieCC2-Total,1820464,732.8,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.3125,244.5625,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8179,ColusaCC-Total,3302875,715,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,39.3125,237.8125,18,0,1802,Sacramento,CA
+8180,YumaCogenCC-Total,216693,62.6,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.6875,245.4375,COLO,0,1503,Lower Colorado,COLO
+8181,FresnoCogenCC-Total,199067,76.3,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.5625,239.9375,18,0,1803,Tulare-Buena Vista Lakes,CA
+8182,WoodlandCC-Total,348560,98.2,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,37.5625,239.0625,18,0,1804,San Joaquin,CA
+8183,CosumnesCC-Total,2900959,596.4,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,38.4375,238.8125,18,0,1804,San Joaquin,CA
+8184,CoyoteSprgCC1-Total,1283822,266.4,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,45.8125,240.3125,PNW,0,1707,Middle Columbia,PNW
+8185,CoyoteSprgCC2-Total,1439414,287,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,45.8125,240.3125,PNW,0,1707,Middle Columbia,PNW
+8186,DesertStarCC-Total,1917105,510,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,35.6875,244.9375,COLO,0,1606,Central Nevada Desert Basins,16
+8187,EncogenCC-Total,715547,176.4,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,48.6875,237.4375,PNW,0,1711,Puget Sound,PNW
+8188,FortStVrainCC-Total,3142402,867.9,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,40.3125,255.1875,10,0,1019,South Platte,10
+8189,GraysonCC-Total,192766,130,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,34.0625,241.8125,18,0,1807,Southern California Coastal,CA
+8190,HarborCC-Total,551170,275.8,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+8191,HarryAllenCC-Total,3122080,558.5,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,35.9375,244.9375,COLO,0,1501,Lower Colorado-Lake Mead,COLO
+8192,HaynesCC-Total,3409311,629.85,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+8193,HermistnGenCC1-Total,1003070,310.6,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,45.8125,240.6875,PNW,0,1707,Middle Columbia,PNW
+8194,HermistnGenCC2-Total,1446061,310.6,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,45.8125,240.6875,PNW,0,1707,Middle Columbia,PNW
+8195,ElCentroCC2-Total,0,124.4,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.6875,244.4375,18,0,1810,Southern Mojave-Salton Sea,CA
+8196,ElCentroCC3-Total,470757,152.3,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.6875,244.4375,18,0,1810,Southern Mojave-Salton Sea,CA
+8197,WestPhoenixCC4-Total,180482,135.6,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.4375,247.8125,COLO,0,1506,Salt,COLO
+8198,WestPhoenixCC5-Total,1753336,569,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.4375,247.8125,COLO,0,1506,Salt,COLO
+8199,WatsonCogenCC-Total,121793,499.2,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+8200,ValleyCC-Total,2209578,574.29,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,34.1875,241.6875,18,0,1807,Southern California Coastal,CA
+8201,UnitedCogenCC-Total,6866,34.5,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,37.8125,237.6875,18,0,1805,San Francisco Bay,CA
+8202,UCLA-So-CC-Total,206482,43,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,34.1875,241.5625,18,0,1807,Southern California Coastal,CA
+8203,UCDavisCC-Total,502,27,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,38.5625,239.1875,18,0,1804,San Joaquin,CA
+8204,TracyNVCC1-Total,243296,119.9,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,39.5625,240.5625,16,0,1605,Central Lahontan,16
+8205,Kyrene7CC-Total,1456164,292.06,Combined Cycle-Whole Plant-Industrial Frame,147,Recirculating,Waste Water,33.4375,248.1875,COLO,0,1506,Salt,COLO
+8206,CivicCenterCC-Total,42,34.5,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.9375,241.8125,18,0,1807,Southern California Coastal,CA
+8207,MagnoliaCC-Total,895897,323,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,34.1875,241.6875,18,0,1807,Southern California Coastal,CA
+8209,TPE-CC-Total,82068,110.8,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,40.4375,255.3125,10,0,1019,South Platte,10
+8211,SumasPowerCC-Total,562386,139.2,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,48.9375,237.8125,PNW,0,1711,Puget Sound,PNW
+8212,OLSChinoCC-Total,139434,30.8,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.9375,242.4375,18,0,1807,Southern California Coastal,CA
+8213,PE-BerkeleyCC-Total,15726,32.49,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,37.8125,237.6875,18,0,1805,San Francisco Bay,CA
+8214,KingsburgCgnCC-Total,161415,40.27,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,36.4375,240.4375,18,0,1803,Tulare-Buena Vista Lakes,CA
+8215,LosEsterosCC-Total,1522034,320,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,37.4375,237.9375,18,0,1805,San Francisco Bay,CA
+8216,RathdrumCC-Total,1013263,301.5,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,47.6875,243.0625,PNW,0,1701,Kootenai-Pend Oreille-Spokane,PNW
+8217,ReddingPowerCC-Total,399194,109.3,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,40.4375,237.6875,18,0,1802,Sacramento,CA
+8218,Santan5CC-Total,1620688,622.1,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.4375,248.1875,COLO,0,1506,Salt,COLO
+8219,Santan6CC-Total,1000760,289.9,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.4375,248.1875,COLO,0,1506,Salt,COLO
+8221,CalInstTech-CC-Total,4765,13,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,34.0625,241.8125,18,0,1807,Southern California Coastal,CA
+8222,PitchessCognCC-Total,117231,28.3,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,34.4375,241.4375,18,0,1807,Southern California Coastal,CA
+8223,SnDiegoStCC-Total,6282,14.3,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,32.6875,242.9375,18,0,1807,Southern California Coastal,CA
+8224,WheelabratorCC-Total,127966,30.7,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.8125,241.8125,18,0,1807,Southern California Coastal,CA
+8225,UCIFaciltiesCC-Total,88633,19,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.6875,242.0625,18,0,1807,Southern California Coastal,CA
+8226,OLSCamarilloCC-Total,130603,31.1,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,34.0625,240.9375,18,0,1807,Southern California Coastal,CA
+8227,UCSanDiegoCC-Total,166830,33,Combined Cycle-Whole Plant-Aero Derivative,NaN,NA,NA,32.9375,242.8125,18,0,1807,Southern California Coastal,CA
+8229,GilaBendCC-Total,2857522,900,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.0625,247.0625,COLO,0,1507,Lower Gila,COLO
+8230,KlamathCC-Total,1256147,583.9,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,42.1875,238.1875,18,0,1801,Klamath-Northern California Coastal,CA
+8237,NorthIslandCC-Total,4570,38.55,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,32.6875,242.9375,18,0,1807,Southern California Coastal,CA
+8238,MalburgCC-Total,701530,158.8,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,33.9375,241.8125,18,0,1807,Southern California Coastal,CA
+8538,CartyGenStaCC-Total,2676442,440,Combined Cycle-Whole Plant-Industrial Frame,NaN,NA,NA,45.8125,240.3125,PNW,0,1707,Middle Columbia,PNW
