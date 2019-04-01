@@ -15,7 +15,7 @@
 #' @importFrom lubridate ymd year
 #' @importFrom tidyr gather spread separate
 #' @importFrom stringr str_split
-#' @importFrom dplyr select arrange left_join bind_rows mutate summarise group_by ungroup filter pull
+#' @importFrom dplyr select arrange left_join bind_rows mutate summarise group_by ungroup filter pull if_else summarise_if
 #' @export
 #'
 get_wsgif_hydro <- function(hydro_flow_fn_1,
