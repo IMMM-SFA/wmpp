@@ -18,4 +18,9 @@ Imports:
     readr,
     dplyr,
     tidyr,
-    lubridate
+    lubridate,
+    furrr,
+    future,
+    purrr,
+    stringr,
+    tibble

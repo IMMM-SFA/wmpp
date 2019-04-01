@@ -15,6 +15,8 @@ get_wsgif_hydro(hydro_flow_fn_1, hydro_flow_fn_2, hydro_flow_file_dir,
 
 \item{hydro_flow_fn_2}{optional second flow file naming format in case hist and future parts are split.}
 
+\item{hydro_flow_file_dir}{directory where hydro flow files are stored}
+
 \item{output_fn_tag}{naming convention for output files}
 
 \item{output_file_dir}{directory for output. If blank, new directory is made inside hydro_flow_file_dir.}
@@ -26,8 +28,6 @@ get_wsgif_hydro(hydro_flow_fn_1, hydro_flow_fn_2, hydro_flow_file_dir,
 \item{by}{spatial unit ("all", "bal_auth", "region", "HUC2", "WECC")}
 
 \item{dam_cutoff_percentile}{cutoff for which dams to include in the wsgif computation. The percentile is based on nameplate capacity (i.e., percentile of 0.5 will include the largest dams that contribute 50 percent total nameplate).}
-
-\item{hydro_flow_dir}{directory where hydro flow files are stored}
 }
 \value{
 time series of WSGIF

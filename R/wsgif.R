@@ -2,7 +2,7 @@
 #'
 #' @param hydro_flow_fn_1 file naming format for the hydro_flow_file, excluding the region (e.g., 10_HIST_MOSART.csv, would be "HIST_MOSART.csv")
 #' @param hydro_flow_fn_2 optional second flow file naming format in case hist and future parts are split.
-#' @param hydro_flow_dir directory where hydro flow files are stored
+#' @param hydro_flow_file_dir directory where hydro flow files are stored
 #' @param output_fn_tag naming convention for output files
 #' @param output_file_dir directory for output. If blank, new directory is made inside hydro_flow_file_dir.
 #' @param by spatial unit ("all", "bal_auth", "region", "HUC2", "WECC")
@@ -15,7 +15,7 @@
 #' @importFrom lubridate ymd year
 #' @importFrom tidyr gather spread separate
 #' @importFrom stringr str_split
-#' @import dplyr
+#' @importFrom dplyr select arrange left_join bind_rows mutate summarise group_by ungroup filter pull
 #' @export
 #'
 get_wsgif_hydro <- function(hydro_flow_fn_1,
