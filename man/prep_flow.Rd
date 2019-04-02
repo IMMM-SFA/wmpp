@@ -4,14 +4,14 @@
 \alias{prep_flow}
 \title{prep_flow}
 \usage{
-prep_flow(wm_output_dir, hyd_output_dir = "", in_parallel = FALSE)
+prep_flow(wm_output_dir, output_dir = "", in_parallel = FALSE)
 }
 \arguments{
 \item{wm_output_dir}{directory of results folder}
 
-\item{hyd_output_dir}{output directory}
-
 \item{in_parallel}{run data extraction in parallel (where multiple regions are being assessed)}
+
+\item{hyd_output_dir}{output directory}
 }
 \value{
 daily time series of regulated flows at hydropower grids

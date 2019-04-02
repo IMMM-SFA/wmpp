@@ -50,6 +50,10 @@ process_thermal_data <- function(){
   }) %>% dplyr::bind_rows()
 
 }
-
-
 # wmpp:::process_thermal_data() %>% readr::write_csv("inst/extdata/plantFlow_thermal.csv")
+
+
+
+
+
+

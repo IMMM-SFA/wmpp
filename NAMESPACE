@@ -3,6 +3,7 @@
 export("%>%")
 export(get_wsgif_hydro)
 export(prep_flow)
+importFrom(data.table,fread)
 importFrom(dplyr,arrange)
 importFrom(dplyr,bind_rows)
 importFrom(dplyr,filter)
