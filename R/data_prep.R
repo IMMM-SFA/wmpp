@@ -17,6 +17,7 @@
 #' @importFrom future plan multiprocess
 #' @importFrom furrr future_map
 #' @importFrom data.table fread
+#' @importFrom readxl read_xlsx
 #' @export
 #'
 prep_flow <- function(wm_output_dir,
