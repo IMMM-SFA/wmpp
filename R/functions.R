@@ -52,7 +52,7 @@ get_huc4_data <- function(){
 
   # read the huc4 data from the excel file
   extdata_dir <- system.file("extdata/", package = "wmpp")
-  huc4_loc <- readxl::read_xlsx(paste0(extdata_dir, "HUC4list.xlsx"))
+  huc4_loc <- readr::read_csv(paste0(extdata_dir, "HUC4list.csv"))
 
   #
   huc4_loc %>%
