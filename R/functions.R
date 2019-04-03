@@ -29,18 +29,23 @@ read_hydro_plant_grids <- function(region){
 read_hydro_plant_data <- function(region){
   extdata_dir <- system.file("extdata/", package = "wmpp")
   read_csv(paste0(extdata_dir, "plexos_hydro_BA_hucwm.csv"),
-           col_types = cols())
+           col_types = cols()) -> hydro_plants
+
+  read_csv(paste0(extdata_dir, "BA_2_region_mapping.csv"),
+           col_types = cols()) -> BA_region_mapping
+
+  hydro_plants %>% left_join(BA_region_mapping, by = "BA") %>%
+    rename(tepcc_region = `TEPCC region`, region = Regions)
+
 }
 
-# read_thermal_plant_grids
+# read_thermal_plant_data
 #
 #
-read_thermal_plant_grids <- function(region){
+read_thermal_plant_data <- function(){
   extdata_dir <- system.file("extdata/", package = "wmpp")
   read_csv(paste0(extdata_dir, "plantFlow_thermal.csv"),
-           col_types = cols()) %>%
-    filter(huc2 == "10")
-    filter(coolingType == "Surface Water")
+           col_types = cols()) %>% rename(hucwm = region)
 }
 
 
@@ -52,7 +57,8 @@ get_huc4_data <- function(){
 
   # read the huc4 data from the excel file
   extdata_dir <- system.file("extdata/", package = "wmpp")
-  huc4_loc <- readr::read_csv(paste0(extdata_dir, "HUC4list.csv"))
+  huc4_loc <- read_csv(paste0(extdata_dir, "HUC4list.csv"),
+                       col_types = cols())
 
   #
   huc4_loc %>%
@@ -64,7 +70,7 @@ get_huc4_data <- function(){
       readr::read_delim(paste0(extdata_dir, "mask_files/", x$hucwm %>% unique(), "_mask_plot.ll"),
                         delim = " ",
                         col_names = c("grid_id", "lat", "lon", "X1", "X2"),
-                        col_types = readr::cols()) %>%
+                        col_types = cols()) %>%
         select(grid_id, lat, lon) %>%
         # convert to negative lon format
         mutate(lon = lon - 360) -> grid_id_lat_lon
@@ -104,4 +110,54 @@ get_wsgif_all_dams <- function(hydro_flow_his,
     mutate(wsgif = mean_flow / mean_flow_hist) %>%
     select(year, dam, wsgif)
 }
+
+# get_wsgif_all_huc4s
+#
+# calculates the thermal wsgif for each huc4
+get_wsgif_all_huc4s <- function(thermal_flow_his,
+                                thermal_flow_fut){
+
+  # get the historical period average flow
+  thermal_flow_his %>%
+    summarise_if(is.numeric, mean) %>%
+    gather(huc4_outlet, mean_flow_hist) -> thermal_flow_mean_hist
+
+  # get the future period annual flows
+  thermal_flow_fut %>%
+    group_by(year = year(date)) %>%
+    summarise_if(is.numeric, mean) %>%
+    gather(huc4_outlet, mean_flow, -year) -> thermal_flow_mean
+
+  # compute wsgif at huc4 level
+  thermal_flow_mean %>%
+    left_join(thermal_flow_mean_hist, by = "huc4_outlet") %>%
+    rowwise() %>%
+    mutate(wsgif = min(1, mean_flow / mean_flow_hist)) %>%
+    ungroup() %>%
+    select(year, huc4_outlet, wsgif)
+}
+
+
+
+
+# get_regions_by_huc4
+#
+# returns regions/huc4 table
+get_regions_by_huc4 <- function(){
+  extdata_dir <- system.file("extdata/", package = "wmpp")
+  read_tsv(paste0(extdata_dir, "HUC42region.txt"),
+                  col_names = c("huc4", "region_number"),
+                  col_types = readr::cols()) %>%
+    mutate(region = case_when(
+      region_number == 1 ~ "Northwest",
+      region_number == 2 ~ "NCalifornia",
+      region_number == 3 ~ "SCalifornia",
+      region_number == 4 ~ "Basin",
+      region_number == 5 ~ "Southwest",
+      region_number == 6 ~ "Rockies"
+    )) %>% select(-region_number)
+}
+
+
+
 
