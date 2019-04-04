@@ -9,7 +9,7 @@
 #' @return daily time series of regulated flows at hydropower grids
 #' @importFrom readr read_table2 read_csv write_csv
 #' @importFrom lubridate ymd
-#' @importFrom dplyr mutate mutate_if rename bind_rows select one_of filter
+#' @importFrom dplyr mutate mutate_if rename bind_rows select one_of filter distinct
 #' @importFrom magrittr set_colnames
 #' @importFrom stringr str_split_fixed
 #' @importFrom tibble as_tibble
@@ -75,7 +75,10 @@ prep_flow <- function(wm_output_dir,
                    as_tibble()
                  ) %>% bind_rows() %>%
             mutate(V1 = ymd(V1)) %>%
-            set_colnames(c("date", grid_ids)) -> all_flows
+            # ^^ temporal splits may contain overlapping dates (spin-up periods)
+            distinct(V1, .keep_all = TRUE) %>%
+            set_colnames(c("date", grid_ids)) ->
+            all_flows
 
           # hydro grids
           all_flows %>%
