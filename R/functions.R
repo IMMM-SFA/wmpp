@@ -87,54 +87,29 @@ get_huc4_data <- function(){
 }
 
 
-# get_wsgif_all_dams
-#
-# calculates the hydro wsgif for each dam
-get_wsgif_all_dams <- function(hydro_flow_his,
-                               hydro_flow_fut){
-
-  # get the historical period average flow
-  hydro_flow_his %>%
-    summarise_if(is.numeric, mean) %>%
-    gather(dam, mean_flow_hist) -> hydro_flow_mean_hist
-
-  # get the future period annual flows
-  hydro_flow_fut %>%
-    group_by(year = year(date)) %>%
-    summarise_if(is.numeric, mean) %>%
-    gather(dam, mean_flow, -year) -> hydro_flow_mean
-
-  # compute wsgif at dam level
-  hydro_flow_mean %>%
-    left_join(hydro_flow_mean_hist, by = "dam") %>%
-    mutate(wsgif = mean_flow / mean_flow_hist) %>%
-    select(year, dam, wsgif)
-}
-
-# get_wsgif_all_huc4s
+# get_wsgif_all_grids
 #
 # calculates the thermal wsgif for each huc4
-get_wsgif_all_huc4s <- function(thermal_flow_his,
-                                thermal_flow_fut){
+get_wsgif_all_grids <- function(flow_his,
+                                flow_fut){
 
   # get the historical period average flow
-  thermal_flow_his %>%
+  flow_his %>%
     summarise_if(is.numeric, mean) %>%
-    gather(huc4_outlet, mean_flow_hist) -> thermal_flow_mean_hist
+    gather(grid_id, mean_flow_hist) -> flow_mean_hist
 
   # get the future period annual flows
-  thermal_flow_fut %>%
+  flow_fut %>%
     group_by(year = year(date)) %>%
     summarise_if(is.numeric, mean) %>%
-    gather(huc4_outlet, mean_flow, -year) -> thermal_flow_mean
+    gather(grid_id, mean_flow, -year) -> flow_mean
 
-  # compute wsgif at huc4 level
-  thermal_flow_mean %>%
-    left_join(thermal_flow_mean_hist, by = "huc4_outlet") %>%
-    rowwise() %>%
-    mutate(wsgif = min(1, mean_flow / mean_flow_hist)) %>%
+  # compute wsgif at grid level
+  flow_mean %>%
+    left_join(flow_mean_hist, by = "grid_id") %>%
+    mutate(wsgif = mean_flow / mean_flow_hist) %>%
     ungroup() %>%
-    select(year, huc4_outlet, wsgif)
+    select(year, grid_id, wsgif)
 }
 
 

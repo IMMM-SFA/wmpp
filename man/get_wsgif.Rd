@@ -7,7 +7,7 @@
 get_wsgif(flow_fn_1, flow_fn_2, flow_file_dir, output_fn_tag = "",
   output_file_dir, historical_period = c("1955-01-01", "2004-12-31"),
   future_period = c("2005-01-01", "2095-12-31"), by = "all",
-  dam_cutoff_percentile = 0.92)
+  dam_cutoff_percentile = 1)
 }
 \arguments{
 \item{flow_fn_1}{file naming format for the hydro_flow_file, excluding the region (e.g., 10_HIST_MOSART.csv, would be "HIST_MOSART.csv")}

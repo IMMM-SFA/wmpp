@@ -17,6 +17,7 @@
 #' @importFrom stringr str_split
 #' @importFrom dplyr select arrange left_join bind_rows mutate summarise group_by ungroup filter pull if_else summarise_if case_when rowwise
 #' @importFrom tibble tibble
+#' @importFrom purrr map map2
 #' @export
 #'
 get_wsgif <- function(flow_fn_1,
@@ -27,7 +28,7 @@ get_wsgif <- function(flow_fn_1,
                       historical_period = c("1955-01-01", "2004-12-31"),
                       future_period = c("2005-01-01", "2095-12-31"),
                       by = "all",
-                      dam_cutoff_percentile = 0.92){
+                      dam_cutoff_percentile = 1.0){
 
 
   # stop routine for incorrect function arguments
@@ -64,7 +65,7 @@ get_wsgif <- function(flow_fn_1,
                       ymd(future_period[2]),
                       by = "days")
 
-  if(missing(flow_fn_2)){
+  if(missing(flow_fn_2)){ # for when flow input is included in a single simulation file
 
     list.files(flow_file_dir) %>%
       .[grepl(flow_fn_1, .)] -> flow_files
@@ -74,41 +75,55 @@ get_wsgif <- function(flow_fn_1,
 
 
     str_split(hydro_flow_files, "_") %>%
-      map(~.[[2]]) %>% unlist() -> regions_detected
-    message(paste0(c("Regions detected in hydro files:", regions_detected), collapse = " "))
+      map(~.[[2]]) %>% unlist() -> regions_detected_hydro
 
-    hydro_flow_files %>%
-      # map through all regions and calculate dam-level wsgif
-      map(function(hff){
+    str_split(hydro_flow_files, "_") %>%
+      map(~.[[2]]) %>% unlist() -> regions_detected_thermal
 
-        # read hydro flows
-        hydro_flow <- read_csv(paste0(flow_file_dir, "/", hff),
-                               col_types = cols())
+    stopifnot(all(regions_detected_hydro == regions_detected_thermal))
 
-        # return shell for files without hydro flow
-        if(ncol(hydro_flow) == 1) return(tibble(year = as.double(),
-                                                dam = as.character(),
-                                                wsgif = as.double()))
+    message(paste0(c("Regions detected:", regions_detected_hydro), collapse = " "))
 
-        # ensure flow file contains representative dates for historical and future periods:
-        if(!all(date_seq_his %in% hydro_flow$date)) stop("hydro_flow_file lacks some dates of the historical period")
-        if(!all(date_seq_fut %in% hydro_flow$date)) stop("hydro_flow_file lacks some dates of the future period")
+    # set up function for pulling flow file, checking the data, and performing wgif computation
+    flow_to_wsgif <- function(flow_file){
 
-        # get historical hydro flows
-        hydro_flow %>%
-          filter(date %in% date_seq_his) ->
-          hydro_flow_his
+      # read flows
+      flow <- read_csv(paste0(flow_file_dir, "/", flow_file),
+                       col_types = cols())
 
-        # get future hydro flows
-        hydro_flow %>%
-          filter(date %in% date_seq_fut) ->
-          hydro_flow_fut
+      # return shell for files without hydro flow
+      if(ncol(flow) == 1) return(tibble(year = as.double(),
+                                        grid_id = as.character(),
+                                        wsgif = as.double()))
 
-        get_wsgif_all_dams(hydro_flow_his, hydro_flow_fut)
+      # ensure flow file contains representative dates for historical and future periods:
+      if(!all(date_seq_his %in% flow$date)) stop(paste0(flow_file, " lacks some dates of the historical period"))
+      if(!all(date_seq_fut %in% flow$date)) stop(paste0(flow_file, " lacks some dates of the future period"))
 
-      }) -> wsgif_all_dams_and_regions
+      # get historical hydro flows
+      flow %>%
+        filter(date %in% date_seq_his) ->
+        flow_his
 
-  }else{
+      # get future hydro flows
+      flow %>%
+        filter(date %in% date_seq_fut) ->
+        flow_fut
+
+      # get the wsgif
+      get_wsgif_all_grids(flow_his, flow_fut)
+
+    }
+
+    # get hydro wsgif
+    hydro_flow_files %>% map(flow_to_wsgif) %>% bind_rows() -> wsgif_all_dams
+
+    # get thermal wsgif
+    thermal_flow_files %>% map(flow_to_wsgif) %>% bind_rows() %>%
+      mutate(wsgif = if_else(wsgif > 1.0, 1.0, wsgif)) ->
+      wsgif_all_huc4s
+
+  }else{ # for when inputs are split across two separate files...
 
     # get filenames for historical and future period results
     list.files(flow_file_dir) %>%
@@ -158,112 +173,87 @@ get_wsgif <- function(flow_fn_1,
     stopifnot(all(regions_detected_his_hyd == regions_detected_his_thr))
     message(paste0(c("hucwm regions detected in files:", regions_detected_his_hyd), collapse = " "))
 
+
+    # set up function for pulling flow file, checking the data, and performing wgif computation
+    flow_to_wsgif <- function(hucwm, hyd_huc){
+      # get historical hydro flows
+      read_csv(paste0(flow_file_dir, "/",
+                      hyd_huc ,"_", hucwm, "_",
+                      flow_fn_1),
+               col_types = cols()) %>%
+        filter(date %in% date_seq_his) ->
+        flow_his
+
+      # get future hydro flows
+      read_csv(paste0(flow_file_dir, "/",
+                      hyd_huc, "_", hucwm, "_",
+                      flow_fn_2),
+               col_types = cols()) %>%
+        filter(date %in% date_seq_fut) ->
+        flow_fut
+
+      # return shell for files without hydro flow
+      if(ncol(flow_fut) == 1 | ncol(flow_fut) == 1){
+        return(tibble(year = as.double(),
+                      grid_id = as.character(),
+                      wsgif = as.double()))
+      }
+
+      # ensure flow file contains representative dates for historical and future periods:
+      if(!all(date_seq_his %in% flow_his$date)) stop(paste0(hucwm, " ", hyd_huc, " file lacks some dates of the historical period"))
+      if(!all(date_seq_fut %in% flow_fut$date)) stop(paste0(hucwm, " ", hyd_huc, " lacks some dates of the future period"))
+
+      # return the (non-weighted) wsgif for all hydro dams
+      get_wsgif_all_grids(flow_his, flow_fut)
+    }
+
     regions_detected_his_hyd %>%
-      map(function(hucwm){
-
-        # get historical hydro flows
-        read_csv(paste0(flow_file_dir,
-                        "/hydro_", hucwm, "_",
-                        flow_fn_1),
-                 col_types = cols()) %>%
-          filter(date %in% date_seq_his) ->
-          hydro_flow_his
-
-        # get future hydro flows
-        read_csv(paste0(flow_file_dir,
-                        "/hydro_", hucwm, "_",
-                        flow_fn_2),
-                 col_types = cols()) %>%
-          filter(date %in% date_seq_fut) ->
-          hydro_flow_fut
-
-        # return shell for files without hydro flow
-        if(ncol(hydro_flow_fut) == 1 | ncol(hydro_flow_fut) == 1){
-          return(tibble(year = as.double(),
-                        dam = as.character(),
-                        wsgif = as.double()))
-        }
-
-        # ensure flow file contains representative dates for historical and future periods:
-        if(!all(date_seq_his %in% hydro_flow_his$date)) stop("hydro_flow_file_1 lacks some dates of the historical period")
-        if(!all(date_seq_fut %in% hydro_flow_fut$date)) stop("hydro_flow_file_2 lacks some dates of the future period")
-
-        # return the (non-weighted) wsgif for all hydro dams
-        get_wsgif_all_dams(hydro_flow_his, hydro_flow_fut)
-
-      }) %>% bind_rows() -> wsgif_all_dams
+      map2("hydro", flow_to_wsgif) %>%
+      bind_rows() -> wsgif_all_dams
 
     regions_detected_his_thr %>%
-      map(function(hucwm){
+      map2("huc4", flow_to_wsgif) %>%
+      bind_rows() %>%
+      mutate(wsgif = if_else(wsgif > 1.0, 1.0, wsgif)) ->
+      wsgif_all_huc4s
 
-        # get historical hydro flows
-        read_csv(paste0(flow_file_dir,
-                        "/huc4_", hucwm, "_",
-                        flow_fn_1),
-                 col_types = cols()) %>%
-          filter(date %in% date_seq_his) ->
-          thermal_flow_his
-
-        # get future hydro flows
-        read_csv(paste0(flow_file_dir,
-                        "/huc4_", hucwm, "_",
-                        flow_fn_2),
-                 col_types = cols()) %>%
-          filter(date %in% date_seq_fut) ->
-          thermal_flow_fut
-
-        # return shell for files without hydro flow
-        if(ncol(thermal_flow_fut) == 1 | ncol(thermal_flow_fut) == 1){
-          return(tibble(year = as.double(),
-                        dam = as.character(),
-                        wsgif = as.double()))
-        }
-
-        # ensure flow file contains representative dates for historical and future periods:
-        if(!all(date_seq_his %in% thermal_flow_his$date)) stop("flow_file_1 lacks some dates of the historical period")
-        if(!all(date_seq_fut %in% thermal_flow_fut$date)) stop("flow_file_2 lacks some dates of the future period")
-
-        # return the (non-weighted) wsgif for all huc4
-        get_wsgif_all_huc4s(thermal_flow_his, thermal_flow_fut)
-
-      }) %>% bind_rows() -> wsgif_all_huc4s
   }
 
   # bring in plant data for balancing authority, region.
 
-  pull(wsgif_all_dams, dam) %>% unique() -> wsgif_dams
-  pull(hydro_plants, grid_id) -> desired_dams
+  pull(wsgif_all_dams, grid_id) %>% unique() -> wsgif_dam_grids
+  pull(hydro_plants, grid_id) -> desired_dam_grids
 
-  if(all(desired_dams %in% wsgif_dams)){
+  if(all(desired_dam_grids %in% wsgif_dam_grids)){
     message("WSGIF is available for all desired hydropower plants!")
     }else{
       warning(paste0(c("Plants missing from WSGIF data:",
-                       desired_dams[!desired_dams %in% wsgif_dams]),
+                       desired_dam_grids[!desired_dam_grids %in% wsgif_dam_grids]),
                      collapse = " "))
     }
 
-  pull(wsgif_all_huc4s, huc4_outlet) %>% unique() -> wsgif_huc4s
-  pull(thermal_nameplate, grid_id) %>% unique() -> desired_huc4s
+  pull(wsgif_all_huc4s, grid_id) %>% unique() -> wsgif_huc4_grids
+  pull(thermal_nameplate, grid_id) %>% unique() -> desired_huc4_grids
 
-  if(all(desired_huc4s %in% wsgif_huc4s)){
+  if(all(desired_huc4_grids %in% wsgif_huc4_grids)){
     message("WSGIF is available for all desired HUC4 catchments!")
   }else{
     warning(paste0(c("HUC4 catchments missing from WSGIF data:",
-                     desired_huc4s[!desired_huc4s %in% wsgif_huc4s]),
+                     desired_huc4_grids[!desired_huc4_grids %in% wsgif_huc4_grids]),
                    collapse = " "))
   }
 
   wsgif_all_dams %>%
-    filter(is.na(wsgif)) %>% pull(dam) %>% unique() ->
-    dams_with_bad_flow_data
+    filter(is.na(wsgif)) %>% pull(grid_id) %>% unique() ->
+    dam_grids_with_bad_flow_data
 
   wsgif_all_huc4s %>%
-    filter(is.na(wsgif)) %>% pull(huc4_outlet) %>% unique() ->
-    huc4s_with_bad_flow_data
+    filter(is.na(wsgif)) %>% pull(grid_id) %>% unique() ->
+    huc4_grids_with_bad_flow_data
 
   # add balancing authority and region weights for hydro
   hydro_plants %>%
-    filter(!grid_id %in% dams_with_bad_flow_data) %>%
+    filter(!grid_id %in% dam_grids_with_bad_flow_data) %>%
     group_by(BA) %>%
     mutate(BA_weighting = nameplate_MW_ / sum(nameplate_MW_)) %>%
     group_by(region) %>%
@@ -274,7 +264,7 @@ get_wsgif <- function(flow_fn_1,
 
   # add region weights for thermal
   thermal_nameplate %>%
-    filter(!grid_id %in% huc4s_with_bad_flow_data) %>%
+    filter(!grid_id %in% huc4_grids_with_bad_flow_data) %>%
     group_by(region) %>%
     mutate(region_weighting = nameplate / sum(nameplate)) %>%
     ungroup() %>%
@@ -283,12 +273,12 @@ get_wsgif <- function(flow_fn_1,
     thermal_plants_weighted
 
   wsgif_all_dams %>%
-    left_join(hydro_plants_weighted, by = c("dam" = "grid_id")) %>%
+    left_join(hydro_plants_weighted, by = c("grid_id")) %>%
     filter(!is.na(nameplate_MW_)) ->
     wsgif_all_dams_BA_region
 
   wsgif_all_huc4s %>%
-    left_join(thermal_plants_weighted, by = c("huc4_outlet" = "grid_id")) %>%
+    left_join(thermal_plants_weighted, by = c("grid_id")) %>%
     filter(!is.na(nameplate)) ->
     wsgif_all_huc4_region
 
