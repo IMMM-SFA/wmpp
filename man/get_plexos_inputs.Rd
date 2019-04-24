@@ -4,15 +4,18 @@
 \alias{get_plexos_inputs}
 \title{get_plexos_inputs}
 \usage{
-get_plexos_inputs(scenario_file, flow_dir, huc4_shape_dir)
+get_plexos_inputs(huc4_fn_1, huc4_fn_2, flow_dir, huc4_shape_dir, base_yr,
+  output_dir)
 }
 \arguments{
-\item{flow_dir}{directory where huc4 flow results reside}
+\item{huc4_fn_1}{file naming format for the hydro_flow_file, excluding the region (e.g., 10_HIST_MOSART.csv, would be "HIST_MOSART.csv")}
 
-\item{scenario_name}{file naming format for the huc4 flow file}
+\item{huc4_fn_2}{optional second flow file naming format in case hist and future parts are split.}
+
+\item{flow_dir}{directory where huc4 flow results reside}
 }
 \value{
-time series of WSGIF
+...
 }
 \description{
 get_plexos_inputs

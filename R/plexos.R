@@ -5,7 +5,6 @@
 #' @param flow_dir directory where huc4 flow results reside
 #' @param huc4_shape_dir
 #' @details derives plexos inputs for given scenario
-#' @importFrom FedData get_huc4
 #' @importFrom purrr map reduce
 #' @importFrom readr read_csv cols
 #' @importFrom dplyr left_join right_join filter select bind_rows vars contains
