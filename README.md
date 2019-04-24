@@ -74,7 +74,7 @@ Then create a bash (named something like `batch_get_flows.sh`) in the same direc
 
     R CMD BATCH get_flows.R
 
-**Note:** WM gridded flow files are in the order of 1Gb each, causing slow load and computation within the R environment. Currently, the above script can take up to an hour to run (depending on how many flow files are in the results directory), even with the `in_parallel` option set to TRUE.
+**Note:** WM gridded flow files are in the order of 1Gb each, causing slow load and computation within the R environment. Currently, the above script can take up perhaps up to 30 minutes (depending on how many flow files are in the results directory), even with the `in_parallel` option set to TRUE.
 
 Then send the job for computation:
 
@@ -82,4 +82,8 @@ $`sbatch batch_get_flows.sh`
 
 ### WSGIF computation
 
-The computation of WSGIF is computed on files prepared in the prior step.
+The computation of WSGIF is computed on files prepared in the prior step. The function `get_wsgif` is used as follows:
+
+    get_wsgif("HIST45_MOSART_2010_WM.csv",
+              "RCP45_MOSART_2010_WM.csv",
+              "flows_hyd_huc4")

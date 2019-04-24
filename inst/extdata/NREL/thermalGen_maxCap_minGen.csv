@@ -1,0 +1,1721 @@
+name,Type,Category,Max Capacity,MinStable
+150MileHouse,Other,ST-Other,6.5,2.925
+ACE-Cogen,CHP-QF,ST-Coal,102.73,56.5015
+AESO-P+G,Gas CT,CT-NatGas-Industrial,34.5,15.525
+AESO_Reserve,Other,Dummy,600,0
+ALPAC1,Biomass,Bio-ST,40.8,35
+ALPAC2,Biomass,Bio-ST,40.8,35
+ALPAC3,Biomass,Bio-ST,17.6,15
+Aberdeen,Biomass,Bio-ST,18,8.1
+AftonCC-Total,Gas CC,CCWhole-NatGas-Industrial,287.95,158.3725
+AgnewsCC-Total,CHP-QF,CCWhole-NatGas-Aero,27.3,15.015
+AguaFria1,Gas CT,ST-NatGas,113.636,15.11359
+AguaFria2,Gas CT,ST-NatGas,113.636,15.11359
+AguaFria3,Gas CT,ST-NatGas,163.2,18.9312
+AguaFria4,Gas CT,CT-NatGas-Industrial,80.55,4.43025
+AguaFria5,Gas CT,CT-NatGas-Industrial,71.2,3.916
+AguaFria6,Gas CT,CT-NatGas-Industrial,71.2,3.916
+Agua_Mansa,Gas CT,CT-NatGas-Aero,43,12.9
+Aidlin_Geo1,Geothermal,LCGS_CA_geothermal,12.5,6.25
+Aidlin_Geo2,Geothermal,LCGS_CA_geothermal,12.5,6.25
+AirLiquide,Gas CT,CT-NatGas-Industrial,80,48
+AirportIndustrial1,Other,CT-OilDistillate,2.5,0.75
+AirportIndustrial2,Other,CT-OilDistillate,2.5,0.75
+AirportIndustrial3,Other,CT-OilDistillate,2.5,0.75
+AirportIndustrial4,Other,CT-OilDistillate,2.5,0.75
+Alameda1,Gas CT,CT-NatGas-Aero,23.8,10.71
+Alameda2,Gas CT,CT-NatGas-Aero,24,10.8
+Alamitos1,Gas CT,ST-NatGas,175,14
+Alamitos2,Gas CT,ST-NatGas,176,14.08
+Alamitos3,Gas CT,ST-NatGas,322,25.76
+Alamitos4,Gas CT,ST-NatGas,320,25.6
+Alamitos5,Gas CT,ST-NatGas,482,38.56
+Alamitos6,Gas CT,ST-NatGas,481,38.48
+Alamosa1,Gas CT,CT-NatGas-Industrial,26.6,7.98
+Alamosa2,Gas CT,CT-NatGas-Industrial,26.6,7.98
+AldenBailey,Gas CT,CT-NatGas-Aero,10.9,5.995
+AlgonquinCC-Total,CHP-QF,CCWhole-NatGas-Aero,29.73,16.3515
+Almond1,Gas CT,CT-NatGas-Aero,50,27.5
+Altamont1,Biomass,LCGS_CA_biomass,3,0.9
+Altamont_Bio2,Biomass,LCGS_CA_biomass,3,0.9
+Altamont_Bio3,Biomass,LCGS_CA_biomass,1.3,0.26
+Altamont_Bio4,Biomass,LCGS_CA_biomass,1.3,0.26
+AmedeeWineagle1,Geothermal,LCGS_CA_geothermal,1.5,0.75
+AmedeeWineagle2,Geothermal,LCGS_CA_geothermal,1.5,0.75
+AmericanCanyon1,Biomass,LCGS_CA_biomass,1.25,0.25
+AmericanCanyon2,Biomass,LCGS_CA_biomass,1.25,0.25
+Amp_Chow_Bio,Biomass,LCGS_CA_biomass,12.5,12
+Anaheim_GT,Gas CT,CT-NatGas-Aero,42.81,19.2645
+Anderson,Biomass,LCGS_CA_biomass,5.7,1.71
+ApacheCC-Total,Gas CC,CCWhole-NatGas-Industrial,93.1,51.205
+ApacheGT2,Gas CT,CT-NatGas-Industrial,20.4,6.12
+ApacheGT3,Gas CT,CT-NatGas-Industrial,78.7,23.61
+ApacheGT4,Gas CT,CT-NatGas-Aero,60.5,33.275
+ApacheST2,Coal,ST-Coal,204,81.6
+ApacheST3,Coal,ST-Coal,204,81.6
+ApexCC-Total,Gas CC,CCWhole-NatGas-Industrial,600.6,300.3
+ArapahoeCC-Total,Gas CC,CCWhole-NatGas-Aero,194,106.7
+Argus_Cogen8,Coal,ST-Coal,27.5,27.225
+Argus_Cogen9,Coal,ST-Coal,27.5,27.225
+ArlngtnVallyCC-Total,Gas CC,CCWhole-NatGas-Industrial,713,372.5425
+Armstrong_Cogen,Biomass,Bio-ST,20.4,9.18
+Arvada1,Gas CT,CT-NatGas-Aero,7.2,2.88
+Arvada2,Gas CT,CT-NatGas-Aero,7.2,2.88
+Arvada3,Gas CT,CT-NatGas-Aero,7.2,2.88
+Badger_Creek,CHP-QF,CT-NatGas-Industrial,46.63,25.6465
+BalzacCC-Total,Gas CC,CCWhole-NatGas-Aero,120,66
+BangorSubmarineBase2,Other,CT-OilDistillate,10,3
+BarberCreek1,Gas CT,CT-NatGas-Aero,7.2,2.88
+BarberCreek2,Gas CT,CT-NatGas-Aero,7.2,2.88
+BarberCreek3,Gas CT,CT-NatGas-Aero,7.2,2.88
+BarrePeaker,Gas CT,CT-NatGas-Aero,45.38,27.228
+BasinCreek1,ICE Gas,ICE-NatGas,5.75,0.8483607
+BasinCreek2,ICE Gas,ICE-NatGas,5.75,0.8483607
+BasinCreek3,ICE Gas,ICE-NatGas,5.75,0.8483607
+BasinCreek4,ICE Gas,ICE-NatGas,5.75,0.8483607
+BasinCreek5,ICE Gas,ICE-NatGas,5.75,0.8483607
+BasinCreek6,ICE Gas,ICE-NatGas,5.75,0.8483607
+BasinCreek7,ICE Gas,ICE-NatGas,5.75,0.8483607
+BasinCreek8,ICE Gas,ICE-NatGas,5.75,0.8483607
+BasinCreek9,ICE Gas,ICE-NatGas,5.75,0.8483607
+Battle_River_3,Coal,ST-Coal,148,59.2
+Battle_River_4,Coal,ST-Coal,148,59.2
+Battle_River_5,Coal,ST-Coal,407,162.8
+Bay_Envirnmntal,Biomass,LCGS_CA_biomass,3,0.6
+BearCreekCC-Total,Gas CC,CCWhole-NatGas-Industrial,80,44
+BearMountain_CA,CHP-QF,CT-NatGas-Aero,47.13,25.9215
+Bear_Canyon1,Geothermal,LCGS_CA_geothermal,11,5.5
+Bear_Canyon2,Geothermal,LCGS_CA_geothermal,11,5.5
+Beaver8,Gas CT,CT-NatGas-Industrial,24.5,13.475
+BeaverCC-Total,Gas CC,CCWhole-NatGas-Industrial,586.2,322.41
+BenFrenchGT1,Gas CT,CT-NatGas-Industrial,25.2,11.34
+BenFrenchGT2,Gas CT,CT-NatGas-Industrial,25.2,11.34
+BenFrenchGT3,Gas CT,CT-NatGas-Industrial,25.2,11.34
+BenFrenchGT4,Gas CT,CT-NatGas-Industrial,25.2,11.34
+BenFrenchST1,Coal,ST-Coal,25,10
+BennettMountain,Gas CT,CT-NatGas-Aero,172.8,77.76
+BeowawePower1,Geothermal,Geo-BinaryCycle,17,8.5
+BeowawePower2,Geothermal,Geo-BinaryCycle,3.6,1.8
+BerryPlaceritaCogen1,CHP-QF,CT-NatGas-Aero,18.61,10.2355
+BerryPlaceritaCogen2,CHP-QF,CT-NatGas-Aero,18.61,10.2355
+BerryTanneHills18-1,CHP-QF,CT-NatGas-Aero,11.14,6.127
+BerryTanneHills18-2,Gas CT,CT-NatGas-Aero,8.8,8.712
+BerryUniversityCogen,Gas CT,CT-NatGas-Aero,37.2,36.828
+BigSky1,Biomass,Bio-ICE,0.75,0.15
+BigSky2,Biomass,Bio-ICE,0.75,0.15
+BigValley,Biomass,LCGS_CA_biomass,8.6,2.58
+BiomassOneGE1,Biomass,Bio-ST,14.4,4.32
+BiomassOneGE2,Biomass,Bio-ST,15,4.5
+BlackMountain1,Gas CT,CT-NatGas-Aero,60.5,36.3
+BlackMountain2,Gas CT,CT-NatGas-Aero,60.5,36.3
+Blacksand182,Biomass,LCGS_CA_biomass,4,1.2
+Blacksand189,Biomass,LCGS_CA_biomass,3.7,1.11
+BloomingtonPwr1,Other,ICE-OilDistillate,1.7,0.51
+BloomingtonPwr2,Other,ICE-OilDistillate,1.7,0.51
+BloomingtonPwr3,Other,ICE-OilDistillate,1.7,0.51
+BloomingtonPwr4,Other,ICE-OilDistillate,1.7,0.51
+BloomingtonPwr5,Other,ICE-OilDistillate,1.7,0.51
+BloomingtonPwr6,Other,ICE-OilDistillate,1.7,0.51
+BlueLake,Biomass,LCGS_CA_biomass,13.8,13
+BlueSpruce1,Gas CT,CT-NatGas-Industrial,150,36
+BlueSpruce2,Gas CT,CT-NatGas-Industrial,150,36
+BluffviewCC-Total,Gas CC,CCWhole-NatGas-Aero,64,32
+Blundell1,Geothermal,Geo-BinaryCycle,26.095,13.0475
+Blundell2,Geothermal,Geo-BinaryCycle,12,6
+BlytheCC-Total,Gas CC,CCWhole-NatGas-Industrial,559.99,307.9945
+Boardman,Coal,ST-Coal,642.2,256.88
+Bonanza,Coal,ST-Coal,460,184
+BorderPeaker,Gas CT,CT-NatGas-Industrial,43.8,19.71
+BottleRock,Geothermal,LCGS_CA_geothermal,55,27.5
+BoulderPark1,ICE Gas,ICE-NatGas,4.1,0.328
+BoulderPark2,ICE Gas,ICE-NatGas,4.1,0.328
+BoulderPark3,ICE Gas,ICE-NatGas,4.1,0.328
+BoulderPark4,ICE Gas,ICE-NatGas,4.1,0.328
+BoulderPark5,ICE Gas,ICE-NatGas,4.1,0.328
+BoulderPark6,ICE Gas,ICE-NatGas,4.1,0.328
+BountifulCity1A,Gas CT,CT-NatGas-Aero,5.2,1.56
+BountifulCity8,ICE Gas,ICE-NatGas,7,1.75
+BradleyLandfill,Biomass,LCGS_CA_biomass,6,1.8
+BradyHotSprings1,Geothermal,Geo-BinaryCycle,8,4
+BradyHotSprings2,Geothermal,Geo-BinaryCycle,9.2,4.6
+BradyHotSprings3,Geothermal,Geo-BinaryCycle,9.2,4.6
+BradyHotSpringsOEC,Geothermal,Geo-BinaryCycle,6.5,3.25
+Broadway3,Gas CT,ST-NatGas,65,44.85
+BrushCC1-Total,Gas CC,CCWhole-NatGas-Industrial,88,48.4
+BrushCC2-Total,Gas CC,CCWhole-NatGas-Aero,74,38.94316
+BrushCC3-Total,Gas CC,CCWhole-NatGas-Aero,137.6,75.68
+BuenaVistaPump1-1,Other,MotorLoad,5,0
+BuenaVistaPump1-2,Other,MotorLoad,5,0
+BuenaVistaPump1-3,Other,MotorLoad,5,0
+BuenaVistaPump1-4,Other,MotorLoad,12,0
+BuenaVistaPump1-5,Other,MotorLoad,12,0
+BuenaVistaPump1-6,Other,MotorLoad,12,0
+BuenaVistaPump2-1,Other,MotorLoad,12,0
+BuenaVistaPump2-2,Other,MotorLoad,12,0
+BuenaVistaPump2-3,Other,MotorLoad,12,0
+BuenaVistaPump2-4,Other,MotorLoad,9,0
+Burlington,Biomass,Bio-ST,28,25
+Burlington_1,Other,CT-OilDistillate,46.3,13.89
+Burlington_2,Other,CT-OilDistillate,46.3,13.89
+Burney_Mountain,Biomass,LCGS_CA_biomass,13,13
+BurrardThermal1,Gas CT,ST-NatGas,150.81,22.6215
+BurrardThermal2,Gas CT,ST-NatGas,146,21.9
+BurrardThermal3,Gas CT,ST-NatGas,150.81,22.6215
+BurrardThermal4,Gas CT,ST-NatGas,150.81,22.6215
+BurrardThermal5,Gas CT,ST-NatGas,150.81,22.6215
+BurrardThermal6,Gas CT,ST-NatGas,155.6,23.34
+CANCARB1-1,Biomass,Bio-ST,36,35
+CMH_3_3,Gas CT,ST-NatGas,37.8,9.827999
+CPeakPanochePkr,Gas CT,CT-NatGas-Aero,42.78,19.251
+C_LenzieCC1-Total,Gas CC,CCWhole-NatGas-Industrial,732.8,403.04
+C_LenzieCC2-Total,Gas CC,CCWhole-NatGas-Industrial,732.8,403.04
+C_P_Kelco1,Gas CT,CT-NatGas-Industrial,8.57,8.4843
+C_P_Kelco2,Gas CT,CT-NatGas-Industrial,10.71,10.6029
+C_P_Kelco3,Gas CT,CT-NatGas-Industrial,10.71,10.6029
+CabinCreekA,Storage,PSH,150,0
+CabinCreekB,Storage,PSH,150,0
+CalInstTech-CC-Total,Gas CC,CCWhole-NatGas-Aero,13,3.9
+Calabasas1,Biomass,LCGS_CA_biomass,4.6,0.92
+Calabasas2,Biomass,LCGS_CA_biomass,10,9
+Calabasas3,Biomass,LCGS_CA_biomass,4.6,0.92
+Calistoga1,Geothermal,LCGS_CA_geothermal,51.9,25.95
+Calistoga2,Geothermal,LCGS_CA_geothermal,51.9,25.95
+CalpineCC-Total,Gas CC,CCWhole-NatGas-Industrial,300,138.662
+Calpine_Geo,Geothermal,LCGS_CA_geothermal,78,39
+CardinalCC-Total,CHP-QF,CCWhole-NatGas-Aero,21.62,11.891
+CargillB6Bio1,Biomass,Bio-ICE,1.1,0.22
+CargillB6Bio2,Biomass,Bio-ICE,1.1,0.22
+CargillDryCreekBio1,Biomass,Bio-ICE,0.8,0.16
+CargillDryCreekBio2,Biomass,Bio-ICE,0.8,0.16
+CargillDryCreekBio3,Biomass,Bio-ICE,0.8,0.16
+CarlsbadEC1-GT1,Gas CT,CT-NatGas-Aero,100,20
+CarlsbadEC1-GT2,Gas CT,CT-NatGas-Aero,100,20
+CarlsbadEC1-GT3,Gas CT,CT-NatGas-Aero,100,20
+CarlsbadEC1-GT4,Gas CT,CT-NatGas-Aero,100,20
+CarlsbadEC1-GT5,Gas CT,CT-NatGas-Aero,100,20
+CarlsbadEC1-GT6,Gas CT,CT-NatGas-Aero,100,20
+Carsela1_1,Gas CT,CT-NatGas-Industrial,40,18
+Carsela2_2,Gas CT,CT-NatGas-Industrial,40,18
+CarsonCC-Total,CHP-QF,CCWhole-NatGas-Aero,51.11,28.1105
+CarsonIceCC-Total,CHP-QF,CCWhole-NatGas-Aero,42.5,23.375
+CarsonIce_GT,Gas CT,CT-NatGas-Aero,57.5,17.25
+Castaic_2,Storage,PSH,212,0
+Castaic_3,Storage,PSH,212,0
+Castaic_4,Storage,PSH,212,0
+Castaic_5,Storage,PSH,212,0
+Castaic_6,Storage,PSH,212,0
+Castrvlle_QF,Coal,ST-Coal,13.04,12.9096
+CavalierCC-Total,Gas CC,CCWhole-NatGas-Aero,120,66
+Cedar_Road_LFG,Biomass,Bio-ST,1.26,0.378
+Celgar_1,Biomass,Bio-ST,40.67,8.134
+Celgar_2,Biomass,Bio-ST,37.33,7.466
+CenterPeaker,Gas CT,CT-NatGas-Aero,44.57,26.742
+Center_Area_Agg,Gas CT,CT-NatGas-Industrial,31.01,13.9545
+Centralia1,Coal,ST-Coal,729.9,291.96
+Centralia2,Coal,ST-Coal,729.9,291.96
+CentraliaCC-Total,Gas CC,CCWhole-NatGas-Industrial,268,147.4
+Century1,Gas CT,CT-NatGas-Aero,9,4.05
+Century2,Gas CT,CT-NatGas-Aero,9,4.05
+Century3,Gas CT,CT-NatGas-Aero,9,4.05
+Century4,Gas CT,CT-NatGas-Aero,9,4.05
+CerroPrieto1-1,Geothermal,Geo-BinaryCycle,35.7,17.85
+CerroPrieto1-2,Geothermal,Geo-BinaryCycle,35.7,17.85
+CerroPrieto1-3,Geothermal,Geo-BinaryCycle,35.7,17.85
+CerroPrieto1-4,Geothermal,Geo-BinaryCycle,35.7,17.85
+CerroPrieto1-5,Geothermal,Geo-BinaryCycle,30,15
+CerroPrieto2-1,Geothermal,Geo-BinaryCycle,110,55
+CerroPrieto2-2,Geothermal,Geo-BinaryCycle,110,55
+CerroPrieto3-1,Geothermal,Geo-BinaryCycle,110,55
+CerroPrieto3-2,Geothermal,Geo-BinaryCycle,110,55
+CerroPrieto4-1,Geothermal,Geo-BinaryCycle,25,12.5
+CerroPrieto4-2,Geothermal,Geo-BinaryCycle,25,12.5
+CerroPrieto4-3,Geothermal,Geo-BinaryCycle,25,12.5
+CerroPrieto4-4,Geothermal,Geo-BinaryCycle,25,12.5
+Chalk_Cliff,CHP-QF,CT-NatGas-Aero,46.55,25.6025
+ChehalisCC-Total,Gas CC,CCWhole-NatGas-Industrial,594,326.7
+Cherokee3,Coal,ST-Coal,170.5,68.2
+Cherokee4,Coal,ST-Coal,380.8,152.32
+ChildrensHospital,Gas CT,CT-NatGas-Aero,1.05,0.6
+ChinoMinesCC-Total,Gas CC,CCWhole-NatGas-Industrial,54,53.46
+Chino_Area_Agg,Biomass,LCGS_CA_biomass,21.8,6.54
+Cholla_1,Coal,ST-Coal,113.6,45.44
+Cholla_2,Coal,ST-Coal,288.9,115.56
+Cholla_3,Coal,ST-Coal,312.3,124.92
+Cholla_4,Coal,ST-Coal,414,165.6
+Chowchilla2_01,ICE Gas,ICE-NatGas,48.1,2.9341
+Chowchilla2_02,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_03,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_04,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_05,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_06,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_07,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_08,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_09,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_10,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_11,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_12,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_13,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_14,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_15,ICE Gas,ICE-NatGas,3.04,0.18544
+Chowchilla2_16,ICE Gas,ICE-NatGas,3.04,0.18544
+Chula_Vista,Gas CT,CT-NatGas-Aero,35.5,10.65
+CicloCmbMxclCC-Total,Gas CC,CCWhole-NatGas-Industrial,170,93.5
+Cipres1,Other,CT-OilDistillate,28,8.400001
+CivicCenterCC-Total,CHP-QF,CCWhole-NatGas-Industrial,34.5,18.975
+Clark04,Gas CT,CT-NatGas-Industrial,72.4,21.72
+Clark11,Gas CT,CT-NatGas-Aero,60.5,36.3
+Clark12,Gas CT,CT-NatGas-Aero,60.5,36.3
+Clark13,Gas CT,CT-NatGas-Aero,60.5,36.3
+Clark14,Gas CT,CT-NatGas-Aero,60.5,36.3
+Clark15,Gas CT,CT-NatGas-Aero,60.5,36.3
+Clark16,Gas CT,CT-NatGas-Aero,60.5,36.3
+Clark17,Gas CT,CT-NatGas-Aero,60.5,36.3
+Clark18,Gas CT,CT-NatGas-Aero,60.5,36.3
+Clark19,Gas CT,CT-NatGas-Aero,60.5,36.3
+Clark20,Gas CT,CT-NatGas-Aero,60.5,36.3
+Clark21,Gas CT,CT-NatGas-Aero,60.5,36.3
+Clark22,Gas CT,CT-NatGas-Aero,60.5,36.3
+ClarkCC1-Total,Gas CC,CCWhole-NatGas-Industrial,289.4,159.17
+ClarkCC2-Total,Gas CC,CCWhole-NatGas-Industrial,289.4,159.17
+ClarkMtn3,Gas CT,CT-NatGas-Industrial,85,25.5
+ClarkMtn4,Gas CT,CT-NatGas-Industrial,85,25.5
+ClearwaterCC-Total,Gas CC,CCWhole-NatGas-Aero,32,14.4
+ClearwaterPaper3,Biomass,Bio-ST,28.8,25
+ClearwaterPaper4,Biomass,Bio-ST,65,60
+Cloverbar_GT1,Gas CT,CT-NatGas-Industrial,48,14.4
+Cloverbar_GT2,Gas CT,CT-NatGas-Industrial,101,45.45
+Cloverbar_GT3,Gas CT,CT-NatGas-Industrial,101,45.45
+CoGen2DRJohnson,Biomass,Bio-ST,7.5,2.25
+Coachella_1,Gas CT,CT-OilDistillate,26,11.7
+Coachella_2,Gas CT,CT-OilDistillate,26,11.7
+Coachella_3,Gas CT,CT-OilDistillate,26,11.7
+Coachella_4,Gas CT,CT-OilDistillate,26,11.7
+CoalingaCogen,CHP-QF,CT-NatGas-Aero,39.77,21.8735
+Coalinga_25D1,CHP-QF,CT-NatGas-Aero,12.31,6.7705
+Coalinga_25D2,Gas CT,CT-NatGas-Aero,3.4,3.366
+Coalinga_25D3,Gas CT,CT-NatGas-Aero,3.4,3.366
+Coalinga_25D4,Gas CT,CT-NatGas-Aero,3.4,3.366
+Coalinga_6C1,Gas CT,CT-NatGas-Aero,3.4,3.366
+Coalinga_6C2,Gas CT,CT-NatGas-Aero,3.4,1.02
+Coffin_Butte_1,Biomass,Bio-ICE,0.8,0.36
+Coffin_Butte_2,Biomass,Bio-ICE,0.8,0.16
+Coffin_Butte_3,Biomass,Bio-ICE,0.8,0.16
+Coffin_Butte_4,Biomass,Bio-ICE,1.5,0.3
+Coffin_Butte_5,Biomass,Bio-ICE,1.5,0.3
+Collins_Pine,Biomass,LCGS_CA_biomass,13.8,4.14
+Colstrip_1,Coal,ST-Coal,330,132
+Colstrip_2,Coal,ST-Coal,330,132
+Colstrip_3,Coal,ST-Coal,823,329.2
+Colstrip_4,Coal,ST-Coal,823,329.2
+Colstrip_Energy,Coal,ST-Coal,43.7,17.48
+Colton_Plant,Biomass,LCGS_CA_biomass,1.2,0.24
+Columbia2,Nuclear,ST-Nuclear,1170,1170
+Columbia_Ridge1,Biomass,Bio-ICE,0.8,0.16
+Columbia_Ridge2,Biomass,Bio-ICE,0.8,0.16
+Columbia_Ridge3,Biomass,Bio-ICE,0.8,0.16
+Columbia_Ridge4,Biomass,Bio-ICE,0.8,0.16
+Columbia_Ridge5,Biomass,Bio-ICE,0.8,0.16
+Columbia_Ridge6,Biomass,Bio-ICE,0.8,0.16
+Columbia_Ridge7,Biomass,Bio-ICE,0.8,0.16
+Columbia_Ridge8,Biomass,Bio-ICE,0.8,0.16
+ColusaCC-Total,Gas CC,CCWhole-NatGas-Industrial,660,264
+Comanche_1,Coal,ST-Coal,382.5,153
+Comanche_2,Coal,ST-Coal,396,158.4
+Comanche_3,Coal,ST-Coal,856.8,342.72
+Conklin,Gas CT,CT-NatGas-Industrial,92,27.6
+CoolwaterCC3-Total,Gas CC,CCWhole-NatGas-Industrial,255.99,140.7945
+CoolwaterCC4-Total,Gas CC,CCWhole-NatGas-Industrial,255.99,140.7945
+Coolwater_1,Gas CT,ST-NatGas,65,16.9
+Coolwater_2,Gas CT,ST-NatGas,71,18.46
+Copper_1,Gas CT,CT-NatGas-Industrial,80.55,24.165
+Corona_Cogen,CHP-QF,CT-NatGas-Aero,36.95,20.3225
+CoronadoIsland,Gas CT,CT-NatGas-Aero,0.6,0.3
+Coronado_CO1,Coal,ST-Coal,410.94,164.376
+Coronado_CO2,Coal,ST-Coal,410.94,164.376
+Cosmo1,Biomass,Bio-ST,8.6,2.58
+Cosmo2,Biomass,Bio-ST,8.6,2.58
+Coso1_Navy1,Geothermal,LCGS_CA_geothermal,26.19,13.095
+Coso2_Navy1,Geothermal,LCGS_CA_geothermal,24.4,12.2
+Coso3_Navy1,Geothermal,LCGS_CA_geothermal,24.4,12.2
+Coso4_Navy2,Geothermal,LCGS_CA_geothermal,22.5,11.25
+Coso5_Navy2,Geothermal,LCGS_CA_geothermal,22.5,11.25
+Coso6_Navy2,Geothermal,LCGS_CA_geothermal,22.5,11.25
+Coso7_BLM,Geothermal,LCGS_CA_geothermal,22.5,11.25
+Coso8_BLM,Geothermal,LCGS_CA_geothermal,22.5,11.25
+Coso9_BLM,Geothermal,LCGS_CA_geothermal,22.5,11.25
+CosumnesCC-Total,Gas CC,CCWhole-NatGas-Aero,500,185.0746269
+CouleePump1-2,Other,MotorLoad,166.67,0
+CouleePump3-4,Other,MotorLoad,166.67,0
+CouleePump5-6,Other,MotorLoad,166.67,0
+County_Line,Biomass,Bio-ST,0.55,0.165
+CoyoteCanyon,Biomass,LCGS_CA_biomass,17.1,9.405001
+CoyoteSprgCC1-Total,Gas CC,CCWhole-NatGas-Industrial,266.4,93.24
+CoyoteSprgCC2-Total,Gas CC,CCWhole-NatGas-Industrial,287,157.85
+Craig_1,Coal,ST-Coal,446.4,178.56
+Craig_2,Coal,ST-Coal,446.4,178.56
+Craig_3,Coal,ST-Coal,446.4,178.56
+Creed_Energy,Gas CT,CT-NatGas-Aero,48,21.6
+Crockett_Cogen,CHP-QF,CCWhole-NatGas-SingleShaft,194,106.7
+CurrantCreekCC-Total,Gas CC,CCWhole-NatGas-Industrial,566.9,293.9781
+Cymric_31X1,Gas CT,CT-NatGas-Aero,3.4,3.366
+Cymric_31X2,Gas CT,CT-NatGas-Aero,3.4,3.366
+Cymric_36W1,Gas CT,CT-NatGas-Aero,3.1,0.93
+Cymric_36W2,Gas CT,CT-NatGas-Aero,3.1,0.93
+Cymric_36W3,Gas CT,CT-NatGas-Aero,3.1,0.93
+Cymric_36W4,Gas CT,CT-NatGas-Aero,3.4,1.02
+Cymric_6Z1,Gas CT,CT-NatGas-Aero,3.4,1.02
+Cymric_6Z2,Gas CT,CT-NatGas-Aero,3.1,0.93
+DCI_Artesia,Other,DC-Intertie,200,0
+DCI_Blackwater,Other,DC-Intertie,200,0
+DCI_Lamar,Other,DC-Intertie,220,0
+DCI_McNeill,Other,DC-Intertie,0,0
+DCI_Miles_City,Other,DC-Intertie,200,0
+DCI_RapidCity,Other,DC-Intertie,200,0
+DCI_Stegall,Other,DC-Intertie,110,0
+DCI_VirginiaSmith,Other,DC-Intertie,200,0
+DVPL_IPP13.8_1,Biomass,Bio-ST,11.6,10
+Daishowa_G1_1,Gas CT,CT-NatGas-Industrial,40,18
+Darrington_GEN1,Biomass,Bio-ST,4.5,1.35
+Dave_Johnston_1,Coal,ST-Coal,113.636,45.4544
+Dave_Johnston_2,Coal,ST-Coal,113.636,45.4544
+Dave_Johnston_3,Coal,ST-Coal,229.5,91.8
+Dave_Johnston_4,Coal,ST-Coal,360,144
+DeltaEnergyCC-Total,Gas CC,CCWhole-NatGas-Industrial,861,212.68
+DeltaPerson,Gas CT,CT-NatGas-Industrial,150,36
+DeltaPumpA-1,Other,MotorLoad,8,0
+DeltaPumpA-2,Other,MotorLoad,8,0
+DeltaPumpA-3,Other,MotorLoad,29,0
+DeltaPumpB-4,Other,MotorLoad,21,0
+DeltaPumpB-5,Other,MotorLoad,28,0
+DeltaPumpC-6,Other,MotorLoad,28,0
+DeltaPumpC-7,Other,MotorLoad,28,0
+DeltaPumpD-8,Other,MotorLoad,28,0
+DeltaPumpD-9,Other,MotorLoad,28,0
+DeltaPumpE-10,Other,MotorLoad,28,0
+DeltaPumpE-11,Other,MotorLoad,28,0
+Demoss_Petrie_1,Gas CT,CT-NatGas-Aero,85,25.5
+DesertStarCC-Total,Gas CC,CCWhole-NatGas-Industrial,510,280.5
+Desert_Peak2,Geothermal,Geo-BinaryCycle,15,7.5
+Desert_Peak3,Geothermal,Geo-BinaryCycle,11,5.5
+DiabloCanyon1,Nuclear,ST-Nuclear,1122,1065.9
+DiabloCanyon2,Nuclear,ST-Nuclear,1118,1062.1
+DiamondValleyLake02,Other,MotorLoad,3.3,0
+DiamondValleyLake03,Other,MotorLoad,3.3,0
+DiamondValleyLake04,Other,MotorLoad,3.3,0
+DiamondValleyLake06,Other,MotorLoad,3.3,0
+DiamondValleyLake07,Other,MotorLoad,3.3,0
+DiamondValleyLake08,Other,MotorLoad,3.3,0
+DiamondValleyLake10,Other,MotorLoad,3.3,0
+DiamondValleyLake11,Other,MotorLoad,3.3,0
+DiamondValleyLake12,Other,MotorLoad,3.3,0
+DillardComplexGEN4,Biomass,Bio-ST,11.5,3.45
+DillardComplexGEN5,Biomass,Bio-ST,11.5,3.45
+Dinuba_1,Gas CT,ST-NatGas,9.87,3.75
+DivisnNavalCC-Total,Gas CC,CCWhole-NatGas-Aero,55.1,54.549
+DonVonRsfldCC-Total,Gas CC,CCWhole-NatGas-Industrial,147.8,81.29
+DosAmigosPump1-1,Other,MotorLoad,25,0
+DosAmigosPump1-2,Other,MotorLoad,25,0
+DosAmigosPump1-3,Other,MotorLoad,25,0
+DosAmigosPump2-1,Other,MotorLoad,25,0
+DosAmigosPump2-2,Other,MotorLoad,22,0
+DosAmigosPump2-3,Other,MotorLoad,25,0
+DoubleC1,CHP-QF,CT-NatGas-Aero,48.93,26.9115
+DoubleC2,Gas CT,CT-NatGas-Aero,27.65,27.3735
+Douglas_1,Gas CT,ST-NatGas,26.1,6.786
+DowCC-Total,Gas CC,CCWhole-NatGas-Industrial,129.5,71.225
+DowG101_1,Gas CT,CT-NatGas-Industrial,110,60.5
+DowG201-2,Gas CT,CT-NatGas-Industrial,110,60.5
+Drews1,Gas CT,CT-NatGas-Aero,9,4.05
+Drews2,Gas CT,CT-NatGas-Aero,9,4.05
+Drews3,Gas CT,CT-NatGas-Aero,9,4.05
+Drews4,Gas CT,CT-NatGas-Aero,9,4.05
+Drywood1-1,Gas CT,CT-NatGas-Industrial,3,1.8
+Drywood_2_2,Gas CT,CT-NatGas-Industrial,3,1.8
+EF_Oxnard,Gas CT,CT-NatGas-Aero,47.7,47.223
+EagleMountainPump1,Other,MotorLoad,9.3,0
+EagleMountainPump2,Other,MotorLoad,9.3,0
+EagleMountainPump3,Other,MotorLoad,9.3,0
+EagleMountainPump4,Other,MotorLoad,9.3,0
+EagleMountainPump5,Other,MotorLoad,9.3,0
+EagleMountainPump6,Other,MotorLoad,9.3,0
+EagleMountainPump7,Other,MotorLoad,9.3,0
+EagleMountainPump8,Other,MotorLoad,9.3,0
+East_Bay_MUD,Biomass,LCGS_CA_biomass,4.6,1.38
+Eastridge1,Gas CT,CT-NatGas-Aero,28.1,8.43
+Eastridge2,Gas CT,CT-NatGas-Aero,28.1,8.43
+EdmonstonPump1,Other,MotorLoad,56,0
+EdmonstonPump2,Other,MotorLoad,56,0
+EdmonstonPump3-3,Other,MotorLoad,56,0
+EdmonstonPump3-4,Other,MotorLoad,56,0
+EdmonstonPump4-5,Other,MotorLoad,56,0
+EdmonstonPump4-6,Other,MotorLoad,56,0
+EdmonstonPump5-7,Other,MotorLoad,56,0
+EdmonstonPump5-8,Other,MotorLoad,56,0
+EdmonstonPump6-10,Other,MotorLoad,56,0
+EdmonstonPump6-9,Other,MotorLoad,56,0
+EdmonstonPump7-11,Other,MotorLoad,57,0
+EdmonstonPump7-12,Other,MotorLoad,57,0
+EdmonstonPump8-13,Other,MotorLoad,57,0
+EdmonstonPump8-14,Other,MotorLoad,57,0
+EdwardCHyatt2,Storage,PS-Hydro,121.15,0
+EdwardCHyatt4,Storage,PS-Hydro,121.15,0
+EdwardCHyatt6,Storage,PS-Hydro,121.15,0
+ElCentroCC2-Total,Gas CC,CCWhole-NatGas-Industrial,35,10.5
+ElSegndCogCC1-Total,Gas CC,CCWhole-NatGas-Aero,42.4,41.976
+ElSegndCogCC2-Total,Gas CC,CCWhole-NatGas-Aero,42.4,24.86
+ElSegndCogCC3-Total,Gas CC,CCWhole-NatGas-Aero,49.4,22.23
+ElSegundoPwr3,Gas CT,ST-NatGas,335,26.8
+ElSegundoPwr4,Gas CT,ST-NatGas,335,26.8
+El_Cajon_EC,Gas CT,CT-NatGas-Industrial,49.9,22.455
+El_Cajon_GT,Gas CT,CT-NatGas-Industrial,15,4.5
+El_Centro_3,Gas CT,ST-NatGas,50,15
+El_Centro_4,Gas CT,ST-NatGas,80,20.8
+El_Sobrante1,Biomass,LCGS_CA_biomass,1.35,0.27
+El_Sobrante2,Biomass,LCGS_CA_biomass,1.35,0.27
+El_Sobrante3,Biomass,LCGS_CA_biomass,1.35,0.27
+ElkHillsCC-Total,Gas CC,CCWhole-NatGas-Industrial,550,176.69
+ElkHillsCogen1,Gas CT,CT-NatGas-Aero,23,6.9
+ElkHillsCogen2,Gas CT,CT-NatGas-Aero,23,6.9
+Ellwood_1,Gas CT,CT-NatGas-Industrial,56,16.8
+ElmworthG5_5,Gas CT,CT-NatGas-Industrial,2.4,0.192
+ElmworthG6_6,Gas CT,CT-NatGas-Industrial,2.4,0.192
+ElmworthG7_7,Gas CT,CT-NatGas-Industrial,2.4,0.192
+ElmworthG8_8,Gas CT,CT-NatGas-Industrial,2.4,0.192
+ElmworthG9_9,Gas CT,CT-NatGas-Industrial,2.4,0.192
+Encina_2,Gas CT,ST-NatGas,110.25,8.82
+Encina_3,Gas CT,ST-NatGas,110.25,8.82
+Encina_4,Gas CT,ST-NatGas,306,24.48
+Encina_5,Gas CT,ST-NatGas,345.6,27.648
+Encina_GT1,Gas CT,CT-NatGas-Aero,18,5.4
+Encina_ST1,Gas CT,ST-NatGas,106.25,8.5
+EncogenCC-Total,Gas CC,CCWhole-NatGas-Industrial,176.4,52.92
+EnterprisePeakr,Gas CT,CT-NatGas-Industrial,45.5,20.475
+Equilon_LA_1,CHP-QF,CT-OtherGas,30,16.5
+Equilon_LA_2,CHP-QF,CT-OtherGas,30,16.5
+Equilon_LA_3,CHP-QF,ST-OtherGas,23,12.65
+Escalante_1,Coal,ST-Coal,285,114
+Etiwanda3,Gas CT,ST-NatGas,333,26.64
+Etiwanda4,Gas CT,ST-NatGas,333,26.64
+EtiwandaAreaAgg,Gas CT,CT-NatGas-Aero,44.08,13.224
+EvanderAndrews1,Gas CT,CT-NatGas-Aero,170.9,76.905
+EvanderAndrews2,Gas CT,CT-NatGas-Aero,45.4,13.62
+EvanderAndrews3,Gas CT,CT-NatGas-Aero,45,13.5
+Fairhaven_Pwr,Biomass,LCGS_CA_biomass,19.9,5.97
+FarmPowerLynden,Biomass,Bio-ICE,0.75,0.15
+FarmPowerRexville,Biomass,Bio-ICE,0.75,0.15
+Faulkner_1,Geothermal,Geo-BinaryCycle,20,10
+Feather_River,Gas CT,CT-NatGas-Aero,46.3,20.835
+Fellow_QF,Coal,ST-Coal,17.25,5.175
+FerndaleCC-Total,Gas CC,CCWhole-NatGas-Industrial,253.47,101.388
+Finley_Bio1,Biomass,Bio-ICE,1.6,0.32
+Finley_Bio2,Biomass,Bio-ICE,1.6,0.32
+Finley_Bio3,Biomass,Bio-ICE,1.6,0.32
+Firebag_7,Gas CT,CT-NatGas-Industrial,96,43.2
+Fiscalini_1,Biomass,LCGS_CA_biomass,0.7,0.21
+FortNelson1,Gas CT,CT-NatGas-Industrial,52.2,23.49
+FortNelson2,Gas CT,CT-NatGas-Industrial,28,8.400001
+FortStVrainCC-Total,Gas CC,CCWhole-NatGas-Industrial,867.9,477.345
+FortStVrainGT5,Gas CT,CT-NatGas-Industrial,140.3,63.135
+FortStVrainGT6,Gas CT,CT-NatGas-Industrial,140.3,63.135
+Fort_Churchill1,Gas CT,ST-NatGas,115,9.2
+Fort_Churchill2,Gas CT,ST-NatGas,115,9.2
+Fort_Lupton_1,Gas CT,CT-NatGas-Industrial,39.2,11.76
+Fort_Lupton_2,Gas CT,CT-NatGas-Industrial,39.2,11.76
+FosterCreek1,Gas CT,CT-NatGas-Industrial,47,21.15
+FosterCreek2,Gas CT,CT-NatGas-Industrial,47,21.15
+FosterWhlrCC-Total,CHP-QF,CCWhole-NatGas-Aero,26.39,14.5145
+FountainValley1,Gas CT,CT-NatGas-Industrial,38,17.1
+FountainValley2,Gas CT,CT-NatGas-Industrial,38,17.1
+FountainValley3,Gas CT,CT-NatGas-Industrial,38,17.1
+FountainValley4,Gas CT,CT-NatGas-Industrial,38,17.1
+FountainValley5,Gas CT,CT-NatGas-Industrial,38,17.1
+FountainValley6,Gas CT,CT-NatGas-Industrial,38,17.1
+FourCorners1-Total,Coal,CrossCompoundWhole-Coal,170,68
+FourCorners2-Total,Coal,CrossCompoundWhole-Coal,170,68
+FourCorners3-Total,Coal,CrossCompoundWhole-Coal,220,88
+FourCorners4-Total,Coal,CrossCompoundWhole-Coal,770,308
+FourCorners5-Total,Coal,CrossCompoundWhole-Coal,770,308
+Frank_Knutson1,Gas CT,CT-NatGas-Aero,77.1,11.37541
+Frank_Knutson2,Gas CT,CT-NatGas-Aero,77.1,11.37541
+FranklinGrays1,Gas CT,CT-NatGas-Aero,11.4,3.42
+FranklinGrays2,Gas CT,CT-NatGas-Aero,11.4,3.42
+FranklinGrays3,Gas CT,CT-NatGas-Aero,11.4,3.42
+FranklinGrays4,Gas CT,CT-NatGas-Aero,11.4,3.42
+Frederickson1,Gas CT,CT-NatGas-Aero,88.9,26.67
+Frederickson2,Gas CT,CT-NatGas-Aero,88.9,26.67
+FredericksonCC-Total,Gas CC,CCWhole-NatGas-Industrial,269,131.5111
+Fredonia_1,Gas CT,CT-NatGas-Industrial,129.1,38.73
+Fredonia_2,Gas CT,CT-NatGas-Industrial,129.1,38.73
+Fredonia_3,Gas CT,CT-NatGas-Industrial,58.9,26.505
+Fredonia_4,Gas CT,CT-NatGas-Industrial,58.9,26.505
+FresnoCogenCC-Total,Gas CC,CCWhole-NatGas-Industrial,76.3,41.965
+FresnoPeakr_CT,Gas CT,CT-NatGas-Aero,22.69,10.2105
+Frito_Lay_Cogen,Gas CT,CT-NatGas-Aero,6.9,2.07
+FrontRangeCC-Total,Gas CC,CCWhole-NatGas-Industrial,541,243.9804
+Fruita_1,Gas CT,CT-NatGas-Industrial,26.6,7.98
+FtJames1,Biomass,LCGS_CA_biomass,37,22.2
+Ft_James_Cogen,Other,ST-WasteHeat,53,31.8
+GP_CHP1_1,Biomass,Bio-ST,27,8.1
+Gadsby_1,Gas CT,ST-NatGas,69,13.8
+Gadsby_2,Gas CT,ST-NatGas,73,14.6
+Gadsby_3,Gas CT,ST-NatGas,113.64,17.046
+Gadsby_4,Gas CT,CT-NatGas-Aero,60.4,27.18
+Gadsby_5,Gas CT,CT-NatGas-Aero,60.4,27.18
+Gadsby_6,Gas CT,CT-NatGas-Aero,60.4,27.18
+Galena2_1,Geothermal,Geo-BinaryCycle,13.5,6.75
+Galena3_1,Geothermal,Geo-BinaryCycle,15,7.5
+Galena3_2,Geothermal,Geo-BinaryCycle,15,7.5
+GatesPeaker_CT,Gas CT,CT-NatGas-Aero,46.35,20.8575
+GatewayCC-Total,Gas CC,CCWhole-NatGas-Industrial,579,265
+GaviotaOil1,Gas CT,CT-NatGas-Aero,3.5,1.05
+GaviotaOil2,Gas CT,CT-NatGas-Aero,3.5,1.05
+GaviotaOil3,Gas CT,CT-NatGas-Aero,3.5,1.05
+GaviotaOil4,Gas CT,CT-NatGas-Aero,3.5,1.05
+GaviotaOil5,Gas CT,CT-NatGas-Aero,3.5,1.05
+GenePump1,Other,MotorLoad,6.7,0
+GenePump2,Other,MotorLoad,6.7,0
+GenePump3,Other,MotorLoad,6.7,0
+GenePump4,Other,MotorLoad,6.7,0
+GenePump5,Other,MotorLoad,6.7,0
+GenePump6,Other,MotorLoad,6.7,0
+GenePump7,Other,MotorLoad,6.7,0
+GenePump8,Other,MotorLoad,6.7,0
+Genesee1-1,Coal,ST-Coal,422,168.8
+Genesee_2_2,Coal,ST-Coal,422,168.8
+Genesee_3_3,Coal,ST-Coal,526.9999,210.8
+GeoEastMesa2-1,Geothermal,LCGS_CA_geothermal,21.6,10.8
+GeoEastMesa3_1,Geothermal,LCGS_CA_geothermal,8,4
+GeoEastMesa3_2,Geothermal,LCGS_CA_geothermal,21.6,10.8
+GeorgeBirdsall1,Gas CT,ST-NatGas,17.3,5.19
+GeorgeBirdsall2,Gas CT,ST-NatGas,18.8,5.64
+GeorgeBirdsall3,Gas CT,ST-NatGas,23.5,7.05
+Geothermal1-1,Geothermal,LCGS_CA_geothermal,55,27.5
+Geothermal1-2,Geothermal,LCGS_CA_geothermal,55,27.5
+Geothermal_2_3,Geothermal,LCGS_CA_geothermal,55,27.5
+Geothermal_2_4,Geothermal,LCGS_CA_geothermal,55,27.5
+Geysers05,Geothermal,LCGS_CA_geothermal,55,27.5
+Geysers06,Geothermal,LCGS_CA_geothermal,55,27.5
+Geysers07,Geothermal,LCGS_CA_geothermal,55,27.5
+Geysers08,Geothermal,LCGS_CA_geothermal,55,27.5
+Gianera_1,Gas CT,CT-NatGas-Aero,24,10.8
+Gianera_2,Gas CT,CT-NatGas-Aero,24,10.8
+GilaRiverCC1-Total,Gas CC,CCWhole-NatGas-Industrial,619,302.1641
+GilaRiverCC2-Total,Gas CC,CCWhole-NatGas-Industrial,619,301.4901
+GilaRiverCC3-Total,Gas CC,CCWhole-NatGas-Industrial,619,301.0741
+GilaRiverCC4-Total,Gas CC,CCWhole-NatGas-Industrial,619,300.6492
+GilroyCC-Total,CHP-QF,CCWhole-NatGas-Industrial,130,65.45000001
+GilroyEnergyPeaking1,Gas CT,CT-NatGas-Aero,47.25,14.175
+GilroyEnergyPeaking2,Gas CT,CT-NatGas-Aero,47.25,14.175
+GilroyEnergyPeaking3,Gas CT,CT-NatGas-Aero,46.2,13.86
+Glenarm_GT1,Gas CT,CT-NatGas-Aero,30.58,9.174
+Glenarm_GT2,Gas CT,CT-NatGas-Aero,30.58,9.174
+Glenarm_GT3,Gas CT,CT-NatGas-Aero,47.3,14.19
+Glenarm_GT4,Gas CT,CT-NatGas-Aero,47.3,14.19
+Glendale_LF,Biomass,Bio-CT,2.9,0.87
+GoalLineCC-Total,CHP-QF,CCWhole-NatGas-Industrial,47.71,26.2405
+Gold_Creek1-1,Gas CT,CT-NatGas-Industrial,5,3
+GoldendaleCC-Total,Gas CC,CCWhole-NatGas-Industrial,280.3,135.093
+Goose_Haven,Gas CT,CT-NatGas-Aero,48,14.4
+GrandCouleePG07,Other,PS-Hydro,83.33,0
+GrandCouleePG08,Other,PS-Hydro,83.33,0
+GrandCouleePG09,Other,PS-Hydro,83.33,0
+GrandCouleePG10,Other,PS-Hydro,83.33,0
+GrandCouleePG11,Other,PS-Hydro,83.33,0
+GrandCouleePG12,Other,PS-Hydro,83.33,0
+GrapelandPeaker,Gas CT,CT-NatGas-Aero,42.53,19.1385
+GraysHarborCC-Total,Gas CC,CCWhole-NatGas-Industrial,650,324.5
+GraysonCC-Total,Gas CC,CCWhole-NatGas-Industrial,105,19.5
+Grayson_3,Gas CT,ST-NatGas,20,6
+Grayson_4,Gas CT,ST-NatGas,44,13.2
+Grayson_5,Gas CT,ST-NatGas,44,11.44
+Grayson_9,Gas CT,CT-NatGas-Aero,70,21
+Greenleaf2,CHP-QF,CT-NatGas-Aero,63.75,35.0625
+GreenleafCC-Total,CHP-QF,CCWhole-NatGas-Aero,24.75,13.6125
+GriffithCC-Total,Gas CC,CCWhole-NatGas-Industrial,654.4,329.9267
+GrossmontHospital,Gas CT,CT-NatGas-Aero,1.54,0.6
+Guadalupe1,Biomass,LCGS_CA_biomass,0.71,0.142
+Guadalupe2,Biomass,LCGS_CA_biomass,0.71,0.142
+Guadalupe3,Biomass,LCGS_CA_biomass,0.71,0.142
+Guadalupe4,Biomass,LCGS_CA_biomass,1.57,0.314
+H._Gonzales_G1,Gas CT,CT-NatGas-Aero,5.75,2
+H._Gonzales_G2,Gas CT,CT-NatGas-Aero,5.75,2
+HR_Milner,Coal,ST-Coal,151,60.4
+HWilsonSundtGT1,Gas CT,CT-NatGas-Aero,27,8.1
+HWilsonSundtGT2,Gas CT,CT-NatGas-Aero,27,8.1
+HWilsonSundtST1,Gas CT,ST-NatGas,108.8,32.64
+HWilsonSundtST2,Gas CT,ST-NatGas,108.8,28.288
+HWilsonSundtST3,Gas CT,ST-NatGas,113.6,9.088
+HWilsonSundtST4,Coal,ST-Coal,173.3,69.32
+HanfordEnergy1,Gas CT,CT-NatGas-Aero,48,21.6
+HanfordEnergy2,Gas CT,CT-NatGas-Aero,48,21.6
+HarborCC-Total,Gas CC,CCWhole-NatGas-Industrial,228,82.08
+HarborCgnCC-Total,Gas CC,CCWhole-NatGas-Industrial,100,55
+Harbor_GT10,Gas CT,CT-NatGas-Aero,47.5,21.375
+Harbor_GT11,Gas CT,CT-NatGas-Aero,47.5,21.375
+Harbor_GT12,Gas CT,CT-NatGas-Aero,47.5,21.375
+Harbor_GT13,Gas CT,CT-NatGas-Aero,47.5,21.375
+Harbor_GT14,Gas CT,CT-NatGas-Aero,47.5,21.375
+Hardin,Coal,ST-Coal,135,54
+HarquahalaCC1-Total,Gas CC,CCWhole-NatGas-Industrial,441.7,242.935
+HarquahalaCC2-Total,Gas CC,CCWhole-NatGas-Industrial,441.7,242.935
+HarquahalaCC3-Total,Gas CC,CCWhole-NatGas-Industrial,441.7,242.935
+Harry_Allen_GT1,Gas CT,CT-NatGas-Aero,101.5,24.36
+Harry_Allen_GT4,Gas CT,CT-NatGas-Aero,85,20.4
+Hartland_LF_1,Biomass,Bio-ST,1.8,0.81
+Hartzog_1,Gas CT,CT-NatGas-Aero,7.2,2.88
+Hartzog_2,Gas CT,CT-NatGas-Aero,7.2,2.88
+Hartzog_3,Gas CT,CT-NatGas-Aero,7.2,2.88
+Hayden_1,Coal,ST-Coal,190,76
+Hayden_2,Coal,ST-Coal,275.4,110.16
+HaynesCC-Total,Gas CC,CCWhole-NatGas-Industrial,585,163.8
+Haynes_1,Gas CT,ST-NatGas,230,18.4
+Haynes_2,Gas CT,ST-NatGas,222,17.76
+Haynes_5,Gas CT,ST-NatGas,343,102.9
+Haynes_6,Gas CT,ST-NatGas,343,102.9
+HeberGeo1,Geothermal,LCGS_CA_geothermal,52,26
+HeberGeo2,Geothermal,LCGS_CA_geothermal,51,25.5
+HeberGeo3,Geothermal,LCGS_CA_geothermal,13.3,6.65
+HelmsPS1,Storage,PSH,407,0
+HelmsPS2,Storage,PSH,407,0
+HelmsPS3,Storage,PSH,404,0
+Henrietta1,Gas CT,CT-NatGas-Aero,49,22.05
+Henrietta2,Gas CT,CT-NatGas-Aero,49,22.05
+HermistnCC-Total,Gas CC,CCWhole-NatGas-Industrial,689.4,310.23
+HermistnGenCC1-Total,Gas CC,CCWhole-NatGas-Industrial,310.6,139.77
+HermistnGenCC2-Total,Gas CC,CCWhole-NatGas-Industrial,310.6,139.77
+HiddenHollow1,Biomass,Bio-ICE,1.6,0.32
+HiddenHollow2,Biomass,Bio-ICE,1.6,0.32
+HigginsCC-Total,Gas CC,CCWhole-NatGas-Industrial,688.4,378.62
+HighDesertCC-Total,Gas CC,CCWhole-NatGas-Industrial,746,475
+HighSierra1,CHP-QF,CT-NatGas-Aero,44.24,24.332
+HighSierra2,Gas CT,CT-NatGas-Aero,30.15,29.8485
+HooleyDigester1,Biomass,Bio-ICE,0.2,0.04
+HooleyDigester2,Biomass,Bio-ICE,0.2,0.04
+HorizonCC-Total,Gas CC,CCWhole-NatGas-Aero,103,25.75
+Horse_Mesa_HM4,Storage,PSH,111,0
+HumboldtBayIC01,ICE Gas,ICE-NatGas,16.27,4.0675
+HumboldtBayIC02,ICE Gas,ICE-NatGas,16.27,4.0675
+HumboldtBayIC03,ICE Gas,ICE-NatGas,16.27,4.0675
+HumboldtBayIC04,ICE Gas,ICE-NatGas,16.27,4.0675
+HumboldtBayIC05,ICE Gas,ICE-NatGas,16.27,4.0675
+HumboldtBayIC06,ICE Gas,ICE-NatGas,16.27,4.0675
+HumboldtBayIC07,ICE Gas,ICE-NatGas,16.27,4.0675
+HumboldtBayIC08,ICE Gas,ICE-NatGas,16.27,4.0675
+HumboldtBayIC09,ICE Gas,ICE-NatGas,16.27,4.0675
+HumboldtBayIC10,ICE Gas,ICE-NatGas,16.27,4.0675
+Hunter_1,Coal,ST-Coal,488.3,195.32
+Hunter_2,Coal,ST-Coal,488.3,195.32
+Hunter_3,Coal,ST-Coal,495.6,198.24
+HuntingtonBeach1,Gas CT,ST-NatGas,226,18.08
+HuntingtonBeach2,Gas CT,ST-NatGas,226,18.08
+Huntington_1,Coal,ST-Coal,498,199.2
+Huntington_2,Coal,ST-Coal,498,199.2
+HurricaneCityPwr1,Other,ICE-OilDistillate,1.7,0.51
+HurricaneCityPwr2,Other,ICE-OilDistillate,1.7,0.51
+HurricaneCityPwr3,Other,ICE-OilDistillate,1.7,0.51
+HurricaneCityPwr4,Gas CT,CT-NatGas-Aero,2,0.6
+HurricaneCityPwr5,Gas CT,CT-NatGas-Aero,2,0.6
+HurricaneCityPwr6,Gas CT,CT-NatGas-Aero,2,0.6
+HurricaneCityPwr7,Gas CT,CT-NatGas-Aero,2,0.6
+HurricaneCityPwr8,Gas CT,CT-NatGas-Aero,2,0.6
+HurricaneCityPwr9,Gas CT,CT-NatGas-Aero,2,0.6
+IBM_COTTLE_1,Gas CT,CT-NatGas-Aero,50,15
+IP_Springfield4,Biomass,Bio-ST,40,12
+Indigo1,Gas CT,CT-NatGas-Aero,42,18.9
+Indigo2,Gas CT,CT-NatGas-Aero,42,18.9
+Indigo3,Gas CT,CT-NatGas-Aero,42,18.9
+InlandEmpireEC1,Gas CC,CCWhole-NatGas-SingleShaft,405,222.75
+InlandEmpireEC2,Gas CC,CCWhole-NatGas-SingleShaft,405,222.75
+IntakePump1,Other,MotorLoad,6.7,0
+IntakePump2,Other,MotorLoad,6.7,0
+IntakePump3,Other,MotorLoad,6.7,0
+IntakePump4,Other,MotorLoad,6.7,0
+IntakePump5,Other,MotorLoad,6.7,0
+IntakePump6,Other,MotorLoad,6.7,0
+IntakePump7,Other,MotorLoad,6.7,0
+IntakePump8,Other,MotorLoad,6.7,0
+Intermountain1,Coal,ST-Coal,820,328
+Intermountain2,Coal,ST-Coal,820,328
+IronMountainPump1,Other,MotorLoad,3.2,0
+IronMountainPump2,Other,MotorLoad,3.2,0
+IronMountainPump3,Other,MotorLoad,3.2,0
+IronMountainPump4,Other,MotorLoad,3.2,0
+IronMountainPump5,Other,MotorLoad,3.2,0
+IronMountainPump6,Other,MotorLoad,3.2,0
+IronMountainPump7,Other,MotorLoad,3.2,0
+IronMountainPump8,Other,MotorLoad,3.2,0
+IronMountainPump9,Other,MotorLoad,3.2,0
+IslandCogenCC-Total,Gas CC,CCWhole-NatGas-Industrial,290,159.5
+JHindPump1,Other,MotorLoad,9.3,0
+JHindPump2,Other,MotorLoad,9.3,0
+JHindPump3,Other,MotorLoad,9.3,0
+JHindPump4,Other,MotorLoad,9.3,0
+JHindPump5,Other,MotorLoad,9.3,0
+JHindPump6,Other,MotorLoad,9.3,0
+JHindPump7,Other,MotorLoad,9.3,0
+JHindPump8,Other,MotorLoad,9.3,0
+JHindPump9,Other,MotorLoad,9.3,0
+JMShaferCC1-Total,Gas CC,CCWhole-NatGas-Industrial,164,90.2
+JMShaferCC2-Total,Gas CC,CCWhole-NatGas-Industrial,222.5,122.375
+JSEastwoodPS,Storage,PSH,199,0
+J_E_Corette,Coal,ST-Coal,172.8,69.12
+JacksonValley,Coal,ST-Coal,20.7,20.493
+JeffrsnSmrftCC-Total,Gas CC,CCWhole-NatGas-Industrial,25.8,25.542
+Jim_Bridger_1,Coal,ST-Coal,577.9,231.16
+Jim_Bridger_2,Coal,ST-Coal,577.9,231.16
+Jim_Bridger_3,Coal,ST-Coal,577.9,231.16
+Jim_Bridger_4,Coal,ST-Coal,584,233.6
+KUCC-1,Coal,ST-Coal,50,20
+KUCC-2,Coal,ST-Coal,25,10
+KUCC-3,Coal,ST-Coal,25,10
+KUCC-4,Coal,ST-Coal,75,41.25
+Keephills1,Coal,ST-Coal,411,164.4
+Keephills2,Coal,ST-Coal,411,164.4
+Keller_Canyon1,Biomass,LCGS_CA_biomass,1.9,0.38
+Keller_Canyon2,Biomass,LCGS_CA_biomass,1.9,0.38
+KernRiverCgn1,CHP-QF,CT-NatGas-Industrial,77.25,42.4875
+KernRiverCgn2,CHP-QF,CT-NatGas-Industrial,77.25,42.4875
+KernRiverCgn3,CHP-QF,CT-NatGas-Industrial,77.25,42.4875
+KernRiverCgn4,CHP-QF,CT-NatGas-Industrial,77.25,42.4875
+Kern_Front_KF1,CHP-QF,CT-NatGas-Aero,39.46,21.703
+Kern_Front_KF2,Gas CT,CT-NatGas-Aero,30,29.7
+KettleFalls1,Biomass,Bio-ST,50.7,45
+KettleFalls2,Gas CT,CT-NatGas-Aero,7.2,2.16
+Kiefer2_1,Biomass,LCGS_CA_biomass,3,0.9
+Kiefer2_2,Biomass,LCGS_CA_biomass,3,0.9
+KieferLandfillA,Biomass,LCGS_CA_biomass,3,0.6
+KieferLandfillB,Biomass,LCGS_CA_biomass,3,0.6
+KieferLandfillC,Biomass,LCGS_CA_biomass,3,0.6
+KingCityCC-Total,CHP-QF,CCWhole-NatGas-Industrial,97.85,53.8175
+KingCityPeaking,Gas CT,CT-NatGas-Aero,44.6,20.07
+KingsRiverGT1,Gas CT,CT-NatGas-Aero,48,21.6
+KingsRiverGT2,Gas CT,CT-NatGas-Aero,48,21.6
+KingsburgCgnCC-Total,CHP-QF,CCWhole-NatGas-Industrial,25.44,13.992
+KlamathCC-Total,Gas CC,CCWhole-NatGas-Industrial,583.9,262.755
+KlamathCogenCC-Total,Gas CC,CCWhole-NatGas-Industrial,501.5,225.675
+KlamathExpGT1,Gas CT,CT-NatGas-Aero,29.4,13.23
+KlamathExpGT2,Gas CT,CT-NatGas-Aero,29.4,13.23
+KlamathExpGT3,Gas CT,CT-NatGas-Aero,29.4,13.23
+KlamathExpGT4,Gas CT,CT-NatGas-Aero,29.4,13.23
+KyoceraInternational,ICE Gas,ICE-NatGas,3.25,0.18544
+Kyrene1,Gas CT,ST-NatGas,34.5,10.005
+Kyrene2,Gas CT,ST-NatGas,73.5,12.2745
+Kyrene4,Gas CT,CT-NatGas-Industrial,53.125,3.6125
+Kyrene5,Gas CT,CT-NatGas-Industrial,60.3,6.8139
+Kyrene6,Gas CT,CT-NatGas-Industrial,60.3,6.8139
+Kyrene7CC-Total,Gas CC,CCWhole-NatGas-Industrial,292.06,160.633
+LANL_TA_3_1,Gas CT,ST-NatGas,5,2.25
+LANL_TA_3_2,Gas CT,ST-NatGas,5,2.25
+LANL_TA_3_3,Gas CT,ST-NatGas,16.47,7.4115
+LANL_TA_3_GT1,Gas CT,CT-NatGas-Aero,33.5,15.075
+LA_Wilmington2,CHP-QF,ST-NatGas,58.5,32.175
+LONGLAKEG1-2,Gas CT,CT-NatGas-Industrial,80,48
+LONGLAKEG2_1,Gas CT,CT-NatGas-Industrial,80,48
+LONGLAKEGT3_1,Gas CT,CT-NatGas-Industrial,11.5,6.9
+LONGLAKEGT4_1,Gas CT,CT-NatGas-Industrial,11.5,6.9
+LOTTWWTP,Biomass,Bio-ICE,0.335,0.067
+LaPaloma1,Gas CC,CCWhole-NatGas-SingleShaft,260,76.5
+LaPaloma2,Gas CC,CCWhole-NatGas-SingleShaft,260,76.5
+LaPaloma3,Gas CC,CCWhole-NatGas-SingleShaft,256,76.5
+LaPaloma4,Gas CC,CCWhole-NatGas-SingleShaft,260,76.5
+LaRosita1CC-Total,Gas CC,CCWhole-NatGas-Industrial,750,412.5
+LaRosita2CC-Total,Gas CC,CCWhole-NatGas-Industrial,322,193.6
+LagunaBelle_Agg,Biomass,LCGS_CA_biomass,17.41,5.223
+LakeSideCC-Total,Gas CC,CCWhole-NatGas-Industrial,591.3,322.5273
+Lake_L1,Gas CT,CT-NatGas-Aero,47,14.1
+Lamar_Plant_4,Coal,ST-Coal,25,10
+Lamar_Plant_6,Coal,ST-Coal,18.5,7.4
+Lambie_EC,Gas CT,CT-NatGas-Aero,48,14.4
+Lange,Gas CT,CT-NatGas-Aero,40,18
+LaramieRiver2,Coal,ST-Coal,605,242
+LaramieRiver3,Coal,ST-Coal,605,242
+Larkspur1,Gas CT,CT-NatGas-Industrial,46,20.7
+Larkspur2,Gas CT,CT-NatGas-Industrial,46,20.7
+LasVegasCg1CC-Total,Gas CC,CCWhole-NatGas-Aero,61.3,24.52
+LasVegasCg2CC1-Total,Gas CC,CCWhole-NatGas-Aero,148.8,81.84
+LasVegasCg2CC2-Total,Gas CC,CCWhole-NatGas-Aero,148.8,81.84
+Lassen1,CHP-QF,CT-NatGas-Industrial,21.86,12.023
+Lassen_QF,Coal,ST-Coal,40.65,40.2435
+Limon1,Gas CT,CT-NatGas-Industrial,67.2,16.128
+Limon2,Gas CT,CT-NatGas-Industrial,67.2,16.128
+Lincoln4,Biomass,LCGS_CA_biomass,18.3,5.49
+LincolnLF1,Biomass,LCGS_CA_biomass,0.8,0.16
+LincolnLF2,Biomass,LCGS_CA_biomass,0.8,0.16
+LincolnLF3,Biomass,LCGS_CA_biomass,0.8,0.16
+LincolnLF4,Biomass,LCGS_CA_biomass,0.8,0.16
+LincolnLF5,Biomass,LCGS_CA_biomass,0.8,0.16
+LincolnLF6,Biomass,LCGS_CA_biomass,0.8,0.16
+LindeWilmingtn1,CHP-QF,CT-NatGas-Aero,25,13.75
+Lithehipe_Agg,Gas CT,CT-NatGas-Aero,5,1.5
+LiveOakCogen,CHP-QF,CT-NatGas-Aero,47.73,26.2515
+LodiSTIG,Gas CT,CT-NatGas-Aero,49.5,22.275
+Lodi_1,Gas CT,CT-NatGas-Aero,22.7,10.215
+LoganCity1,Gas CT,CT-NatGas-Aero,5.3,1.59
+LoganCity2,Gas CT,CT-NatGas-Aero,5.3,1.59
+LoganCity3,Gas CT,CT-NatGas-Aero,5.3,1.59
+LomaLindaCC-Total,Gas CC,CCWhole-NatGas-Aero,11.6,3.48
+LongBeach_GT1,Gas CT,CT-NatGas-Aero,70,42
+LongBeach_GT2,Gas CT,CT-NatGas-Aero,70,42
+LongBeach_GT3,Gas CT,CT-NatGas-Aero,70,42
+LongBeach_GT4,Gas CT,CT-NatGas-Aero,70,42
+LongviewFibre4,Biomass,Bio-ST,10,4.5
+LongviewFibre6,Biomass,Bio-ICE,20,9
+LongviewFibre7,Biomass,Bio-ICE,25,11.25
+Lordsburg1,Gas CT,CT-NatGas-Aero,54,24.3
+Lordsburg2,Gas CT,CT-NatGas-Aero,54,24.3
+LosEsteros_GT1,Gas CT,CT-NatGas-Aero,50,25
+LosEsteros_GT2,Gas CT,CT-NatGas-Aero,50,25
+LosEsteros_GT3,Gas CT,CT-NatGas-Aero,50,25
+LosEsteros_GT4,Gas CT,CT-NatGas-Aero,50,25
+LosMedanosCC-Total,Gas CC,CCWhole-NatGas-Industrial,561,161.26
+LostHillsCogen4,Gas CT,CT-NatGas-Aero,3.5,1.05
+LostHillsCogen5,Gas CT,CT-NatGas-Aero,3.5,1.05
+LostHillsCogen6,Gas CT,CT-NatGas-Aero,3.5,1.05
+Lowe1_1,Gas CT,CT-NatGas-Industrial,93,27.9
+Loyalton_1,Biomass,LCGS_CA_biomass,42,40
+LunaCC-Total,Gas CC,CCWhole-NatGas-Industrial,700.08,351.5619
+MACKAY1_1,Gas CT,CT-NatGas-Industrial,165,39.6
+MAHKESESG1_1,Gas CT,CT-NatGas-Industrial,90,21.6
+MAHKESESG2_2,Gas CT,CT-NatGas-Industrial,90,21.6
+MMC-Escondido,Gas CT,CT-NatGas-Industrial,44.02,19.809
+MM_LopezEnergy1,Biomass,LCGS_CA_biomass,3,0.9
+MM_LopezEnergy2,Biomass,LCGS_CA_biomass,3,0.9
+MM_SDNorthCity1,Biomass,LCGS_CA_biomass,0.95,0.285
+MM_SDNorthCity2,Biomass,LCGS_CA_biomass,0.95,0.19
+MM_SDNorthCity3,Biomass,LCGS_CA_biomass,0.95,0.19
+MM_SDNorthCity4,Biomass,LCGS_CA_biomass,0.95,0.19
+MM_SD_Miramar1,Biomass,LCGS_CA_biomass,1.6,0.48
+MM_SD_Miramar2,Biomass,LCGS_CA_biomass,1.6,0.48
+MM_SD_Miramar3,Biomass,LCGS_CA_biomass,1.6,0.48
+MM_SD_Miramar4,Biomass,LCGS_CA_biomass,1.6,0.48
+MM_WestCovina2,Biomass,LCGS_CA_biomass,6.5,1.95
+MM_WestCovina3,Biomass,LCGS_CA_biomass,4.9,1.47
+MagnoliaCC-Total,Gas CC,CCWhole-NatGas-Industrial,328,187
+MalburgCC-Total,Gas CC,CCWhole-NatGas-Industrial,134,59.5
+MamthPacfc1-2,Geothermal,LCGS_CA_geothermal,5,2.5
+MamthPacfc1_1,Geothermal,LCGS_CA_geothermal,5,2.5
+MamthPacfc2_1,Geothermal,LCGS_CA_geothermal,5,2.5
+MamthPacfc2_2,Geothermal,LCGS_CA_geothermal,5,2.5
+MamthPacfc2_3,Geothermal,LCGS_CA_geothermal,5,2.5
+MamthPacfc2_T1,Geothermal,LCGS_CA_geothermal,5,2.5
+MamthPacfc2_T2,Geothermal,LCGS_CA_geothermal,5,2.5
+MamthPacfc2_T3,Geothermal,LCGS_CA_geothermal,5,2.5
+Manchief1,Gas CT,CT-NatGas-Industrial,150,36
+Manchief2,Gas CT,CT-NatGas-Industrial,150,36
+Mandalay_1,Gas CT,ST-NatGas,215,17.2
+Mandalay_2,Gas CT,ST-NatGas,215,17.2
+Mandalay_3,Gas CT,CT-NatGas-Industrial,130,39
+MarchPointCC-Total,Gas CC,CCWhole-NatGas-Aero,167.04,66.816
+MarinaLandfillU1,Biomass,LCGS_CA_biomass,1.6,0.32
+MarinaLandfillU2,Biomass,LCGS_CA_biomass,1,0.2
+MarinaLandfillU3,Biomass,LCGS_CA_biomass,1,0.2
+MarinaLandfillU4,Biomass,LCGS_CA_biomass,1.4,0.28
+Marion_Inc,Biomass,Bio-ST,13.1,3.93
+Martin_Drake_5,Coal,ST-Coal,50,20
+Martin_Drake_6,Coal,ST-Coal,90,36
+Martin_Drake_7,Coal,ST-Coal,150,60
+MartinezCC-Total,Gas CC,CCWhole-NatGas-Aero,100,99
+MartinezRegen,Steam,ST-Other,4.6,2.07
+Maxim_Burdett,Gas CT,CT-NatGas-Industrial,8,3.6
+Maxim_Coaldale,Gas CT,CT-NatGas-Industrial,7,3.15
+Maxim_FtMcLeod,Gas CT,CT-NatGas-Industrial,4.1,1.845
+Maxim_Taber,Gas CT,CT-NatGas-Industrial,6,2.7
+McClellan_1,Gas CT,CT-NatGas-Aero,74,17.76
+McClure_1,Gas CT,CT-OilDistillate,62,18.6
+McClure_2,Gas CT,CT-OilDistillate,62,18.6
+McKittrick_Ltd,CHP-QF,CT-NatGas-Industrial,47.1,25.905
+McMahon_1,Gas CT,CT-NatGas-Industrial,55,24.75
+McMahon_2,Gas CT,CT-NatGas-Industrial,55,24.75
+MedicineHat10,Gas CT,CT-NatGas-Industrial,28.2,12.69
+MedicineHat11,Gas CT,CT-NatGas-Industrial,27.9,12.555
+MedicineHat12,Gas CT,ST-NatGas,39.8,10.348
+MedicineHat13,Gas CT,CT-NatGas-Industrial,41,10.66
+MedicineHat15,Gas CT,CT-NatGas-Industrial,64,19.2
+Mendota,Biomass,LCGS_CA_biomass,33,9.900001
+MenloPark1,Biomass,LCGS_CA_biomass,0.65,0.13
+MenloPark2,Biomass,LCGS_CA_biomass,0.65,0.13
+MenloPark3,Biomass,LCGS_CA_biomass,0.65,0.13
+MenloPark4,Biomass,LCGS_CA_biomass,0.65,0.13
+Mesa_South_Agg,Biomass,LCGS_CA_biomass,2.9,0.87
+MesquiteCC1-Total,Gas CC,CCWhole-NatGas-Industrial,625,341.4566
+MesquiteCC2-Total,Gas CC,CCWhole-NatGas-Industrial,625,341.4566
+MetcalfEnrgyCC-Total,Gas CC,CCWhole-NatGas-Industrial,593,173.9
+Mexicali1,Other,CT-OilDistillate,25.55,7.665
+Mexicali2,Other,CT-OilDistillate,17.73,5.319
+Mexicali3,Other,CT-OilDistillate,17.68,5.304
+MidValley1,Biomass,LCGS_CA_biomass,1.3,0.39
+MidValley2,Biomass,LCGS_CA_biomass,1.3,0.39
+Mid_Set_Cogen,CHP-QF,CT-NatGas-Industrial,36.26,19.943
+MidwaySunsetA,CHP-QF,CT-NatGas-Industrial,50.33,27.6815
+MidwaySunsetB,CHP-QF,CT-NatGas-Industrial,50.33,27.6815
+MidwaySunsetC,CHP-QF,CT-NatGas-Industrial,50.33,27.6815
+Midway_QF,Biomass,LCGS_CA_biomass,0.05,0.015
+MilagroCogenA,Gas CT,CT-NatGas-Aero,30.4,12.16
+MilagroCogenB,Gas CT,CT-NatGas-Aero,30.4,12.16
+MillcreekPwrGen1,Gas CT,CT-NatGas-Aero,40,12
+MillcreekPwrGen2,Gas CT,CT-NatGas-Aero,40,12
+MillenniumCC-Total,Gas CC,CCWhole-NatGas-Industrial,310,137.3216
+Milliken1,Biomass,LCGS_CA_biomass,1.25,0.25
+Milliken2,Biomass,LCGS_CA_biomass,1.25,0.25
+Minnehik_1A_1,Gas CT,CT-NatGas-Industrial,3,1.35
+Minnehik_1B_1,Gas CT,CT-NatGas-Industrial,2,0.9
+Minnehik_2_1,Gas CT,CT-NatGas-Industrial,0.8,0.36
+MintFarmCC-Total,Gas CC,CCWhole-NatGas-Industrial,319,157.7184
+MiraLomaPeaker,Gas CT,CT-NatGas-Aero,43.18,25.908
+MiramarEnergy1,Gas CT,CT-NatGas-Industrial,46.6,20.97
+MiramarEnergy2,Gas CT,CT-NatGas-Industrial,47.9,21.555
+MojaveCC-Total,CHP-QF,CCWhole-NatGas-Aero,51.44,28.292
+MoorePark_Agg,Gas CT,CT-NatGas-Aero,30.02,9.006
+Mormon_Flat_MF2,Storage,PSH,54.05,0
+MorroBay3,Gas CT,ST-NatGas,300,24
+MorroBay4,Gas CT,ST-NatGas,300,24
+MorrowPwrGT,Gas CT,CT-NatGas-Aero,31,13.95
+MossLanding6,Gas CT,ST-NatGas,702,56.16
+MossLanding7,Gas CT,ST-NatGas,702,56.16
+MossLandingCC1-Total,Gas CC,CCWhole-NatGas-Industrial,698.9999,402.6994
+MossLandingCC2-Total,Gas CC,CCWhole-NatGas-Industrial,698.9999,402.6994
+Mount_Elbert_1,Storage,PSH,100,0
+Mount_Elbert_2,Storage,PSH,100,0
+MtLassenPwr,Biomass,LCGS_CA_biomass,13.1,1.31
+MtPosoCogen,CHP-QF,ST-Coal,48.07,26.4385
+MtnviewCC3-Total,Gas CC,CCWhole-NatGas-Industrial,485,169.9
+MtnviewCC4-Total,Gas CC,CCWhole-NatGas-Industrial,485,169.9
+MurrayTurbine1,Gas CT,CT-NatGas-Aero,13.5,6.075
+MurrayTurbine2,Gas CT,CT-NatGas-Aero,13.5,6.075
+MurrayTurbine3,Gas CT,CT-NatGas-Aero,13.5,6.075
+MuskegG1_1,Gas CT,CT-NatGas-Industrial,85,51
+MuskegG2_2,Gas CT,CT-NatGas-Industrial,85,51
+NGP_BlueMtn1,Geothermal,Geo-BinaryCycle,21.3,10.65
+NGP_BlueMtn2,Geothermal,Geo-BinaryCycle,21.3,10.65
+NGP_BlueMtn3,Geothermal,Geo-BinaryCycle,21.3,10.65
+NRG-EC-SanDiego,Gas CT,CT-NatGas-Aero,1.6,0.6
+NTC-MCRD-CC-Total,Gas CC,CCWhole-NatGas-Industrial,24.88,24.6312
+NW_Energy_1,Biomass,Bio-ST,67.69,30.4605
+Naughton1,Coal,ST-Coal,163.2,65.28
+Naughton2,Coal,ST-Coal,217.6,87.04
+Naughton3Coal,Coal,ST-Coal,350,140
+Navajo_NAV1,Coal,ST-Coal,803.16,321.264
+Navajo_NAV2,Coal,ST-Coal,803.16,321.264
+Navajo_NAV3,Coal,ST-Coal,803.16,321.264
+NeboPwrStaCC-Total,Gas CC,CCWhole-NatGas-Aero,140,77
+NeilSimpson_GT1,Gas CT,CT-NatGas-Aero,42,18.9
+NeilSimpson_GT2,Gas CT,CT-NatGas-Aero,40,18
+NeilSimpson_ST1,Coal,ST-Coal,21.76,8.704
+NeilSimpson_ST2,Coal,ST-Coal,105.6,42.24
+NevadaCogenCC1-Total,Gas CC,CCWhole-NatGas-Industrial,96.3,38.52
+NevadaCogenCC2-Total,Gas CC,CCWhole-NatGas-Industrial,96.3,38.52
+Newby1-2,Biomass,LCGS_CA_biomass,0.45,0.09
+Newby1-3,Biomass,LCGS_CA_biomass,0.45,0.09
+Newby1-4,Biomass,LCGS_CA_biomass,0.45,0.09
+Newby1_1,Biomass,LCGS_CA_biomass,0.45,0.09
+Newby2_1,Biomass,LCGS_CA_biomass,1,0.2
+Newby2_2,Biomass,LCGS_CA_biomass,1,0.2
+Newby2_3,Biomass,LCGS_CA_biomass,1,0.2
+Newman4CC-Total,Gas CC,CCWhole-NatGas-Industrial,290,159.5
+Newman5CC-Total,Gas CC,CCWhole-NatGas-Industrial,312,154.44
+Newman_1,Gas CT,ST-NatGas,81.6,21.216
+Newman_2,Gas CT,ST-NatGas,81.6,21.216
+Newman_3,Gas CT,ST-NatGas,121.8,9.744
+Niland01,Gas CT,CT-NatGas-Aero,45,27
+Niland02,Gas CT,CT-NatGas-Aero,45,27
+NorthIslandCC-Total,Gas CC,CCWhole-NatGas-Industrial,38.55,38.1645
+NorthValmy1,Coal,ST-Coal,277.2,110.88
+NorthValmy2,Coal,ST-Coal,289.8,115.92
+North_Loop_1,Gas CT,CT-NatGas-Aero,27,8.1
+North_Loop_2,Gas CT,CT-NatGas-Aero,27,8.1
+North_Loop_3,Gas CT,CT-NatGas-Aero,27,8.1
+North_Loop_4,Gas CT,CT-NatGas-Aero,26.8,8.04
+Northeast_1,Gas CT,CT-NatGas-Aero,30.9,9.27
+Northeast_2,Gas CT,CT-NatGas-Aero,30.9,9.27
+NovaJoffreCC-Total,Gas CC,CCWhole-NatGas-Industrial,504,277.2
+Nucla_1,Coal,ST-Coal,11.5,4.6
+Nucla_2,Coal,ST-Coal,11.5,4.6
+Nucla_3,Coal,ST-Coal,11.5,4.6
+Nucla_ST4,Coal,ST-Coal,79.38,31.752
+OLSCamarilloCC-Total,Gas CC,CCWhole-NatGas-Industrial,31.1,30.789
+OLSChinoCC-Total,CHP-QF,CCWhole-NatGas-Industrial,25.81,14.1955
+ONeill_1,Storage,PS-Hydro,4.2,0
+ONeill_2,Storage,PS-Hydro,4.2,0
+ONeill_3,Storage,PS-Hydro,4.2,0
+ONeill_4,Storage,PS-Hydro,4.2,0
+ONeill_5,Storage,PS-Hydro,4.2,0
+ONeill_6,Storage,PS-Hydro,4.2,0
+Oakland_Pwr1,Gas CT,CT-OilDistillate,74.5,22.35
+Oakland_Pwr2,Gas CT,CT-OilDistillate,74.5,22.35
+Oakland_Pwr3,Gas CT,CT-OilDistillate,74.5,22.35
+Ocotillo_1,Gas CT,ST-NatGas,113.636,9.09088
+Ocotillo_2,Gas CT,ST-NatGas,113.636,9.09088
+Ocotillo_GT1,Gas CT,CT-NatGas-Industrial,53.125,15.9375
+Ocotillo_GT2,Gas CT,CT-NatGas-Industrial,53.125,15.9375
+OgdenPwrPacific,Biomass,LCGS_CA_biomass,23.8,7.14
+Oildale_Energy,Gas CT,CT-NatGas-Aero,47.1,46.629
+Olinda_LF1,Biomass,LCGS_CA_biomass,1.88,0.564
+Olinda_LF2,Biomass,LCGS_CA_biomass,1.88,0.376
+Olinda_LF3,Biomass,LCGS_CA_biomass,1.88,0.376
+Olive_O1,Gas CT,ST-NatGas,44,13.2
+Olive_O2,Gas CT,ST-NatGas,55,14.3
+OrangeGrove1,Gas CT,CT-NatGas-Industrial,48.5,21.825
+OrangeGrove2,Gas CT,CT-NatGas-Industrial,48.5,21.825
+Ormesa2_21,Geothermal,LCGS_CA_geothermal,12,6
+Ormesa2_22,Geothermal,LCGS_CA_geothermal,12,6
+Ormesa_IH_OE11,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_IH_OE12,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_IH_OE13,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_IH_OE14,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_IH_OE15,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_IH_OE16,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_IH_OE21,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_IH_OE22,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_IH_OE23,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_IH_OE24,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_IH_OE25,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_IH_OE26,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_I_ITLU1,Geothermal,LCGS_CA_geothermal,12,6
+Ormesa_I_ITLU2,Geothermal,LCGS_CA_geothermal,12,6
+Ormesa_I_OE11,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_I_OE12,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_I_OE14,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_I_OE15,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_I_OE21,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_I_OE22,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_I_OE24,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_I_OE25,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_I_OE31,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormesa_I_OE32,Geothermal,LCGS_CA_geothermal,1.2,0.6
+Ormond_Beach_1,Gas CT,ST-NatGas,750,60
+Ormond_Beach_2,Gas CT,ST-NatGas,750,60
+OrovilleCogen1,ICE Gas,ICE-NatGas,1.4,0.42
+OrovilleCogen2,ICE Gas,ICE-NatGas,1.4,0.35
+OrovilleCogen3,ICE Gas,ICE-NatGas,1.4,0.35
+OrovilleCogen4,ICE Gas,ICE-NatGas,1.4,0.35
+OrovilleCogen5,ICE Gas,ICE-NatGas,1.4,0.35
+OrovilleCogen6,ICE Gas,ICE-NatGas,1.4,0.35
+OrovilleCogen7,ICE Gas,ICE-NatGas,1.4,0.35
+Osage_1,Coal,ST-Coal,11.5,4.6
+Osage_2,Coal,ST-Coal,11.5,4.6
+Osage_3,Coal,ST-Coal,11.5,4.6
+OsoPump1,Other,MotorLoad,14,0
+OsoPump2,Other,MotorLoad,14,0
+OsoPump3,Other,MotorLoad,3.6,0
+OsoPump4,Other,MotorLoad,3.5,0
+OsoPump5,Other,MotorLoad,3,0
+OsoPump6,Other,MotorLoad,3,0
+OsoPump7,Other,MotorLoad,12,0
+OsoPump8,Other,MotorLoad,12,0
+Ostrom_Road,Biomass,LCGS_CA_biomass,1.6,0.32
+OtayLF1,Biomass,LCGS_CA_biomass,1.88,0.564
+OtayLF2,Biomass,LCGS_CA_biomass,1.88,0.564
+OtayLF3,Biomass,LCGS_CA_biomass,18.75,15
+OtayMesaCC-Total,Gas CC,CCWhole-NatGas-Industrial,604,236
+Ox_Mountain1,Biomass,LCGS_CA_biomass,1.9,0.57
+Ox_Mountain2,Biomass,LCGS_CA_biomass,1.9,0.57
+Ox_Mountain3,Biomass,LCGS_CA_biomass,1.9,0.57
+Ox_Mountain4,Biomass,LCGS_CA_biomass,1.9,0.57
+Ox_Mountain5,Biomass,LCGS_CA_biomass,1.9,0.57
+Ox_Mountain6,Biomass,LCGS_CA_biomass,1.9,0.57
+Ox_Mountain7,Biomass,LCGS_CA_biomass,1.9,0.57
+OxnardPaperMill,Gas CT,CT-NatGas-Aero,29,28.71
+OxnardWWTreatment76,Biomass,LCGS_CA_biomass,0.5,0.1
+Oxnard_GEN2,CHP-QF,CT-NatGas-Aero,46.22,25.421
+PAUL_SWEET_QF,Biomass,LCGS_CA_biomass,1.2,0.36
+PE-BerkeleyCC-Total,CHP-QF,CCWhole-NatGas-Industrial,25.38,13.959
+PEARBMAP-1,Other,MotorLoad,16,0
+PEARBMAP-2,Other,MotorLoad,16,0
+PEARBMAP-3,Other,MotorLoad,6,0
+PEARBMBP-4,Other,MotorLoad,6,0
+PEARBMBP-5,Other,MotorLoad,16,0
+PEARBMBP-6,Other,MotorLoad,16,0
+PEARBMCP-7,Other,MotorLoad,16,0
+PEARBMCP-8,Other,MotorLoad,16,0
+PEARBMCP-9,Other,MotorLoad,16,0
+PGP_Bio,Biomass,Bio-ST,60.6,18.18
+PacificLumber1,Biomass,LCGS_CA_biomass,12.5,3.75
+PacificLumber2,Biomass,LCGS_CA_biomass,12.5,3.75
+PacificLumber3,Biomass,LCGS_CA_biomass,12.5,3.75
+PacificUltrapwr,Biomass,LCGS_CA_biomass,22,6.6
+Palo_Verde_1,Nuclear,ST-Nuclear,1403.19,1403.19
+Palo_Verde_2,Nuclear,ST-Nuclear,1403.19,1403.19
+Palo_Verde_3,Nuclear,ST-Nuclear,1403.19,1403.19
+PalomarCC-Total,Gas CC,CCWhole-NatGas-Industrial,565,164.09
+PalomarMC,Gas CT,CT-NatGas-Aero,1.3,0.6
+PanocheEC1,Gas CT,CT-NatGas-Industrial,100,45
+PanocheEC2,Gas CT,CT-NatGas-Industrial,100,45
+PanocheEC3,Gas CT,CT-NatGas-Industrial,100,45
+PanocheEC4,Gas CT,CT-NatGas-Industrial,100,45
+PanochePeakerCT,Gas CT,CT-NatGas-Aero,40,18
+ParnsusCntrlCC-Total,Gas CC,CCWhole-NatGas-Aero,13.5,4.05
+PastoriaCC1-Total,Gas CC,CCWhole-NatGas-Industrial,500,165
+PastoriaCC2-Total,Gas CC,CCWhole-NatGas-Industrial,250,75
+Pawnee_1,Coal,ST-Coal,552.3,220.92
+Payson_86_1,ICE Gas,ICE-NatGas,2.65,1.1925
+Payson_86_2,ICE Gas,ICE-NatGas,2.65,1.1925
+Payson_86_3,ICE Gas,ICE-NatGas,2.5,1.125
+Payson_86_4,ICE Gas,ICE-NatGas,2,0.9
+PdteJuarez05,Gas CT,ST-NatGas,160,12.8
+PdteJuarez06,Gas CT,ST-NatGas,160,12.8
+PdteJuarez07,Gas CT,CT-NatGas-Industrial,147.85,35.484
+PdteJuarez08,Gas CC,CCWhole-NatGas-SingleShaft,240.93,120.465
+PdteJuarez09,Gas CC,CCWhole-NatGas-SingleShaft,241.52,120.76
+PdteJuarezCC-Total,Gas CC,CCWhole-NatGas-Industrial,292.7,144.8865
+PdteJuarezGT1,Gas CT,CT-NatGas-Industrial,28,8.400001
+PdteJuarezGT2,Gas CT,CT-NatGas-Industrial,28,8.400001
+Phillips_Carbon,Coal,ST-Coal,20,19.8
+Phillips_RodeoA,Gas CT,CT-NatGas-Aero,21.6,21.384
+Phillips_RodeoB,Gas CT,CT-NatGas-Aero,21.6,21.384
+Phillips_RodeoC,Gas CT,CT-NatGas-Aero,21.6,21.384
+PitchesHnrRanch,Gas CT,CT-NatGas-Aero,28.71,17.226
+PitchessCognCC-Total,Gas CC,CCWhole-NatGas-Industrial,28.3,28.017
+PittsburgPwr5,Gas CT,ST-NatGas,320,25.6
+PittsburgPwr6,Gas CT,ST-NatGas,325,26
+PittsburgPwr7,Gas CT,ST-NatGas,712,56.96
+Plains_End2G01,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G02,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G03,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G04,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G05,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G06,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G07,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G08,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G09,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G10,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G11,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G12,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G13,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End2G14,ICE Gas,ICE-NatGas,8.4,2.52
+Plains_End_GE10,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GE11,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GE12,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GE13,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GE14,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GE15,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GE16,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GE17,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GE18,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GE19,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GE20,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GEN1,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GEN2,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GEN3,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GEN4,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GEN5,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GEN6,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GEN7,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GEN8,ICE Gas,ICE-NatGas,5.7,1.71
+Plains_End_GEN9,ICE Gas,ICE-NatGas,5.7,1.71
+Ples_I_T101,Geothermal,LCGS_CA_geothermal,5,2.5
+Ples_I_T102,Geothermal,LCGS_CA_geothermal,5,2.5
+Ples_I_T103,Geothermal,LCGS_CA_geothermal,5,2.5
+Plummer_Cgn,Biomass,Bio-ST,6.2,2.79
+Pocatello_Waste,Biomass,Bio-ICE,0.46,0.092
+Poplar_Hill_1,Gas CT,CT-NatGas-Industrial,48,21.6
+PortWestwrd1CC-Total,Gas CC,CCWhole-NatGas-Industrial,483,249.0469
+Port_Townsend4,Biomass,Bio-ST,3,0.9
+Port_Townsend6,Biomass,Bio-ST,7.5,2.25
+PortlandCementColtn1,Coal,ST-Coal,15,14.85
+PortlandCementColtn2,Coal,ST-Coal,15,14.85
+PortofStocktonEF,Coal,ST-Coal,54,53.46
+PrairieWoodProducts,Biomass,Bio-ST,7.5,2.25
+Primrose_1,Gas CT,CT-NatGas-Industrial,75,18
+Pueblo5,Gas CT,ST-NatGas,7.5,2.25
+Pueblo6,Gas CT,ST-NatGas,15,4.5
+Pueblo_IC1,Other,CT-OilDistillate,2,0.52
+Pueblo_IC2,Other,CT-OilDistillate,2,0.6
+Pueblo_IC3,Other,CT-OilDistillate,2,0.6
+Pueblo_IC4,Other,CT-OilDistillate,2,0.6
+Pueblo_IC5,Other,CT-OilDistillate,2,0.6
+Puente_Hills1,Biomass,LCGS_CA_biomass,50,25
+Puente_Hills2,Biomass,LCGS_CA_biomass,2.8,0.14
+Puente_Hills3,Biomass,LCGS_CA_biomass,3.3,0.165
+Puente_Hills4,Biomass,LCGS_CA_biomass,3.3,0.165
+Puente_Hills5,Biomass,LCGS_CA_biomass,3.3,0.165
+Puget_Sound,Other,CT-OilDistillate,12,3.6
+Pyramid_1,Gas CT,CT-NatGas-Aero,43,19.35
+Pyramid_2,Gas CT,CT-NatGas-Aero,43,19.35
+Pyramid_3,Gas CT,CT-NatGas-Aero,43,19.35
+Pyramid_4,Gas CT,CT-NatGas-Aero,43,19.35
+Quincy_1,Biomass,LCGS_CA_biomass,20,18
+Quincy_2,Biomass,LCGS_CA_biomass,7.5,2.25
+RCWMD_LF,Biomass,LCGS_CA_biomass,1.2,0.24
+REDWATER_GT_1,Gas CT,CT-NatGas-Industrial,40.8,18.36
+Raft_River1,Geothermal,Geo-BinaryCycle,18,9
+Rainbow1_1,Gas CT,CT-NatGas-Industrial,30,9
+Rainbow2_2,Gas CT,CT-NatGas-Industrial,40,12
+Rainbow3_3,Gas CT,CT-NatGas-Industrial,20,6
+Rainbow4_4,Gas CT,CT-NatGas-Industrial,45,20.25
+Rainbow5_5,Gas CT,CT-NatGas-Industrial,45,20.25
+RathdrumCC-Total,Gas CC,CCWhole-NatGas-Industrial,301.5,147.9302
+Rathdrum_1,Gas CT,CT-NatGas-Industrial,83.2,19.57647
+Rathdrum_2,Gas CT,CT-NatGas-Industrial,83.2,19.57647
+Rawhide_1,Coal,ST-Coal,280,112
+Rawhide_A,Gas CT,CT-NatGas-Industrial,65,29.25
+Rawhide_B,Gas CT,CT-NatGas-Industrial,65,29.25
+Rawhide_C,Gas CT,CT-NatGas-Industrial,65,29.25
+Rawhide_D,Gas CT,CT-NatGas-Industrial,65,29.25
+Rawhide_F,Gas CT,CT-NatGas-Industrial,128,76.8
+Ray_D_Nixon_1,Coal,ST-Coal,207,82.8
+Ray_D_Nixon_GT1,Gas CT,CT-NatGas-Industrial,35.8,16.11
+Ray_D_Nixon_GT2,Gas CT,CT-NatGas-Industrial,35.8,16.11
+RedHawkCC1-Total,Gas CC,CCWhole-NatGas-Industrial,573.5,294.3723
+RedHawkCC2-Total,Gas CC,CCWhole-NatGas-Industrial,568,291.5492
+Red_Bluff_IC1,ICE Gas,ICE-NatGas,44,2.86
+Red_Bluff_IC10,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC11,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC12,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC13,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC14,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC15,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC16,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC2,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC3,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC4,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC5,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC6,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC7,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC8,ICE Gas,ICE-NatGas,2.9,0.1885
+Red_Bluff_IC9,ICE Gas,ICE-NatGas,2.9,0.1885
+ReddingPower1,Gas CT,CT-NatGas-Aero,24.4,10.98
+ReddingPower2,Gas CT,CT-NatGas-Aero,31,13.95
+ReddingPower3,Gas CT,CT-NatGas-Aero,31,13.95
+ReddingPowerCC-Total,Gas CC,CCWhole-NatGas-Industrial,82,59.86
+RedondoBeach5,Gas CT,ST-NatGas,175,14
+RedondoBeach6,Gas CT,ST-NatGas,175,14
+RedondoBeach7,Gas CT,ST-NatGas,480,38.4
+RedondoBeach8,Gas CT,ST-NatGas,480,38.4
+Reeves_1,Gas CT,ST-NatGas,44,13.2
+Reeves_2,Gas CT,ST-NatGas,44,13.2
+Reeves_3,Gas CT,CT-NatGas-Industrial,66,19.8
+Reid_Gardner_1,Coal,ST-Coal,114,45.6
+Reid_Gardner_2,Coal,ST-Coal,114,45.6
+Reid_Gardner_3,Coal,ST-Coal,114,45.6
+Reid_Gardner_4,Coal,ST-Coal,294.8,117.92
+RichardBurdete1,Geothermal,Geo-BinaryCycle,15,7.5
+RichardBurdete2,Geothermal,Geo-BinaryCycle,15,7.5
+RichmondCgn1,Gas CT,ST-NatGas,62.6,61.974
+RichmondCgn2,Gas CT,ST-NatGas,62.6,61.974
+RichmondRefinery-5,Gas CT,ST-OtherGas,30.4,30.096
+RifleCC-Total,Gas CC,CCWhole-NatGas-Aero,85,46.75
+RioBravoFresno,Biomass,LCGS_CA_biomass,30.5,17
+RioBravoPoso,Coal,ST-Coal,45,44.55
+RioBravoRocklin,Biomass,LCGS_CA_biomass,28.8,25
+RioBravo_Jasmin,Coal,ST-Coal,37,19.3325
+RioGrande6,Gas CT,ST-NatGas,50,15
+RioGrande7,Gas CT,ST-NatGas,50,15
+RioGrande8,Gas CT,ST-NatGas,166.5,13.32
+Ripon1,Gas CT,CT-NatGas-Aero,50,22.5
+Ripon2,Gas CT,CT-NatGas-Aero,50,22.5
+Ripon_Mill_GEN1,CHP-QF,CT-NatGas-Industrial,56.9,30.98205
+River_Road,Gas CC,CCWhole-NatGas-SingleShaft,248,136.4
+Riverbend_LF1,Biomass,Bio-ICE,0.8,0.16
+Riverbend_LF2,Biomass,Bio-ICE,0.8,0.16
+Riverbend_LF3,Biomass,Bio-ICE,0.8,0.16
+Riverbend_LF4,Biomass,Bio-ICE,0.8,0.16
+Riverbend_LF5,Biomass,Bio-ICE,0.8,0.16
+Riverbend_LF6,Biomass,Bio-ICE,0.8,0.16
+RiversideERC1,Gas CT,CT-NatGas-Aero,48,21.6
+RiversideERC2,Gas CT,CT-NatGas-Aero,48,21.6
+Riverview_EC,Gas CT,CT-NatGas-Aero,48.7,21.915
+Rockwood_1,Gas CT,CT-OilDistillate,32,9.6
+Rockwood_2,Gas CT,CT-OilDistillate,32,9.6
+RockyMtnCC-Total,Gas CC,CCWhole-NatGas-Industrial,685.1,290.6435
+Rocky_Ford_IC1,Other,CT-OilDistillate,2,0.6
+Rocky_Ford_IC2,Other,CT-OilDistillate,2,0.6
+Rocky_Ford_IC3,Other,CT-OilDistillate,2,0.6
+Rocky_Ford_IC4,Other,CT-OilDistillate,2,0.6
+Rocky_Ford_IC5,Other,CT-OilDistillate,2,0.6
+RooseveltBiogas1,Biomass,Bio-ICE,2.1,0.63
+RooseveltBiogas2,Biomass,Bio-ICE,2.1,0.63
+RooseveltBiogas3,Biomass,Bio-ICE,2.1,0.63
+RooseveltBiogas4,Biomass,Bio-ICE,2.1,0.63
+RooseveltBiogas5,Biomass,Bio-ICE,2.1,0.63
+RosevilleEPCC-Total,Gas CC,CCWhole-NatGas-Aero,166,83
+Roseville_1,Gas CT,CT-NatGas-Aero,25.6,11.52
+Roseville_2,Gas CT,CT-NatGas-Aero,25.6,11.52
+Rupert_Cgn,Gas CC,CCWhole-NatGas-SingleShaft,10.4,4.16
+Rupert_GT_1,Gas CT,CT-NatGas-Industrial,23,6.900001
+Rupert_GT_2,Gas CT,CT-NatGas-Industrial,23,6.900001
+SAIT_1,Gas CT,CT-NatGas-Industrial,5.5,2.475
+SANTA_CLARA,Biomass,LCGS_CA_biomass,11.16,3.348
+SAN_JOAQUIN,Gas CT,CT-NatGas-Aero,12.4,12.276
+SAN_MARCOS_LF,Biomass,LCGS_CA_biomass,1.88,0.564
+SCACogen2CC-Total,Gas CC,CCWhole-NatGas-Aero,48.5,21.825
+SCACogen2GT,Gas CT,CT-NatGas-Industrial,42,16.8
+SEKernRiverCgn1,Gas CT,CT-NatGas-Aero,30.94,30.6306
+SEKernRiverCgn2,Gas CT,CT-NatGas-Aero,4.38,1.314
+SEKernRiverCgn3,Gas CT,CT-NatGas-Aero,4.38,1.314
+SE_Resource,Biomass,LCGS_CA_biomass,38.91,3.891
+SHCG1-1,Gas CT,CT-NatGas-Industrial,23,8.05
+SPACogenCC-Total,Gas CC,CCWhole-NatGas-Aero,178,71.2
+SRI_Int_Cgn,Gas CT,CT-NatGas-Aero,6.9,3.105
+STANDBY_AGG._3,Other,CT-OilDistillate,62.2,18.66
+STURGEON1-1,Gas CT,CT-NatGas-Industrial,10,3
+STURGEON_2_1,Gas CT,CT-NatGas-Industrial,8,2.4
+SaguaroAZ1,Gas CT,CT-NatGas-Industrial,53.125,15.9375
+SaguaroAZ2,Gas CT,CT-NatGas-Industrial,78.3,9.034616
+SaguaroCTG1,Gas CT,CT-NatGas-Industrial,45.1,18.04
+SaguaroCTG2,Gas CT,CT-NatGas-Industrial,45.1,18.04
+SaguaroCTG3,Gas CT,CT-NatGas-Industrial,37,14.8
+SaguaroGE1,Gas CT,CT-NatGas-Industrial,53.125,15.9375
+Saguaro_1,Gas CT,ST-NatGas,125,10
+Saguaro_2,Gas CT,ST-NatGas,125,18.75
+SalinasRiverCgn,CHP-QF,CT-NatGas-Industrial,35.72,19.646
+SalkInstitute,Gas CT,CT-NatGas-Aero,1.3,0.6
+Salt_Wells1,Geothermal,Geo-BinaryCycle,11.8,5.9
+Salt_Wells2,Geothermal,Geo-BinaryCycle,11.8,5.9
+SaltonSea1,Geothermal,LCGS_CA_geothermal,10,5
+SaltonSea2-1,Geothermal,LCGS_CA_geothermal,11.5,5.75
+SaltonSea2-2,Geothermal,LCGS_CA_geothermal,5,2.5
+SaltonSea2-3,Geothermal,LCGS_CA_geothermal,3.5,1.75
+SaltonSea4,Geothermal,LCGS_CA_geothermal,51,25.5
+SaltonSea5,Geothermal,LCGS_CA_geothermal,49.9,24.95
+SanJoseCgn,Gas CT,CT-NatGas-Aero,6.9,3.105
+SanOnofre1,Nuclear,ST-Nuclear,1127,1065.9
+SanOnofre2,Nuclear,ST-Nuclear,1127,1065.9
+San_Gabriel,Gas CT,CT-NatGas-Aero,36,35.64
+San_Joaquin_Cgn,CHP-QF,CT-NatGas-Aero,48,26.4
+San_Juan_1,Coal,ST-Coal,321.7,128.68
+San_Juan_2,Coal,ST-Coal,319.8,127.9
+San_Juan_3,Coal,ST-Coal,495.4,198.2
+San_Juan_4,Coal,ST-Coal,506.1,202.4
+SantaCruzEnergy,Biomass,LCGS_CA_biomass,1.6,0.32
+SantaYnezCC-Total,Gas CC,CCWhole-NatGas-Aero,49.3,22.185
+Santa_ClaraCgn1,Gas CT,CT-NatGas-Aero,3.9,1.755
+Santa_ClaraCgn2,Gas CT,CT-NatGas-Aero,3.9,1.755
+Santa_Cruz1,Biomass,LCGS_CA_biomass,1,0.2
+Santa_Cruz2,Biomass,LCGS_CA_biomass,1,0.2
+Santa_Cruz3,Biomass,LCGS_CA_biomass,1,0.2
+Santa_Maria_Cgn,Gas CT,CT-NatGas-Aero,10.2,3.06
+Santa_Maria_LFG,Biomass,LCGS_CA_biomass,1.48,0.296
+Santan1,Gas CC,CCWhole-NatGas-SingleShaft,103.5,56.925
+Santan2,Gas CC,CCWhole-NatGas-SingleShaft,103.5,56.925
+Santan3,Gas CC,CCWhole-NatGas-SingleShaft,103.5,56.925
+Santan4,Gas CC,CCWhole-NatGas-SingleShaft,103.5,56.925
+Santan5CC-Total,Gas CC,CCWhole-NatGas-Industrial,622.1,342.155
+Santan6CC-Total,Gas CC,CCWhole-NatGas-Industrial,289.9,159.445
+Sargent_Canyon,CHP-QF,CT-NatGas-Industrial,34.33,18.8815
+Savona_ERG_1,Other,ST-Other,5.89,2.6505
+Scattergood_1,Gas CT,ST-NatGas,163.2,13.056
+Scattergood_2,Gas CT,ST-NatGas,163.2,13.056
+Scattergood_3,Gas CT,ST-NatGas,496.8,39.744
+ScotfordUpgdCC-Total,Gas CC,CCWhole-NatGas-Industrial,195,107.25
+SecondImp1,Geothermal,LCGS_CA_geothermal,3.5,1.75
+SecondImp10,Geothermal,LCGS_CA_geothermal,4.5,2.25
+SecondImp11,Geothermal,LCGS_CA_geothermal,4.5,2.25
+SecondImp12,Geothermal,LCGS_CA_geothermal,4.5,2.25
+SecondImp13,Geothermal,LCGS_CA_geothermal,16,8
+SecondImp14,Geothermal,LCGS_CA_geothermal,16,8
+SecondImp2,Geothermal,LCGS_CA_geothermal,3.5,1.75
+SecondImp3,Geothermal,LCGS_CA_geothermal,3.5,1.75
+SecondImp4,Geothermal,LCGS_CA_geothermal,3.5,1.75
+SecondImp5,Geothermal,LCGS_CA_geothermal,3.5,1.75
+SecondImp6,Geothermal,LCGS_CA_geothermal,3.5,1.75
+SecondImp7,Geothermal,LCGS_CA_geothermal,4.5,2.25
+SecondImp8,Geothermal,LCGS_CA_geothermal,4.5,2.25
+SecondImp9,Geothermal,LCGS_CA_geothermal,4.5,2.25
+SeeGen_1,Biomass,Bio-ST,22,12.1
+Shasta1,Biomass,LCGS_CA_biomass,18.39,17
+Shasta2,Biomass,LCGS_CA_biomass,18.39,17
+Shasta3,Biomass,LCGS_CA_biomass,18.39,17
+Shasta4,Biomass,LCGS_CA_biomass,7.84,7
+Sheerness1-1,Coal,ST-Coal,408,163.2
+Sheerness_2_2,Coal,ST-Coal,408,163.2
+Sherritt1-1,Gas CT,CT-NatGas-Industrial,3,1.35
+Sherritt_2_2,Gas CT,CT-NatGas-Industrial,3,1.35
+Sherritt_SOLAR3,Gas CT,CT-NatGas-Industrial,3.5,1.575
+Shute_Creek021A,Gas CT,CT-NatGas-Industrial,35.79,16.1055
+Shute_Creek021B,Gas CT,CT-NatGas-Industrial,35.79,16.1055
+Shute_Creek021C,Gas CT,CT-NatGas-Industrial,36,16.2
+Sierra_Pwr,Biomass,LCGS_CA_biomass,9,2.7
+SilverhawkCC-Total,Gas CC,CCWhole-NatGas-Industrial,664.7,365.585
+Simi_Valley1,Biomass,LCGS_CA_biomass,1.3,0.26
+Simi_Valley2,Biomass,LCGS_CA_biomass,1.3,0.26
+Simplot_Leasing,Other,ST-Other,15.9,6.36
+SimpsonTacoma,Biomass,Bio-ST,64,19.2
+Skookumchuk,Biomass,Bio-ST,51.3,15.39
+SnDiegoStCC-Total,Gas CC,CCWhole-NatGas-Aero,14.3,4.29
+Snowflake,Biomass,Bio-ST,27.2,8.16
+SoTreatmentCC-Total,Biomass,Bio-CCWhole,8,2.4
+SodaLake1,Geothermal,Geo-BinaryCycle,3.5,1.75
+SodaLake11,Geothermal,Geo-BinaryCycle,1.2,0.6
+SodaLake12,Geothermal,Geo-BinaryCycle,1.2,0.6
+SodaLake13,Geothermal,Geo-BinaryCycle,1.2,0.6
+SodaLake2,Geothermal,Geo-BinaryCycle,3.5,1.75
+SodaLake21,Geothermal,Geo-BinaryCycle,1.5,0.75
+SodaLake3,Geothermal,Geo-BinaryCycle,3.5,1.75
+SodaLake4,Geothermal,Geo-BinaryCycle,3.5,1.75
+SodaLake5,Geothermal,Geo-BinaryCycle,3.5,1.75
+SodaLake6,Geothermal,Geo-BinaryCycle,3.5,1.75
+SolarTurbinesInc,Gas CT,CT-NatGas-Aero,9.5,3.06
+SonomaCaliforniaGeo,Geothermal,LCGS_CA_geothermal,78,39
+SonomaCentralLF1+2,Biomass,LCGS_CA_biomass,8,2.4
+Sonora2,Biomass,LCGS_CA_biomass,7.5,2.25
+SouthBelridge1,Gas CT,CT-NatGas-Aero,31.4,9.42
+SouthBelridge2,Gas CT,CT-NatGas-Aero,31.4,9.42
+SouthBelridge3,Gas CT,CT-NatGas-Aero,31.4,9.42
+SouthPointCC-Total,Gas CC,CCWhole-NatGas-Industrial,556,288.8111
+Spindle_Hill1,Gas CT,CT-NatGas-Industrial,197,118.2
+Spindle_Hill2,Gas CT,CT-NatGas-Industrial,197,118.2
+Spokane1,Biomass,Bio-ST,26,7.8
+SpreckelsSugarComp,Gas CT,ST-NatGas,8.9,2.67
+Springerville_1,Coal,ST-Coal,424.8,169.92
+Springerville_2,Coal,ST-Coal,424.8,169.92
+Springerville_3,Coal,ST-Coal,450,180
+Springerville_4,Coal,ST-Coal,450,180
+Springs1,Gas CT,CT-NatGas-Aero,9.5,4.275
+Springs2,Gas CT,CT-NatGas-Aero,9.5,4.275
+Springs3,Gas CT,CT-NatGas-Aero,9.5,4.275
+Springs4,Gas CT,CT-NatGas-Aero,9.5,4.275
+St_George1,Other,CT-OilDistillate,7,3.15
+St_George2,Other,CT-OilDistillate,7,3.15
+StanislausEnrgy,Biomass,LCGS_CA_biomass,22.3,2.23
+Starwood1,Gas CT,CT-NatGas-Aero,60,27
+Starwood2,Gas CT,CT-NatGas-Aero,60,27
+Steamboat1A-31,Geothermal,Geo-BinaryCycle,1.2,0.6
+Steamboat1A-32,Geothermal,Geo-BinaryCycle,1.2,0.6
+Steamboat2-1,Geothermal,Geo-BinaryCycle,9.1,4.55
+Steamboat2-2,Geothermal,Geo-BinaryCycle,9.1,4.55
+Steamboat3-1,Geothermal,Geo-BinaryCycle,9.1,4.55
+Steamboat3-2,Geothermal,Geo-BinaryCycle,9.1,4.55
+SteamboatHillsBin,Geothermal,Geo-BinaryCycle,5.5,2.75
+SteamboatHillsSin,Geothermal,Geo-SingleFlash,14.6,7.3
+Stillwater1-2,Geothermal,Geo-BinaryCycle,11.8,5.9
+Stillwater1_1,Geothermal,Geo-BinaryCycle,11.8,5.9
+Stillwater2_1,Geothermal,Geo-BinaryCycle,11.8,5.9
+Stillwater2_2,Geothermal,Geo-BinaryCycle,11.8,5.9
+StocktonCgn,Coal,ST-Coal,63,62.37
+SumasPowerCC-Total,Gas CC,CCWhole-NatGas-Industrial,139.204,55.6816
+SummitG1,Gas CT,CT-NatGas-Industrial,48,21.6
+SummitG2,Gas CT,CT-NatGas-Industrial,48,21.6
+SummitG3,Gas CT,CT-NatGas-Industrial,48,21.6
+SunPeak5657,Gas CT,CT-NatGas-Industrial,74,17.76
+SunPeak5658,Gas CT,CT-NatGas-Industrial,74,17.76
+SunPeak5659,Gas CT,CT-NatGas-Industrial,74,17.76
+Suncor1,Gas CT,CT-NatGas-Industrial,34.4,4.472
+Suncor2,Gas CT,CT-NatGas-Industrial,31.4,4.082
+SundanceAB1,Coal,ST-Coal,280,112
+SundanceAB2,Coal,ST-Coal,280,112
+SundanceAB3,Coal,ST-Coal,353,141.2
+SundanceAB4,Coal,ST-Coal,406,162.4
+SundanceAB5,Coal,ST-Coal,406,162.4
+SundanceAB6,Coal,ST-Coal,401,160.4
+SundanceAZ01,Gas CT,CT-NatGas-Aero,60.5,27.225
+SundanceAZ02,Gas CT,CT-NatGas-Aero,60.5,27.225
+SundanceAZ03,Gas CT,CT-NatGas-Aero,60.5,27.225
+SundanceAZ04,Gas CT,CT-NatGas-Aero,60.5,27.225
+SundanceAZ05,Gas CT,CT-NatGas-Aero,60.5,27.225
+SundanceAZ06,Gas CT,CT-NatGas-Aero,60.5,27.225
+SundanceAZ07,Gas CT,CT-NatGas-Aero,60.5,27.225
+SundanceAZ08,Gas CT,CT-NatGas-Aero,60.5,27.225
+SundanceAZ09,Gas CT,CT-NatGas-Aero,60.5,27.225
+SundanceAZ10,Gas CT,CT-NatGas-Aero,60.5,27.225
+Sunnyside_Cgn,Coal,ST-Coal,58.103,23.2412
+SunriseCC-Total,Gas CC,CCWhole-NatGas-Industrial,580,117
+SutterEnergyCC-Total,Gas CC,CCWhole-NatGas-Industrial,525,177.94
+Sycamore1,Biomass,LCGS_CA_biomass,0.9,0.27
+Sycamore1-2,Biomass,LCGS_CA_biomass,0.9,0.18
+Sycamore1-3,Biomass,LCGS_CA_biomass,3,0.9
+Sycamore_CgnAB,CHP-QF,CT-NatGas-Industrial,62.49,34.3695
+Sycamore_CgnBG,CHP-QF,CT-NatGas-Industrial,62.49,34.3695
+Sycamore_CgnCG,CHP-QF,CT-NatGas-Industrial,62.49,34.3695
+Sycamore_CgnDG,CHP-QF,CT-NatGas-Industrial,62.49,34.3695
+SyncrudeCC-Total,Gas CC,CCWhole-NatGas-Industrial,528.2,68.66599
+THUMS_GEN1,Gas CT,CT-NatGas-Aero,47,28.2
+TPE-CC-Total,Gas CC,CCWhole-NatGas-Industrial,110.8,60.94
+TRW-Plant,Gas CT,CT-NatGas-Aero,1.3,0.6
+TS_Pwr_Plant1,Coal,ST-Coal,242,96.8
+Taft_Cgn1,Gas CT,CT-NatGas-Aero,3.1,3.069
+Taft_Cgn2,Gas CT,CT-NatGas-Aero,3.1,0.93
+Taft_Cgn3,Gas CT,CT-NatGas-Aero,3.1,0.93
+Taft_Cgn4,Gas CT,CT-NatGas-Aero,3.1,0.93
+Tajiguas,Biomass,LCGS_CA_biomass,3.05,0.61
+Tamarack,Biomass,Bio-ST,5,2.25
+TermoMexiCC-Total,Gas CC,CCWhole-NatGas-Industrial,668,367.4
+TesoroCgn1,Gas CT,CT-NatGas-Industrial,12.5,5.625
+TesoroCgn2,Gas CT,CT-NatGas-Industrial,12.5,5.625
+TesoroICs,ICE Gas,ICE-NatGas,18,4.5
+TexacoExplorAgg,Gas CT,CT-NatGas-Aero,14.9,4.47
+ThermalEnrgyDev,Biomass,LCGS_CA_biomass,24.2,7.26
+Thermalito_2,Storage,PS-Hydro,34.1,0
+Thermalito_3,Storage,PS-Hydro,34.1,0
+Thermalito_4,Storage,PS-Hydro,34.1,0
+ThermoGreeley1,Gas CC,CCWhole-NatGas-SingleShaft,37,14.8
+Toland,Biomass,LCGS_CA_biomass,2.8,0.84
+ToledoMill1,Biomass,Bio-ST,15,4.5
+TotalEngyFacCC-Total,Biomass,LCGS_CA_biomass,35.2,10.56
+Toyon4,Biomass,LCGS_CA_biomass,1.8,0.36
+Toyon5,Biomass,LCGS_CA_biomass,1.8,0.36
+TracyNVCC1-Total,Gas CC,CCWhole-NatGas-Industrial,119.9,65.945
+TracyNVCC2-Total,Gas CC,CCWhole-NatGas-Industrial,623.2,313.2117
+TracyPeaker1,Gas CT,CT-NatGas-Industrial,85,12.54098
+TracyPeaker2,Gas CT,CT-NatGas-Industrial,85,12.54099
+TracyPump1,Other,MotorLoad,10.99,0
+TracyPump2,Other,MotorLoad,10.99,0
+TracyPump3,Other,MotorLoad,10.99,0
+TracyPump4,Other,MotorLoad,10.99,0
+TracyPump5,Other,MotorLoad,10.99,0
+TracyPump6,Other,MotorLoad,10.99,0
+TracyPumpYG,Other,MotorLoad,16.68,0
+Tracy_3,Gas CT,ST-NatGas,119.8,31.148
+Tracy_ST1,Gas CT,ST-NatGas,55,14.3
+Tracy_ST2,Gas CT,ST-NatGas,75,19.5
+TriCntrNaniwa3,Gas CT,CT-NatGas-Industrial,64,15.36
+TriCntrNaniwa4,Gas CT,CT-NatGas-Industrial,64,15.36
+TriCntrNaniwa5,Gas CT,CT-NatGas-Industrial,62,14.88
+TriCntrNaniwa6,Gas CT,CT-NatGas-Industrial,62,14.88
+Tri_Cities_TC1,Biomass,Bio-ICE,0.8,0.16
+Tri_Cities_TC2,Biomass,Bio-ICE,0.8,0.16
+Tri_Cities_TC3,Biomass,Bio-ICE,0.8,0.16
+Tri_Cities_TC4,Biomass,Bio-ICE,0.8,0.16
+Tri_Cities_TC5,Biomass,Bio-ICE,0.8,0.16
+Turlock_TFC,Biomass,LCGS_CA_biomass,1.2,0.36
+UCDavisCC-Total,CHP-QF,CCWhole-NatGas-Aero,27,14.85
+UCIFaciltiesCC-Total,Gas CC,CCWhole-NatGas-Industrial,19,18.81
+UCLA-So-CC-Total,CHP-QF,CCWhole-NatGas-Aero,43,23.65
+UCSanDiegoCC-Total,Gas CC,CCWhole-NatGas-Aero,33,32.67
+US_Borax_GEN1,Gas CT,CT-NatGas-Aero,22,21.78
+US_Magnesium1,Gas CT,CT-NatGas-Aero,16,7.2
+US_Magnesium2,Gas CT,CT-NatGas-Aero,16,7.2
+US_Magnesium3,Gas CT,CT-NatGas-Aero,16,7.2
+UnionTribunePublish,Gas CT,CT-NatGas-Aero,3.1,0.93
+UnitedCogenCC-Total,CHP-QF,CCWhole-NatGas-Industrial,24.42,13.431
+University_QF,CHP-QF,CT-NatGas-Aero,36.23,19.9265
+UofA1,Gas CT,CT-NatGas-Industrial,16,7.2
+UofA2,Gas CT,CT-NatGas-Industrial,26,11.7
+UofCO-CC-Total,Gas CC,CCWhole-NatGas-Aero,33,32.67
+VacaDixonPeaker,Gas CT,CT-NatGas-Aero,42.04,12.612
+Valencia1,Gas CT,CT-NatGas-Industrial,191,114.6
+Valencia_GT1,Gas CT,CT-NatGas-Aero,16.8,6.72
+Valencia_GT2,Gas CT,CT-NatGas-Aero,16.8,6.72
+Valencia_GT3,Gas CT,CT-NatGas-Aero,16.8,6.72
+Valencia_GT4,Gas CT,CT-NatGas-Aero,54,21.6
+ValeroCgn1,Gas CT,CT-NatGas-Aero,44.7,13.41
+ValleyCC-Total,Gas CC,CCWhole-NatGas-Industrial,533,254.65
+Valley_5,Gas CT,CT-NatGas-Aero,47.5,14.25
+Valleyview1_1,Gas CT,CT-NatGas-Industrial,45,13.5
+Valleyview2_1,Gas CT,CT-NatGas-Industrial,45,20.25
+Valmont7,Gas CT,CT-NatGas-Aero,71.1,28.44
+Valmont8,Gas CT,CT-NatGas-Aero,71.1,28.44
+Valmont_5,Coal,ST-Coal,191.7,76.68
+Valmont_6,Gas CT,CT-NatGas-Industrial,59.3,17.79
+Vancouver1,Biomass,Bio-ST,1.666667,0.75
+Vancouver2,Biomass,Bio-ST,1.666667,0.75
+Vancouver3,Biomass,Bio-ST,1.666667,0.75
+Vancouver4,Biomass,Bio-ST,1.85,0.8325
+VanderHaakDairy,Biomass,Bio-ICE,0.45,0.09
+Vulcan1,Geothermal,LCGS_CA_geothermal,30.1,15.05
+Vulcan2,Geothermal,LCGS_CA_geothermal,19,18
+WATERTON1-1,Gas CT,CT-NatGas-Industrial,5.4,3.24
+WATERTON_2_2,Gas CT,CT-NatGas-Industrial,4.9,2.94
+WAUW_Reserve,Other,Dummy,40,0
+WESTLOCKG1_1,Biomass,Bio-ST,16.9,15
+WEYERHAEUSER_CO,Gas CT,CT-NatGas-Aero,14,13.86
+WHITECOURT_CGN,Biomass,Bio-ST,25,21.25
+WM_Landfill_1,Biomass,Bio-ST,3.28,0.984
+WPSIncCC-Total,CHP-QF,CCWhole-NatGas-Aero,28.52,15.686
+W_N_Clark_1,Coal,ST-Coal,18.7,7.48
+W_N_Clark_2,Coal,ST-Coal,25,10
+W_R_Gianelli_1,Storage,PS-Hydro,53,0
+W_R_Gianelli_2,Storage,PS-Hydro,53,0
+W_R_Gianelli_3,Storage,PS-Hydro,53,0
+W_R_Gianelli_4,Storage,PS-Hydro,53,0
+W_R_Gianelli_5,Storage,PS-Hydro,53,0
+W_R_Gianelli_6,Storage,PS-Hydro,53,0
+W_R_Gianelli_7,Storage,PS-Hydro,53,0
+W_R_Gianelli_8,Storage,PS-Hydro,53,0
+Wabuska_1,Geothermal,Geo-BinaryCycle,0.6,0.3
+Wabuska_2,Geothermal,Geo-BinaryCycle,0.8,0.4
+Wabuska_3,Geothermal,Geo-BinaryCycle,0.8,0.4
+Waddell-PS1,Other,PS-Hydro,7.6,0
+Waddell-PS3,Other,PS-Hydro,7.6,0
+Waddell-PS6,Other,PS-Hydro,7.6,0
+Waddell-PS7,Other,PS-Hydro,7.6,0
+WadhamEnrgy,Biomass,LCGS_CA_biomass,32,30
+WalnutEnergyCC-Total,Gas CC,CCWhole-NatGas-Industrial,269,75.32751092
+Walnut_1,Gas CT,CT-NatGas-Industrial,30.3,13.635
+Walnut_2,Gas CT,CT-NatGas-Industrial,30.3,13.635
+WatsonCogenCC-Total,CHP-QF,CCWhole-NatGas-Industrial,142.99,78.6445
+WaunaMill,Biomass,LCGS_CA_biomass,36,19.8
+WeldwoodTG1,Biomass,Bio-ST,19,15
+WeldwoodTG2,Biomass,Bio-ST,29,25
+Welport_Lease,Gas CT,CT-NatGas-Aero,7,2.1
+WesTPhoenix_2B,Gas CC,CCWhole-NatGas-SingleShaft,132,72.6
+WestPhoenixCC4-Total,Gas CC,CCWhole-NatGas-Industrial,135.6,74.58
+WestPhoenixCC5-Total,Gas CC,CCWhole-NatGas-Industrial,569,342.4537
+WestPhoenix_3B,Gas CC,CCWhole-NatGas-SingleShaft,132,72.6
+WestPhoenix_GT1,Gas CT,CT-NatGas-Industrial,53.13,23.9085
+WestPhoenix_GT2,Gas CT,CT-NatGas-Industrial,53.13,23.9085
+West_Ford_Flat1,Geothermal,LCGS_CA_geothermal,32,30
+West_Ford_Flat2,Geothermal,LCGS_CA_geothermal,32,30
+West_Phoenix_1B,Gas CC,CCWhole-NatGas-SingleShaft,132,72.6
+West_Valley1,Gas CT,CT-NatGas-Aero,40.5,18.225
+West_Valley2,Gas CT,CT-NatGas-Aero,40.5,18.225
+West_Valley3,Gas CT,CT-NatGas-Aero,40.5,18.225
+West_Valley4,Gas CT,CT-NatGas-Aero,40.5,18.225
+West_Valley5,Gas CT,CT-NatGas-Aero,40.5,18.225
+Western_A101,ICE Gas,ICE-NatGas,8.4,2.1
+Western_B102,ICE Gas,ICE-NatGas,8.4,2.1
+Western_B202,ICE Gas,ICE-NatGas,8.4,2.1
+Western_C102,ICE Gas,ICE-NatGas,8.4,2.1
+Western_C202,ICE Gas,ICE-NatGas,8.4,2.1
+Western_D101,ICE Gas,ICE-NatGas,8.4,2.1
+Western_E102,ICE Gas,ICE-NatGas,8.4,2.1
+Western_E202,ICE Gas,ICE-NatGas,8.4,2.1
+Western_F102,ICE Gas,ICE-NatGas,8.4,2.1
+Western_F202,ICE Gas,ICE-NatGas,8.4,2.1
+Western_G102,ICE Gas,ICE-NatGas,8.4,2.1
+Western_G202,ICE Gas,ICE-NatGas,8.4,2.1
+Western_H102,ICE Gas,ICE-NatGas,8.4,2.1
+Western_H202,ICE Gas,ICE-NatGas,8.4,2.1
+WeyerhaeuserWA2,Biomass,Bio-ST,5,1.5
+WeyerhaeuserWA3,Biomass,Bio-ST,18,5.4
+WheelabratorCC-Total,Gas CC,CCWhole-NatGas-Industrial,30.7,30.393
+WheelerRidgePump1-1,Other,MotorLoad,7,0
+WheelerRidgePump1-2,Other,MotorLoad,7,0
+WheelerRidgePump1-3,Other,MotorLoad,6,0
+WheelerRidgePump1-4,Other,MotorLoad,14,0
+WheelerRidgePump1-5,Other,MotorLoad,14,0
+WheelerRidgePump2-1,Other,MotorLoad,14,0
+WheelerRidgePump2-2,Other,MotorLoad,14,0
+WheelerRidgePump2-3,Other,MotorLoad,14,0
+WheelerRidgePump2-4,Other,MotorLoad,14,0
+Whitehead_K1,ICE Gas,ICE-NatGas,7,3.15
+Whitehead_K2,ICE Gas,ICE-NatGas,7,3.15
+Whitehead_K3,ICE Gas,ICE-NatGas,7,3.15
+Whitehead_K4,ICE Gas,ICE-NatGas,5,2.25
+Whitehorn_2,Gas CT,CT-NatGas-Industrial,84.6,25.38
+Whitehorn_3,Gas CT,CT-NatGas-Industrial,84.6,25.38
+WilmingtonCalciner,Steam,ST-WasteHeat,35.8,10.74
+WilmngtnHydrgn,Other,ST-WasteHeat,31.9,9.570001
+WindGapPump1-1,Other,MotorLoad,16,0
+WindGapPump1-2,Other,MotorLoad,16,0
+WindGapPump1-3,Other,MotorLoad,16,0
+WindGapPump2-1,Other,MotorLoad,32,0
+WindGapPump2-2,Other,MotorLoad,31,0
+WindGapPump3-1,Other,MotorLoad,31,0
+WindGapPump3-2,Other,MotorLoad,31,0
+WindGapPump4-1,Other,MotorLoad,31,0
+WindGapPump4-2,Other,MotorLoad,31,0
+Wolfskill,Gas CT,CT-NatGas-Aero,46.9,21.105
+Woodland1,Gas CT,CT-NatGas-Industrial,49.4,9.26
+WoodlandCC-Total,Gas CC,CCWhole-NatGas-Industrial,98.2,42.69362
+Woodland_Bio,Biomass,LCGS_CA_biomass,28,26
+Wygen1,Coal,ST-Coal,105.6,42.24
+Wygen2,Coal,ST-Coal,105.6,42.24
+Wygen3,Coal,ST-Coal,110,44
+Wyodak,Coal,ST-Coal,362.07,144.828
+Yellowstone_Eng,Coal,ST-Coal,64,5.12
+YoloPower1,Biomass,LCGS_CA_biomass,0.81,0.162
+YoloPower2,Biomass,LCGS_CA_biomass,0.81,0.162
+YoloPower3,Biomass,LCGS_CA_biomass,0.81,0.162
+YoloPower4,Biomass,LCGS_CA_biomass,0.81,0.162
+YoloPower5,Biomass,LCGS_CA_biomass,0.81,0.162
+Yuba_City_Cogen,CHP-QF,CT-NatGas-Aero,34.02,18.711
+Yuba_City_EC,Gas CT,CT-NatGas-Aero,46,20.7
+Yucca_GT1,Gas CT,CT-NatGas-Industrial,19.6,5.88
+Yucca_GT2,Gas CT,CT-NatGas-Industrial,19.6,5.88
+Yucca_GT21,Other,CT-OilDistillate,25.3,7.59
+Yucca_GT3,Gas CT,CT-NatGas-Industrial,72.4,21.72
+Yucca_GT4,Other,CT-OilDistillate,72.4,21.72
+Yucca_GT5,Gas CT,CT-NatGas-Aero,60.5,27.225
+Yucca_GT6,Gas CT,CT-NatGas-Aero,60.5,27.225
+Yucca_ST1,Gas CT,ST-NatGas,86.7,17.34
+YumaCogenCC-Total,Gas CC,CCWhole-NatGas-Industrial,62.6,34.43

@@ -112,9 +112,6 @@ get_wsgif_all_grids <- function(flow_his,
     select(year, grid_id, wsgif)
 }
 
-
-
-
 # get_regions_by_huc4
 #
 # returns regions/huc4 table
@@ -133,6 +130,140 @@ get_regions_by_huc4 <- function(){
     )) %>% select(-region_number)
 }
 
+# read_WECC_plant_data
+#
+# reads WECC resources and selects required columns
+read_WECC_plant_data <- function(){
+  extdata_dir <- system.file("extdata/", package = "wmpp")
+  read_csv(paste0(extdata_dir, "WECC_resources_2024CC-V1.5.csv"),
+           comment = "##",
+           col_types = cols()) %>%
+    select(teppc_id = `Ref ID`,
+           teppc_shortname = `Plant/Unit (Short)`,
+           #teppc_longname = `Plant/Unit (Long)`,
+           en_annual_MWh = `Annual Energy (MWh)`,
+           np_MWh = `Nameplate (MW)`,
+           type = `Generator Type`,
+           #teppc_plantcode = PLANT_CODE,
+           lat = `Latitude(Red=Confidential)`,
+           lon = `Longitude(Red=Confidential)`) %>%
+    mutate(lat = as.numeric(lat), lon = as.numeric(lon))
+}
+
+# get_plexos_unit_coords
+#
+# reads plexos plant names and matches with WECC plant data to get locations
+get_plexos_unit_coords <- function(){
+
+  read_WECC_plant_data() -> WECC_plant_data
+  extdata_dir <- system.file("extdata/", package = "wmpp")
+
+  c("hydro", "fixedhydro", "thermal") %>%
+    map(function(x){
+
+      read_csv(paste0(extdata_dir, "plexos_", x, "_units.csv"), comment = "#",
+               col_types = cols(name = "c")) -> plexos_units
+
+      plexos_units %>%
+        left_join(WECC_plant_data,
+                  by = c("name" = "teppc_shortname")) ->
+        plexos_units_latlon
+
+      # manual fix for name mismatches in the case of thermal
+      if(x == "thermal"){
+        plexos_units_latlon %>% filter(is.na(teppc_id))
+
+        get_loc <- function(missing_name){
+          WECC_plant_data %>%
+          filter(grepl(missing_name, teppc_shortname)) %>%
+            select(lat, lon) %>% unique()
+        }
+
+        missed <- function(plxname){
+          which(grepl(plxname, plexos_units_latlon$name) &
+                  is.na(plexos_units_latlon$teppc_id))
+        }
+
+        plexos_units_latlon[missed("Ormesa"), "lat"] <- get_loc("Ormesa")$lat
+        plexos_units_latlon[missed("Ormesa"), "lon"] <- get_loc("Ormesa")$lon
+        plexos_units_latlon[missed("FourCorners"), "lat"] <- get_loc("FourCorners")$lat
+        plexos_units_latlon[missed("FourCorners"), "lon"] <- get_loc("FourCorners")$lon
+        plexos_units_latlon[missed("Stillwater"), "lat"] <- get_loc("Stillwater")$lat
+        plexos_units_latlon[missed("Stillwater"), "lon"] <- get_loc("Stillwater")$lon
+        plexos_units_latlon[missed("AESO"), "lat"] <- get_loc("AESO")$lat
+        plexos_units_latlon[missed("AESO"), "lon"] <- get_loc("AESO")$lon
+
+        }
+
+      subset(plexos_units_latlon, is.na(lat) | is.na(lon)) -> exc_loc
+      message(nrow(exc_loc), " of ", nrow(plexos_units_latlon), " ", x,
+              " plants missing lat/lon... (",
+              round(100 * sum(exc_loc$np_MWh, na.rm = T) / sum(plexos_units_latlon$np_MWh, na.rm = T), 2),
+              "% of nameplate missing)")
+
+      plexos_units_latlon %>% mutate(plexos_type = x)
+
+    }) %>% bind_rows()
+
+}
+
+
+# get_huc4_for_plexos_units
+#
+# gets huc4 code for plexos units with lat/lon
+get_huc4_for_plexos_units <- function(huc4_shape_dir){
+
+  # check if huc4 exists--download if not
+  if (!"nhd_huc4.gpkg.zip" %in% list.files(huc4_shape_dir)) get_huc4(template = NULL, huc4_shape_dir)
+
+  # unzip and load huc4 spatial data
+  tempdir <- tempfile()
+  utils::unzip(paste0(huc4_shape_dir, "/nhd_huc4.gpkg.zip"), exdir = tempdir)
+  st_read(stringr::str_c(tempdir, "/data-raw/nhd_huc4.gpkg"),
+              quiet = TRUE) %>% as("Spatial") -> huc4
+
+  get_plexos_unit_coords() -> plexos_units
+
+  # transform plexos units to spatial object
+  plexos_units %>%
+    filter(!is.na(lat) & !is.na(lon)) %>%
+    select(name, lat, lon) %>%
+    st_as_sf(coords = c("lon", "lat"),
+             crs = "+proj=longlat +datum=WGS84") -> plexos_units_points
+
+
+  # transform to US coordinate system
+  st_transform(plexos_units_points, 2163) -> plexos_units_points_
+  st_as_sf(huc4) %>% st_transform(2163) -> huc4_
+
+  # get huc4 for each unit
+  plexos_units_points_$huc4 <- apply(st_intersects(huc4_, plexos_units_points_, sparse = FALSE), 2,
+                                    function(col) {
+                                      which(col) -> x
+                                      if(!length(x) == 1) return(NA_character_)
+                                      as.character(huc4_[x, ]$HUC4)
+                                    })
+
+  rm(huc4)
+
+  # join huc4 back into main plexos unit tibble
+  plexos_units %>%
+    left_join(
+      tibble(name = plexos_units_points_$name,
+             huc4 = plexos_units_points_$huc4)
+    )
+}
 
 
 
+# read_plexos_hydro_units
+#
+# Reads the
+read_plexos_hydro_units <- function(){
+
+  extdata_dir <- system.file("extdata/", package = "wmpp")
+  read_csv(paste0(extdata_dir, "NREL/monthlyMaxEnergy_hydro.csv"),
+           col_types = cols()) %>%
+    select(one_of(c("name", paste0("M", 1:12))))
+
+}
