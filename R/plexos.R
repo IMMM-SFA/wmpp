@@ -10,7 +10,7 @@
 #' @importFrom dplyr left_join right_join filter select bind_rows vars contains case_when full_join
 #' @importFrom tidyr replace_na gather spread
 #' @importFrom sf st_as_sf st_transform st_intersects st_read
-#' @importFrom lubridate mdy_hm year month
+#' @importFrom lubridate mdy_hm year month day hour
 #' @return ...
 #' @export
 #'
