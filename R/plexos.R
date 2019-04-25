@@ -7,8 +7,8 @@
 #' @details derives plexos inputs for given scenario
 #' @importFrom purrr map reduce
 #' @importFrom readr read_csv cols
-#' @importFrom dplyr left_join right_join filter select bind_rows vars contains
-#' @importFrom tidyr replace_na
+#' @importFrom dplyr left_join right_join filter select bind_rows vars contains case_when
+#' @importFrom tidyr replace_na gather spread
 #' @importFrom sf st_as_sf st_transform st_intersects st_read
 #' @importFrom lubridate year month
 #' @return ...
@@ -87,10 +87,23 @@ get_plexos_inputs <- function(huc4_fn_1,
     map(function(x){
       x %>% .$year %>% unique() -> yr
       x %>% select(-year) %>%
-        right_join(units_grid_id_hydro) %>%
-        tidyr::replace_na(list(flow_ratio = 1)) %>%
-        mutate_if(is.numeric, "*", .$flow_ratio) %>%
-        select(-grid_id, -flow_ratio) %>%
+        right_join(units_grid_id_hydro, by = "grid_id") %>%
+        replace_na(list(flow_ratio = 1)) %>%
+        gather(month, hydro, -name, -grid_id, -flow_ratio) %>%
+        mutate(hydro_adj = hydro * flow_ratio) %>%
+        left_join(read_plexos_hydro_units_max() %>% gather(month, max_hydro, -name),
+                  by = c("name", "month")) %>%
+        left_join(read_plexos_hydro_units_min() %>% gather(month, min_hydro, -name),
+                  by = c("name", "month")) %>%
+        mutate(hydro_constrained = case_when(
+          hydro_adj > max_hydro ~ max_hydro,
+          hydro_adj < min_hydro ~ min_hydro,
+          hydro_adj <= max_hydro & hydro_adj >= min_hydro ~ hydro_adj
+        )) %>%
+        mutate(hydro_constrained = round(hydro_constrained, 3)) %>%
+        select(name, month, hydro_constrained) %>%
+        spread(month, hydro_constrained) %>%
+        select(name, one_of(paste0("M", 1:12))) %>%
         write_csv(paste0(output_dir, "/hydro/monthlyMaxEnergy_hydro_", yr, ".csv"))
     })
 

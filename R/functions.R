@@ -259,12 +259,34 @@ get_huc4_for_plexos_units <- function(huc4_shape_dir){
 
 # read_plexos_hydro_units
 #
-# Reads the
+# Reads the static plexos hydro input
 read_plexos_hydro_units <- function(){
 
   extdata_dir <- system.file("extdata/", package = "wmpp")
   read_csv(paste0(extdata_dir, "NREL/monthlyMaxEnergy_hydro.csv"),
            col_types = cols()) %>%
     select(one_of(c("name", paste0("M", 1:12))))
-
 }
+
+# read_plexos_hydro_units_max
+#
+# max constraint for hydro
+read_plexos_hydro_units_max <- function(){
+
+  extdata_dir <- system.file("extdata/", package = "wmpp")
+  read_csv(paste0(extdata_dir, "NREL/monthly_MaxEnergy_hydro_fromMaxCap.csv"),
+           col_types = cols()) %>%
+    select(one_of(c("name", paste0("M", 1:12))))
+}
+
+# read_plexos_hydro_units_min
+#
+# min constraint for hydro
+read_plexos_hydro_units_min <- function(){
+
+  extdata_dir <- system.file("extdata/", package = "wmpp")
+  read_csv(paste0(extdata_dir, "NREL/monthly_MinEnergy_hydro_fromMinStable.csv"),
+           col_types = cols()) %>%
+    select(one_of(c("name", paste0("M", 1:12))))
+}
+
