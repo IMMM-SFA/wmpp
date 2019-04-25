@@ -251,7 +251,8 @@ get_huc4_for_plexos_units <- function(huc4_shape_dir){
   plexos_units %>%
     left_join(
       tibble(name = plexos_units_points_$name,
-             huc4 = plexos_units_points_$huc4)
+             huc4 = plexos_units_points_$huc4),
+      by = "name"
     )
 }
 
@@ -289,4 +290,89 @@ read_plexos_hydro_units_min <- function(){
            col_types = cols()) %>%
     select(one_of(c("name", paste0("M", 1:12))))
 }
+
+# get_hydro_fixed_dispatch
+#
+# get baseline hourly Mwh for fixed dispatch
+get_hydro_fixed_dispatch <- function(){
+
+  extdata_dir <- system.file("extdata/", package = "wmpp")
+
+  hd_dir <- paste0(extdata_dir, "NREL/fixed_dispatch_hydro_files/")
+
+  list.files(hd_dir, recursive = T) %>%
+    .[grepl("HY_", .)] %>%
+    map(function(x){
+      read_csv(paste0(hd_dir, "/", x), col_types = cols()) %>%
+        mutate(file = x)
+    }) %>%
+    bind_rows() %>% mutate(DATETIME = gsub("/", "-", DATETIME)) %>%
+    mutate(DATETIME = mdy_hm(DATETIME)) %>%
+    arrange(file, DATETIME) -> hydro_files
+
+
+  # get mapping file
+  read_csv(paste0(hd_dir, "mapping.csv"), col_types = cols()) %>%
+    rename(file = `Data File`) %>%
+    mutate(file = paste0("FixedDispatchHydroFiles/", file),
+           Multiplier = as.numeric(substr(Multiplier, 11, nchar(Multiplier)))) ->
+    mapping
+
+  # merge data
+  mapping %>% full_join(hydro_files, by = "file") %>%
+    select(-file) %>%
+    mutate(MWh = Multiplier * Value) %>%
+    select(-Multiplier, -Value)
+}
+
+
+# read_plexos_fixed_hydro_units_max
+#
+# max constraint for hydro
+read_plexos_fixed_hydro_units_max <- function(){
+
+  extdata_dir <- system.file("extdata/", package = "wmpp")
+  read_csv(paste0(extdata_dir, "NREL/monthlyCap_hydro.csv"),
+           col_types = cols()) %>%
+    select(one_of(c("name", paste0("M", 1:12)))) %>%
+    gather(Month, max, -name) %>%
+    mutate(Month = as.integer(substr(Month, 2, nchar(Month))))
+}
+
+# read_plexos_fixed_hydro_units_min
+#
+# min constraint for hydro
+read_plexos_fixed_hydro_units_min <- function(){
+
+  extdata_dir <- system.file("extdata/", package = "wmpp")
+  read_csv(paste0(extdata_dir, "NREL/monthlyMinStable_hydro.csv"),
+           col_types = cols()) %>%
+    select(one_of(c("name", paste0("M", 1:12)))) %>%
+    gather(Month, min, -name) %>%
+    mutate(Month = as.integer(substr(Month, 2, nchar(Month))))
+}
+
+
+# read_plexos_thermal_max_min
+#
+# read plexos thermal
+read_plexos_thermal_max_min <- function(){
+
+  extdata_dir <- system.file("extdata/", package = "wmpp")
+
+  read_csv(paste0(extdata_dir, "NREL/thermalGen_maxCap_minGen.csv"),
+           col_types = cols()) %>%
+    select(name, max = `Max Capacity`, min = MinStable) ->
+    thermal_constraints
+
+  read_csv(paste0(extdata_dir, "plantFlow_thermal.csv"),
+           col_types = cols()) %>%
+    filter(!coolingTechnology == "Dry Cooled") %>%
+    filter(coolingType == "Surface Water") %>%
+    select(name, huc4) %>%
+    full_join(thermal_constraints, by = "name") %>%
+    mutate(huc4 = as.character(huc4))
+}
+
+
 
