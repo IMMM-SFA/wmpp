@@ -11,6 +11,7 @@
 #' @importFrom tidyr replace_na gather spread
 #' @importFrom sf st_as_sf st_transform st_intersects st_read
 #' @importFrom lubridate mdy_hm year month day hour
+#' @importFrom FedData get_huc4
 #' @return ...
 #' @export
 #'
