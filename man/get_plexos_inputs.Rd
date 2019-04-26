@@ -8,18 +8,19 @@ get_plexos_inputs(huc4_fn_1, huc4_fn_2, flow_dir, huc4_shape_dir, base_yr,
   output_dir)
 }
 \arguments{
-\item{huc4_fn_1}{file naming format for the hydro_flow_file, excluding the region (e.g., 10_HIST_MOSART.csv, would be "HIST_MOSART.csv")}
+\item{huc4_fn_1}{file naming format for the historical hydro_flow_file, excluding the region (e.g., 10_HIST_MOSART.csv, would be "HIST_MOSART.csv")}
 
-\item{huc4_fn_2}{optional second flow file naming format in case hist and future parts are split.}
+\item{huc4_fn_2}{second flow file naming format for the future hydro_flow_file, exluding the region (e.g., "RCP85_MOSART.csv")}
 
 \item{flow_dir}{directory where huc4 flow results reside}
-}
-\value{
-...
+
+\item{huc4_shape_dir}{directory where huc4 shape file ("nhd_huc4.gpkg.zip") resides. If blank, download will be attempted.}
+
+\item{base_yr}{year from huc4_fn_1 (historical) from which to compute deviation. Should be determined offline for each GCM using WECC WSGIF (73rd percentile of historial years).}
 }
 \description{
 get_plexos_inputs
 }
 \details{
-derives plexos inputs for given scenario
+derives plexos inputs for thermal, hydro, and fixed hydro.
 }

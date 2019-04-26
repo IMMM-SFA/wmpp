@@ -1,10 +1,11 @@
 #' get_plexos_inputs
 #'
-#' @param huc4_fn_1 file naming format for the hydro_flow_file, excluding the region (e.g., 10_HIST_MOSART.csv, would be "HIST_MOSART.csv")
-#' @param huc4_fn_2 optional second flow file naming format in case hist and future parts are split.
+#' @param huc4_fn_1 file naming format for the historical hydro_flow_file, excluding the region (e.g., 10_HIST_MOSART.csv, would be "HIST_MOSART.csv")
+#' @param huc4_fn_2 second flow file naming format for the future hydro_flow_file, exluding the region (e.g., "RCP85_MOSART.csv")
 #' @param flow_dir directory where huc4 flow results reside
-#' @param huc4_shape_dir
-#' @details derives plexos inputs for given scenario
+#' @param huc4_shape_dir directory where huc4 shape file ("nhd_huc4.gpkg.zip") resides. If blank, download will be attempted.
+#' @param base_yr year from huc4_fn_1 (historical) from which to compute deviation. Should be determined offline for each GCM using WECC WSGIF (73rd percentile of historial years).
+#' @details derives plexos inputs for thermal, hydro, and fixed hydro.
 #' @importFrom purrr map reduce
 #' @importFrom readr read_csv cols
 #' @importFrom dplyr left_join right_join filter select bind_rows vars contains case_when full_join
@@ -12,7 +13,6 @@
 #' @importFrom sf st_as_sf st_transform st_intersects st_read
 #' @importFrom lubridate mdy_hm year month day hour
 #' @importFrom FedData get_huc4
-#' @return ...
 #' @export
 #'
 get_plexos_inputs <- function(huc4_fn_1,

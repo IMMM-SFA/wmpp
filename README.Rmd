@@ -12,9 +12,9 @@ knitr::opts_chunk$set(
   out.width = "100%"
 )
 ```
-# wmpp
+# wmpp (Water Management Post-Processing)
 
-`wmpp` (in development) produces Water Scarcity Grid Impact Factor (WSGIF) estimates and PLEXOS inputs from WM simulation results.
+`wmpp` produces Water Scarcity Grid Impact Factor (WSGIF) estimates and PLEXOS inputs from WM simulation results.
 
 ## Installation
 
@@ -28,7 +28,17 @@ You can install `wmpp` using devtools:
 
 To run on PIC, you must first ensure `R` is loaded:
 
-$ `module load R/3.2.3`
+$ `module load R/3.4.3`
+
+You also need to load some other modules required for the spatial mapping features of `wmpp`:
+
+$ `module load gdal/2.1.2`
+
+$ `module load proj4/4.9.3`
+
+$ `module load geos/3.4.2`
+
+$ `module load gcc/5.2.0`
 
 If this is the first time you've used `wmpp` on PIC, you'll need to install it in your home directory. To do this, start R directly:
 
@@ -44,9 +54,9 @@ Then quit R, without saving the workspace image:
 
 **Important:** Even though it's possible to begin running `wmpp` from within the R environment on PIC, this should be avoided. Instead, you should set up some bash scripts to run `wmpp` on a computing node.
 
-### Extracting flow data from WM outputs
+### 1. Extracting flow data from WM outputs
 
-Computation of Water Scarcity Grid Impact Factor (WSGIF) requires flow time series for relevant grids where hydropower dams (for hydropower WSGIF) and catchment outlets (for thermal WSGIF) are located. The `prep_flow` function will search inside a WM results directory and extract these data from all available gridded flow outputs. The function has three arguments:
+Computation of both Water Scarcity Grid Impact Factor (WSGIF) and plexos inputs requires flow time series for relevant grids where hydropower dams (for hydropower WSGIF) and catchment outlets (for thermal WSGIF and thermal/hydro plexos input) are located. The `prep_flow` function will search inside a WM results directory and extract these data from all available gridded flow outputs. The function has three arguments:
 
 1. `wm_output_dir` is used to specify the WM results directory.
 
@@ -66,8 +76,8 @@ To extract the relevant flow information you need to set up a simple .R script. 
 library(wmpp)
 
 # exectute prep_flow
-prep_flow("/pic/projects/wat_nrg_nex/hydromet/Tian/CMIP5_BCSD_runoffs/output/access1-0/",
-          hyd_output_dir = "/people/my_username/wmpp_analysis/access1-0_output_hydro/",
+prep_flow("/pic/projects/wat_nrg_nex/hydromet/Tian/CMIP5_BCSD_runoffs/output/ccsm4/",
+          hyd_output_dir = "/people/my_username/wmpp_analysis/flows_hyd_huc4_ccsm4/",
           in_parallel = TRUE)
 #################
 ```
@@ -93,19 +103,56 @@ Then send the job for computation:
 
 $`sbatch batch_get_flows.sh`
 
-### WSGIF computation
+Once hydropower dam and huc4 flows have been prepared, you can compute both WSGIF and plexos inputs for hydro, fixed hydro, and thermal units.
 
-The computation of WSGIF is computed on files prepared in the prior step. The function `get_wsgif` is used as follows:
+
+### 2. WSGIF computation
+
+The function `get_wsgif` can be run with the following .R script:
 
 ```
-get_wsgif("HIST45_MOSART_2010_WM.csv",
-          "RCP45_MOSART_2010_WM.csv",
-          "flows_hyd_huc4")
+#################
+# .R script for computing WSGIF (hydro and thermal)...
+# ... for all regions, basins, balancing authorities ...
+# ...and WECC as a whole for a given WM run.
+
+# load the wmpp library
+library(wmpp)
+
+# execute get_wsgif for desired scenario
+get_wsgif("HIST_MOSART_2010_WM.csv",        ## the historical part of the scenario
+          "RCP85_MOSART_2010_WM.csv",       ## the future part of the scenario
+          "flows_hyd_huc4_ccsm4")           ## flow file directory (created in prior step)
+#################
 ```
 
+Check the documentation for additional optional function arguments simply entering `?get_wsgif` in the R console.
 
 
+### 3. Plexos input computation
 
+Similarly to WSGIF, Plexos inputs are computed from prepared WM huc4 flows.
 
+Set up the following .R script:
 
+```
+#################
+# .R script for computing plexos inputs (hydro, fixed hydro, and thermal).
 
+# load the wmpp library
+library(wmpp)
+
+# execute get_plexos_inputs
+get_plexos_inputs(
+  "HIST_MOSART_2010_WM.csv",      ## historical part of simulation (base_yr contained within)
+  "RCP85_MOSART_2010_WM.csv",     ## future part of simulation (plexos input computed for all these yrs)
+  "flows_hyd_huc4_ccsm4/",        ## flow file directory (created in (1) above, using prep_flows)
+  huc4_shape_dir = "./",          ## location of huc4 shapefile (will be automatically downloaded if missing)
+  base_yr = 1963,                 ## year from which flow deviations are computed for derating
+  "ccsm4_plexos_outputs/")        ## output directory
+#################
+```
+
+Check the documentation for additional optional function arguments simply entering `?get_wsgif` in the R console.
+
+If you experience any problems running `wmpp` then please email [Sean Turner](sean.turner@pnnl.gov) or raise an issue on this reposity.

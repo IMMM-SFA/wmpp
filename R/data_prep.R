@@ -1,5 +1,3 @@
-# data preparation
-
 #' prep_flow
 #'
 #' @param wm_output_dir directory of results folder
