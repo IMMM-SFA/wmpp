@@ -101,7 +101,7 @@ get_plexos_inputs <- function(huc4_fn_1,
   # create folders in output directory
   dir.create(paste0(output_dir, "/hydro"))
   dir.create(paste0(output_dir, "/hydro_fixed_dispatch"))
-  dir.create(paste0(output_dir, "thermal"))
+  dir.create(paste0(output_dir, "/thermal"))
 
 
   # 1. hydro
