@@ -12,7 +12,6 @@
 #' @importFrom tidyr replace_na gather spread
 #' @importFrom sf st_as_sf st_transform st_intersects st_read
 #' @importFrom lubridate mdy_hm year month day hour
-#' @importFrom FedData get_huc4
 #' @export
 #'
 get_plexos_inputs <- function(huc4_fn_1,

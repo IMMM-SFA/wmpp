@@ -213,7 +213,7 @@ get_plexos_unit_coords <- function(){
 get_huc4_for_plexos_units <- function(huc4_shape_dir){
 
   # check if huc4 exists--download if not
-  if (!"nhd_huc4.gpkg.zip" %in% list.files(huc4_shape_dir)) get_huc4(template = NULL, huc4_shape_dir)
+  #if (!"nhd_huc4.gpkg.zip" %in% list.files(huc4_shape_dir)) get_huc4(template = NULL, huc4_shape_dir)
 
   # unzip and load huc4 spatial data
   tempdir <- tempfile()
