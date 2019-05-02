@@ -9,7 +9,6 @@ read_grid_ids <- function(region){
   extdata_dir <- system.file("extdata/", package = "wmpp")
   read.table(paste0(extdata_dir, "grid_id/", region, ".ll")) %>%
     .$V1
-
 }
 
 # read_hydro_plant_grids
@@ -31,12 +30,13 @@ read_hydro_plant_data <- function(region){
   read_csv(paste0(extdata_dir, "plexos_hydro_BA_hucwm.csv"),
            col_types = cols()) -> hydro_plants
 
-  read_csv(paste0(extdata_dir, "BA_2_region_mapping.csv"),
-           col_types = cols()) -> BA_region_mapping
+  # read_csv(paste0(extdata_dir, "BA_2_region_mapping.csv"),
+  #          col_types = cols()) -> BA_region_mapping
 
-  hydro_plants %>% left_join(BA_region_mapping, by = "BA") %>%
-    rename(tepcc_region = `TEPCC region`, region = Regions)
+  read_csv(paste0(extdata_dir, "plexos_hydro_power_areas.csv"),
+           col_types = cols()) -> power_areas
 
+  hydro_plants %>% left_join(power_areas, by = "plant")
 }
 
 # read_thermal_plant_data
@@ -111,18 +111,18 @@ get_wsgif_all_grids <- function(flow_his,
     select(year, grid_id, wsgif)
 }
 
-# get_regions_by_huc4
+# get_power_areas_by_huc4
 #
 # returns regions/huc4 table
-get_regions_by_huc4 <- function(){
+get_power_areas_by_huc4 <- function(){
   extdata_dir <- system.file("extdata/", package = "wmpp")
   read_tsv(paste0(extdata_dir, "HUC42region.txt"),
                   col_names = c("huc4", "region_number"),
                   col_types = readr::cols()) %>%
-    mutate(region = case_when(
+    mutate(power_area= case_when(
       region_number == 1 ~ "Northwest",
-      region_number == 2 ~ "NCalifornia",
-      region_number == 3 ~ "SCalifornia",
+      region_number == 2 ~ "Northern_California",
+      region_number == 3 ~ "Southern_California",
       region_number == 4 ~ "Basin",
       region_number == 5 ~ "Southwest",
       region_number == 6 ~ "Rockies"

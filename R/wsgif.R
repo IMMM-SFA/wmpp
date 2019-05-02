@@ -39,11 +39,10 @@ get_wsgif <- function(flow_fn_1,
 
   # read in dam file and filter for largest (according to chosen dam_cutoff_percentile)
   read_hydro_plant_data() %>%
-    select(plant, nameplate_MW_, BA, reg_hucwm, grid_id, region) %>%
-    mutate(nameplate_MW_ = if_else(nameplate_MW_ < 0, 0, nameplate_MW_)) %>%
+    select(plant, MWh = annualProduction_MWh_, BA, reg_hucwm, grid_id, power_area) %>%
     filter(reg_hucwm %in% huc2_hucwm$hucwm) %>%
-    arrange(-nameplate_MW_) %>%
-    mutate(percentile = cumsum(nameplate_MW_) / sum(nameplate_MW_),
+    arrange(-MWh) %>%
+    mutate(percentile = cumsum(-MWh) / sum(-MWh),
            grid_id = as.character(grid_id)) %>%
     filter(percentile <= dam_cutoff_percentile) %>% select(-percentile) ->
     hydro_plants
@@ -51,9 +50,9 @@ get_wsgif <- function(flow_fn_1,
   # read in thermal plant data
   read_thermal_plant_data() %>%
     filter(coolingType == "Surface Water") %>%
-    left_join(get_regions_by_huc4(), by = "huc4") %>%
+    left_join(get_power_areas_by_huc4(), by = "huc4") %>%
     left_join(get_huc4_data() %>% select(huc4, grid_id), by = "huc4") %>%
-    select(nameplate = namePlate, huc4, grid_id, region) ->
+    select(MWh = annualMWh, huc4, grid_id, power_area) ->
     thermal_nameplate
 
   # get date sequences
@@ -255,31 +254,31 @@ get_wsgif <- function(flow_fn_1,
   hydro_plants %>%
     filter(!grid_id %in% dam_grids_with_bad_flow_data) %>%
     group_by(BA) %>%
-    mutate(BA_weighting = nameplate_MW_ / sum(nameplate_MW_)) %>%
-    group_by(region) %>%
-    mutate(region_weighting = nameplate_MW_ / sum(nameplate_MW_)) %>%
+    mutate(BA_weighting = MWh / sum(MWh)) %>%
+    group_by(power_area) %>%
+    mutate(power_area_weighting = MWh / sum(MWh)) %>%
     ungroup() %>%
-    mutate(wecc_weighting = nameplate_MW_ / sum(nameplate_MW_)) ->
+    mutate(wecc_weighting = MWh / sum(MWh)) ->
     hydro_plants_weighted
 
   # add region weights for thermal
   thermal_nameplate %>%
     filter(!grid_id %in% huc4_grids_with_bad_flow_data) %>%
-    group_by(region) %>%
-    mutate(region_weighting = nameplate / sum(nameplate)) %>%
+    group_by(power_area) %>%
+    mutate(power_area_weighting = MWh / sum(MWh)) %>%
     ungroup() %>%
-    mutate(wecc_weighting = nameplate / sum(nameplate)) %>%
+    mutate(wecc_weighting = MWh / sum(MWh)) %>%
     mutate(grid_id = as.character(grid_id)) ->
     thermal_plants_weighted
 
   wsgif_all_dams %>%
     left_join(hydro_plants_weighted, by = c("grid_id")) %>%
-    filter(!is.na(nameplate_MW_)) ->
+    filter(!is.na(MWh)) ->
     wsgif_all_dams_BA_region
 
   wsgif_all_huc4s %>%
     left_join(thermal_plants_weighted, by = c("grid_id")) %>%
-    filter(!is.na(nameplate)) ->
+    filter(!is.na(MWh)) ->
     wsgif_all_huc4_region
 
   # get hydro wsgif by balancing authority
@@ -289,12 +288,12 @@ get_wsgif <- function(flow_fn_1,
     summarise(wsgif = round(sum(wsgif_weighted), 3)) %>% ungroup() %>%
     spread(BA, wsgif) -> wsgif_hydro_BA
 
-  # get hydro wsgif by region
+  # get hydro wsgif by power area
   wsgif_all_dams_BA_region %>%
-    mutate(wsgif_weighted = wsgif * region_weighting) %>%
-    group_by(year, region) %>%
+    mutate(wsgif_weighted = wsgif * power_area_weighting) %>%
+    group_by(year, power_area) %>%
     summarise(wsgif = round(sum(wsgif_weighted), 3)) %>% ungroup() %>%
-    spread(region, wsgif) -> wsgif_hydro_region
+    spread(power_area, wsgif) -> wsgif_hydro_power_area
 
   # get hydro wsgif by wecc region
   wsgif_all_dams_BA_region %>%
@@ -303,14 +302,14 @@ get_wsgif <- function(flow_fn_1,
     summarise(wsgif = round(sum(wsgif_weighted), 3)) %>% ungroup() %>%
     rename(wecc = wsgif) -> wsgif_hydro_wecc
 
-  # get thermal wsgif by region
+  # get thermal wsgif by power area
   wsgif_all_huc4_region %>%
-    mutate(wsgif_weighted = wsgif * region_weighting) %>%
-    group_by(year, region) %>%
+    mutate(wsgif_weighted = wsgif * power_area_weighting) %>%
+    group_by(year, power_area) %>%
     summarise(wsgif = round(sum(wsgif_weighted), 3)) %>% ungroup() %>%
-    spread(region, wsgif) -> wsgif_thermal_region
+    spread(power_area, wsgif) -> wsgif_thermal_power_area
 
-  # get thermal wsgif by wecc region
+  # get thermal wsgif by wecc
   wsgif_all_huc4_region %>%
     mutate(wsgif_weighted = wsgif * wecc_weighting) %>%
     group_by(year) %>%
@@ -324,10 +323,10 @@ get_wsgif <- function(flow_fn_1,
   }
 
   write_csv(wsgif_hydro_BA, paste0(output_file_dir, "/wsgif_hydro_BA_", output_fn_tag, ".csv"))
-  write_csv(wsgif_hydro_region, paste0(output_file_dir, "/wsgif_hydro_region_", output_fn_tag, ".csv"))
+  write_csv(wsgif_hydro_power_area, paste0(output_file_dir, "/wsgif_hydro_power_area_", output_fn_tag, ".csv"))
   write_csv(wsgif_hydro_wecc, paste0(output_file_dir, "/wsgif_hydro_wecc_", output_fn_tag, ".csv"))
 
-  write_csv(wsgif_thermal_region, paste0(output_file_dir, "/wsgif_thermal_region_", output_fn_tag, ".csv"))
+  write_csv(wsgif_thermal_power_area, paste0(output_file_dir, "/wsgif_thermal_power_area_", output_fn_tag, ".csv"))
   write_csv(wsgif_thermal_wecc, paste0(output_file_dir, "/wsgif_thermal_wecc_", output_fn_tag, ".csv"))
 
 }
