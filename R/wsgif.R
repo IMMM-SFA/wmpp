@@ -176,20 +176,23 @@ get_wsgif <- function(flow_fn_1,
     # set up function for pulling flow file, checking the data, and performing wgif computation
     flow_to_wsgif <- function(hucwm, hyd_huc){
       # get historical hydro flows
-      read_csv(paste0(flow_file_dir, "/",
+            read_csv(paste0(flow_file_dir, "/",
                       hyd_huc ,"_", hucwm, "_",
                       flow_fn_1),
-               col_types = cols()) %>%
-        filter(date %in% date_seq_his) ->
+               col_types = cols()) ->
         flow_his
 
       # get future hydro flows
       read_csv(paste0(flow_file_dir, "/",
                       hyd_huc, "_", hucwm, "_",
                       flow_fn_2),
-               col_types = cols()) %>%
-        filter(date %in% date_seq_fut) ->
+               col_types = cols()) ->
         flow_fut
+
+      # bind historical and future
+      bind_rows(flow_his,
+                flow_fut %>% filter(date > dplyr::last(flow_his$date))) ->
+        flow_all
 
       # return shell for files without hydro flow
       if(ncol(flow_fut) == 1 | ncol(flow_fut) == 1){
@@ -199,11 +202,12 @@ get_wsgif <- function(flow_fn_1,
       }
 
       # ensure flow file contains representative dates for historical and future periods:
-      if(!all(date_seq_his %in% flow_his$date)) stop(paste0(hucwm, " ", hyd_huc, " file lacks some dates of the historical period"))
-      if(!all(date_seq_fut %in% flow_fut$date)) stop(paste0(hucwm, " ", hyd_huc, " lacks some dates of the future period"))
+      if(!all(date_seq_his %in% flow_all$date)) stop(paste0(hucwm, " ", hyd_huc, " lacks some dates of the historical period"))
+      if(!all(date_seq_fut %in% flow_all$date)) stop(paste0(hucwm, " ", hyd_huc, " lacks some dates of the future period"))
 
       # return the (non-weighted) wsgif for all hydro dams
-      get_wsgif_all_grids(flow_his, flow_fut)
+      get_wsgif_all_grids(filter(flow_all, date %in% date_seq_his),
+                          filter(flow_all, date %in% date_seq_fut))
     }
 
     regions_detected_his_hyd %>%
