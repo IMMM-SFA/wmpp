@@ -19,7 +19,10 @@ get_plexos_inputs <- function(huc4_fn_1,
                               flow_dir,
                               huc4_shape_dir,
                               base_yr,
-                              output_dir){
+                              output_dir,
+                              seasonal = TRUE,
+                              hydro_at_plants = TRUE){
+
 
   get_huc4_for_plexos_units(huc4_shape_dir) ->
     plexos_units_all
@@ -69,15 +72,51 @@ get_plexos_inputs <- function(huc4_fn_1,
     gather(grid_id, flow, -year) ->
     flow_future_yrs
 
+  flow_files_his %>% gsub("huc4", "hydro", .) %>%
+    map(~read_csv(paste0(flow_dir, "/", .),
+                  col_types = cols()) %>%
+          mutate(year = year(date)) %>%
+          group_by(year) %>%
+          summarise_if(is.numeric, mean) %>% ungroup()
+    ) %>%
+    purrr::reduce(left_join, by = c("year")) %>%
+    select(year, one_of(as.character(read_plexos_hydro_grid_ids() %>%
+                                       .[["grid_id"]] %>% unique()))) %>%
+    filter(year == base_yr) %>%
+    gather(grid_id, base_yr_flow, -year) %>% select(-year) ->
+    flow_hydro_base_yr
+
+  flow_files_fut %>% gsub("huc4", "hydro", .) %>%
+    map(~read_csv(paste0(flow_dir, "/", .),
+                  col_types = cols()) %>%
+          mutate(year = year(date)) %>%
+          group_by(year) %>%
+          summarise_if(is.numeric, mean) %>% ungroup()
+    ) %>%
+    purrr::reduce(left_join, by = c("year")) %>%
+    select(year, one_of(as.character(read_plexos_hydro_grid_ids() %>%
+                                       .[["grid_id"]] %>% unique()))) %>%
+    gather(grid_id, flow, -year) ->
+    flow_hydro_future_yrs
+
   # get plexos hydro units and attach data and grid ids
-  read_plexos_hydro_units() %>%
-    left_join(select(plexos_units_all, name, huc4),
-              by = "name") %>%
-    left_join(select(huc4_outlet_grid_id, huc4, grid_id),
-              by = "huc4") %>%
-    mutate(grid_id = as.character(grid_id)) %>%
-    select(-huc4) ->
-    units_grid_id_hydro
+
+  if(isFALSE(hydro_at_plants)){
+    read_plexos_hydro_units() %>%
+      left_join(select(plexos_units_all, name, huc4),
+                by = "name") %>%
+      left_join(select(huc4_outlet_grid_id, huc4, grid_id),
+                by = "huc4") %>%
+      mutate(grid_id = as.character(grid_id)) %>%
+      select(-huc4) ->
+      units_grid_id_hydro
+  }else{
+    read_plexos_hydro_units() %>%
+      left_join(read_plexos_hydro_grid_ids() %>% unique(),
+                by = c("name" = "plexos_name")) %>%
+      mutate(grid_id = as.character(grid_id)) ->
+      units_grid_id_hydro
+  }
 
   get_hydro_fixed_dispatch() %>%
     left_join(select(plexos_units_all, name, huc4),
@@ -97,6 +136,40 @@ get_plexos_inputs <- function(huc4_fn_1,
     mutate(flow_ratio = flow / base_yr_flow) %>%
     select(grid_id, year, flow_ratio) -> flow_ratios
 
+  left_join(
+    flow_hydro_future_yrs,
+    flow_hydro_base_yr,
+    by = "grid_id"
+  ) %>%
+    mutate(flow_ratio = flow / base_yr_flow) %>%
+    select(grid_id, year, flow_ratio) -> flow_hydro_ratios
+
+
+  # get seasonal distribution parameters
+  flow_files_fut %>% gsub("huc4", "hydro", .) %>%
+    map(~read_csv(paste0(flow_dir, "/", .),
+                  col_types = cols()) %>%
+          mutate(year = year(date),
+                 month = month(date)) %>%
+          group_by(year, month) %>%
+          summarise_if(is.numeric, mean) %>% ungroup()
+    ) %>%
+    purrr::reduce(left_join, by = c("year", "month")) %>%
+    #select(year, month, one_of(units_grid_id_hydro$grid_id)) %>%
+    gather(grid_id, flow, -year, -month) %>%
+    # deal with duplicate grids that appear in more than one basin
+    filter(!grepl("y", grid_id)) %>%
+    mutate(grid_id = if_else(grepl(".x", grid_id),
+                             substr(grid_id, 1, nchar(grid_id)  -2),
+                             grid_id)) %>%
+    group_by(grid_id, year) %>%
+    mutate(sum_flow = sum(flow),
+           dist_param = flow / sum_flow,
+           month = paste0("M", month)) %>% ungroup() %>%
+    select(year, month, dist_param, grid_id) ->
+    flow_dist
+
+  if(isFALSE(seasonal)) flow_dist <- mutate(flow_dist, dist_param = NA_real_)
 
   # create folders in output directory
   dir.create(paste0(output_dir, "/hydro"))
@@ -107,7 +180,7 @@ get_plexos_inputs <- function(huc4_fn_1,
   # 1. hydro
 
   # multiply flow ratios, constrain, write to file in plexos format
-  flow_ratios %>%
+  flow_hydro_ratios %>%
     split(.$year) %>%
     map(function(x){
       x %>% .$year %>% unique() -> yr
@@ -116,14 +189,26 @@ get_plexos_inputs <- function(huc4_fn_1,
         replace_na(list(flow_ratio = 1)) %>%
         gather(month, hydro, -name, -grid_id, -flow_ratio) %>%
         mutate(hydro_adj = hydro * flow_ratio) %>%
+        ## SEASONAL ADJUSTMENT IN HERE!!
+        left_join(flow_dist %>%
+                    filter(year == yr) %>%
+                    select(-year),
+                  by = c("month", "grid_id")) %>%
+        group_by(name) %>%
+        mutate(annual_hydro = sum(hydro_adj)) %>% ungroup() %>%
+        mutate(hydro_adj_seasonal = case_when(
+                 is.na(dist_param) ~ hydro_adj,
+                 !is.na(dist_param) ~ annual_hydro * dist_param
+               )) %>%
+        select(name, month, hydro_adj_seasonal) %>%
         left_join(read_plexos_hydro_units_max() %>% gather(month, max_hydro, -name),
                   by = c("name", "month")) %>%
         left_join(read_plexos_hydro_units_min() %>% gather(month, min_hydro, -name),
                   by = c("name", "month")) %>%
         mutate(hydro_constrained = case_when(
-          hydro_adj > max_hydro ~ max_hydro,
-          hydro_adj < min_hydro ~ min_hydro,
-          hydro_adj <= max_hydro & hydro_adj >= min_hydro ~ hydro_adj
+          hydro_adj_seasonal > max_hydro ~ max_hydro,
+          hydro_adj_seasonal < min_hydro ~ min_hydro,
+          hydro_adj_seasonal <= max_hydro & hydro_adj_seasonal >= min_hydro ~ hydro_adj_seasonal
         )) %>%
         mutate(hydro_constrained = round(hydro_constrained, 3)) %>%
         select(name, month, hydro_constrained) %>%

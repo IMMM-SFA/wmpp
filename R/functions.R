@@ -372,5 +372,14 @@ read_plexos_thermal_max_min <- function(){
     mutate(huc4 = as.character(huc4))
 }
 
+# read_plexos_hydro_grid_ids
+#
+# read grid ids for plexos thermal plants
+read_plexos_hydro_grid_ids <- function(){
 
+  extdata_dir <- system.file("extdata/", package = "wmpp")
+
+  read_csv(paste0(extdata_dir, "plexos_hydro_grid_ids.csv"),
+           col_types = cols())
+}
 
